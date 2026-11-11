@@ -15,7 +15,7 @@ tokio = { version = "1", features = ["rt-multi-thread", "time", "net"] }
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
 # API anahtarı kasası: AES-256-GCM + SHA-256 + base64.
 aes-gcm = "0.10"
-sha2 = "0.10"
+sha2 = "0.11"
 base64 = "0.22"
 getrandom = "0.2"
 # Demo HTML sıkıştırma (demo üretimi hâlâ kullanıyor).
