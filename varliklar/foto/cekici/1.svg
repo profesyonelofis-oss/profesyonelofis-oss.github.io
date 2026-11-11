@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Alacakaranlıkta araç yükleyen çekici">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0b1730"/><stop offset="0.45" stop-color="#233a63"/><stop offset="0.72" stop-color="#8a5a4a"/><stop offset="1" stop-color="#e5955c"/>
+</linearGradient>
+<linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#2a2f38"/><stop offset="1" stop-color="#151920"/>
+</linearGradient>
+<linearGradient id="truck" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f2f5f8"/><stop offset="0.55" stop-color="#cfd6dd"/><stop offset="1" stop-color="#8e979f"/>
+</linearGradient>
+<linearGradient id="car" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#3b6ea8"/><stop offset="1" stop-color="#1d3550"/>
+</linearGradient>
+<radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#ffd9a0" stop-opacity="0.95"/><stop offset="0.55" stop-color="#ffb066" stop-opacity="0.35"/><stop offset="1" stop-color="#ffb066" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#ffe9b8" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe9b8" stop-opacity="0"/>
+</linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<circle cx="905" cy="560" r="230" fill="url(#sun)"/>
+<g opacity="0.55" fill="#0f1d33">
+<path d="M0 520 L150 470 L260 505 L380 455 L520 500 L640 470 L760 505 L900 465 L1050 505 L1200 470 L1200 620 L0 620Z"/>
+</g>
+<g opacity="0.35" fill="#0a1626">
+<path d="M0 560 L120 535 L240 562 L360 530 L500 560 L640 535 L780 562 L920 532 L1080 560 L1200 540 L1200 640 L0 640Z"/>
+</g>
+<rect y="600" width="1200" height="200" fill="url(#road)"/>
+<g stroke="#f3d089" stroke-width="7" stroke-dasharray="62 46" opacity="0.85">
+<path d="M-20 742 L1220 676"/>
+</g>
+<g opacity="0.24" stroke="#9fb4cc" stroke-width="3">
+<path d="M-20 700 L1220 638"/><path d="M-20 780 L1220 712"/>
+</g>
+<!-- çekici -->
+<g transform="translate(190 470)">
+<rect x="30" y="0" width="560" height="30" rx="10" fill="#2b3138" opacity="0.55"/>
+<path d="M60 120 h330 l70 -64 h96 l28 64 h28 a46 46 0 0 1 46 46 v42 h-598 v-42 a46 46 0 0 1 46 -46z" fill="url(#truck)"/>
+<path d="M472 62 h92 l24 58 h-116z" fill="#8fb6d9" opacity="0.85"/>
+<rect x="66" y="132" width="330" height="16" rx="6" fill="#b9c2ca"/>
+<rect x="86" y="148" width="290" height="10" rx="5" fill="#98a2ab"/>
+<circle cx="150" cy="212" r="40" fill="#1a1e24"/><circle cx="150" cy="212" r="18" fill="#5a646e"/>
+<circle cx="368" cy="212" r="40" fill="#1a1e24"/><circle cx="368" cy="212" r="18" fill="#5a646e"/>
+<circle cx="540" cy="212" r="40" fill="#1a1e24"/><circle cx="540" cy="212" r="18" fill="#5a646e"/>
+<rect x="500" y="120" width="86" height="34" rx="10" fill="#f4b23c"/>
+<g fill="#ffcf6b" opacity="0.9"><rect x="486" y="104" width="14" height="20" rx="5"/><rect x="512" y="100" width="14" height="24" rx="5"/><rect x="538" y="104" width="14" height="20" rx="5"/></g>
+<circle cx="492" cy="96" r="46" fill="#ffc247" opacity="0.22" filter="url(#soft)"/>
+<path d="M60 160 l-150 150 h90z" fill="url(#beam)" opacity="0.35"/>
+</g>
+<!-- yüklenen araç -->
+<g transform="translate(300 300) rotate(-9)">
+<path d="M0 150 q40 -86 120 -86 h150 q86 0 120 86 z" fill="url(#car)"/>
+<path d="M60 128 q34 -54 92 -54 h94 q58 0 86 54z" fill="#9dc4e6" opacity="0.8"/>
+<circle cx="96" cy="164" r="30" fill="#11151a"/><circle cx="96" cy="164" r="12" fill="#59616a"/>
+<circle cx="300" cy="164" r="30" fill="#11151a"/><circle cx="300" cy="164" r="12" fill="#59616a"/>
+<rect x="14" y="96" width="46" height="12" rx="6" fill="#ffd06a"/>
+</g>
+<g opacity="0.9">
+<circle cx="452" cy="640" r="26" fill="#ffb347" opacity="0.35"/>
+<circle cx="452" cy="640" r="10" fill="#ffd08a"/>
+<rect x="440" y="656" width="24" height="60" fill="#c9d2db" opacity="0.35"/>
+</g>
+<g fill="#e6edf5" opacity="0.8">
+<circle cx="130" cy="120" r="2.2"/><circle cx="240" cy="72" r="1.8"/><circle cx="700" cy="96" r="2"/><circle cx="1030" cy="140" r="2.4"/><circle cx="880" cy="210" r="1.6"/>
+</g>
+</svg>

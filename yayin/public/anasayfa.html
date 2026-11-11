@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saruhanlı Oto Kurtarma · 7/24 Çekici | İzmir – Savaştepe</title>
+<meta name="description" content="O-5 otoyolunda Kemalpaşa'dan Savaştepe'ye 7 ilçede 7/24 çekici, oto kurtarma, benzin destek, mazot takviye, akü takviye ve akücü. Tek numara, baştan net fiyat.">
+<meta name="theme-color" content="#0A0C0A">
+<meta property="og:title" content="Saruhanlı Oto Kurtarma · 7/24 Çekici">
+<meta property="og:description" content="O-5 hattında 7/24 çekici ve oto kurtarma. Konum gönderin, en yakın ekibi yönlendiriyoruz.">
+<meta property="og:url" content="https://profesyonelofis-oss.github.io/anasayfa">
+<meta property="og:site_name" content="Saruhanlı Oto Kurtarma">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://profesyonelofis-oss.github.io/img/hero-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://profesyonelofis-oss.github.io/img/hero-1.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0C0A'/%3E%3Cpath d='M10 40h30v-9H26l-5-6H10z' fill='%23D9FF57'/%3E%3Ccircle cx='20' cy='42' r='5' fill='%23F2EEE3'/%3E%3Ccircle cx='44' cy='42' r='5' fill='%23F2EEE3'/%3E%3Cpath d='M40 22l10 6v12h-8' stroke='%23F2EEE3' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+:root{
+  --ink:#0A0C0A; --ink-2:#11140F; --bone:#F2EEE3; --bone-2:#E8E3D6;
+  --acid:#D9FF57; --ash:#8D968C; --rule:rgba(10,12,10,.16); --rule-d:rgba(242,238,227,.18);
+  --serif:'Instrument Serif','Iowan Old Style',Georgia,serif;
+  --sans:'Inter Tight',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:clamp(20px,5vw,72px);
+  --ease:cubic-bezier(.22,.61,.21,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--sans);
+  font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,figure,ol,ul{margin:0;padding:0}
+ol,ul{list-style:none}
+::selection{background:var(--acid);color:var(--ink)}
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--acid);color:var(--ink);padding:12px 18px;font-weight:600}
+.skip:focus{left:12px;top:12px}
+.wrap{width:100%;max-width:1480px;margin:0 auto;padding:0 var(--pad)}
+.kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--acid)}
+.bone .kicker{color:#3E4A2A}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:.94}
+
+/* film greni: ucuz, sabit */
+.grain{position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.055;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+
+/* ---------- header ---------- */
+.hd{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:18px var(--pad);color:var(--bone);transition:color .45s var(--ease)}
+.hd__brand{display:flex;align-items:center;gap:11px;font-weight:600;letter-spacing:-.01em}
+.hd__dot{width:7px;height:7px;border-radius:50%;background:var(--acid);flex:none;
+  box-shadow:0 0 0 4px rgba(217,255,87,.14)}
+.hd__name{font-size:13px;line-height:1.1;letter-spacing:.02em}
+.hd__name small{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.24em;
+  color:currentColor;opacity:.6;margin-top:3px}
+.hd__nav{display:flex;gap:26px;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.8}
+.hd__nav a{position:relative;padding-bottom:3px}
+.hd__nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;
+  transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.hd__nav a:hover::after{transform:scaleX(1)}
+.hd__tel{font-family:var(--mono);font-size:11px;letter-spacing:.1em;border:1px solid currentColor;border-radius:999px;
+  padding:9px 15px;transition:background .3s var(--ease),color .3s var(--ease)}
+.hd.light{color:var(--ink)}
+.hd.light .hd__tel:hover{background:var(--ink);color:var(--bone)}
+.hd.light .hd__dot{box-shadow:0 0 0 4px rgba(10,12,10,.08)}
+.hd__tel:hover{background:var(--acid);border-color:var(--acid);color:var(--ink)}
+
+/* ---------- film ---------- */
+.film{position:relative;height:520svh;background:#080A08}
+.film__pin{position:sticky;top:0;height:100svh;overflow:hidden;isolation:isolate}
+.film__v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 44%;
+  transform:scale(1.06);transform-origin:50% 46%;opacity:0;transition:opacity .9s ease;will-change:transform;
+  filter:contrast(1.02) saturate(.9)}
+.film.ready .film__v{opacity:1}
+.film__yt{position:absolute;inset:0;overflow:hidden;background:#080a08;z-index:-1}
+.film__yt iframe,.film__yt video{position:absolute;top:50%;left:50%;height:100%;width:calc(100vh * 9 / 16);
+  object-fit:cover;
+  transform:translate(-50%,-50%);border:0;pointer-events:none}
+.film__scrim{position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(8,10,8,.72) 0%,rgba(8,10,8,.12) 24%,rgba(8,10,8,.05) 44%,rgba(8,10,8,.82) 88%,rgba(8,10,8,.94) 100%),
+    linear-gradient(90deg,rgba(8,10,8,.55) 0%,rgba(8,10,8,0) 52%)}
+.film__meta{position:absolute;top:86px;left:var(--pad);display:flex;gap:18px;align-items:center;
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(242,238,227,.62)}
+.film__meta i{width:26px;height:1px;background:rgba(242,238,227,.3)}
+.chapters{position:absolute;left:0;right:0;bottom:clamp(104px,15vh,168px);height:0;padding:0 var(--pad)}
+.ch{position:absolute;left:var(--pad);right:var(--pad);bottom:0;opacity:0;will-change:opacity,transform}
+.ch__in{max-width:1120px}
+.ch .kicker{display:block;margin-bottom:18px}
+.ch__h{font-family:var(--serif);font-weight:400;font-size:clamp(40px,7.1vw,116px);line-height:.92;
+  letter-spacing:-.025em;text-wrap:balance;text-shadow:0 10px 60px rgba(8,10,8,.55)}
+.ch__h em{font-style:italic;color:var(--acid)}
+.ch__p{max-width:44ch;margin-top:22px;font-size:clamp(14px,1.35vw,16.5px);line-height:1.55;
+  color:rgba(242,238,227,.78);text-shadow:0 2px 24px rgba(8,10,8,.8)}
+.ch__cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;padding:14px 20px;border-radius:999px;border:1px solid transparent;
+  transition:transform .35s var(--ease),background .3s var(--ease),color .3s var(--ease),border-color .3s}
+.btn--acid{background:var(--acid);color:var(--ink)}
+.btn--acid:hover{transform:translateY(-2px)}
+.btn--ghost{border-color:rgba(242,238,227,.32);color:var(--bone);background:rgba(8,10,8,.18)}
+.btn--ghost:hover{border-color:var(--bone);background:rgba(242,238,227,.08)}
+/* maskeli satır */
+.ln{display:block;overflow:hidden}
+.ln>span{display:block;transform:translateY(112%);will-change:transform}
+
+.rail{position:absolute;right:calc(var(--pad) - 1px);top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.rail span{display:block;width:18px;height:1px;background:rgba(242,238,227,.32);transition:width .5s var(--ease),background .5s}
+.rail span.on{width:38px;background:var(--acid)}
+.film__foot{position:absolute;left:var(--pad);right:var(--pad);bottom:26px;display:flex;align-items:center;gap:18px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:rgba(242,238,227,.55);text-transform:uppercase}
+.film__foot b{color:var(--bone);font-weight:500}
+.film__bar{flex:1;height:1px;background:rgba(242,238,227,.2);position:relative;overflow:hidden}
+.film__bar i{position:absolute;inset:0;background:var(--acid);transform:scaleX(0);transform-origin:left}
+.film__hint{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.film__hint::after{content:"";width:1px;height:14px;background:currentColor;animation:drop 2.4s var(--ease) infinite}
+@keyframes drop{0%,100%{transform:translateY(-3px);opacity:.2}50%{transform:translateY(3px);opacity:.9}}
+
+/* ---------- editoryal ---------- */
+.bone{background:var(--bone);color:var(--ink)}
+.sec{padding:clamp(76px,13vh,170px) 0;position:relative}
+.sec + .sec{border-top:1px solid var(--rule)}
+.eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:10px;letter-spacing:.26em;
+  text-transform:uppercase;color:rgba(10,12,10,.5);margin-bottom:clamp(30px,5vh,54px)}
+.eyebrow i{display:block;width:34px;height:1px;background:currentColor;opacity:.5}
+.manifesto__grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(24px,4vw,72px);align-items:end}
+.manifesto h2{font-size:clamp(38px,6.6vw,104px)}
+.manifesto h2 em{font-style:italic;color:#5B6B33}
+.manifesto__side p{max-width:38ch;font-size:15px;line-height:1.65;color:rgba(10,12,10,.72)}
+.manifesto__side .meta{margin-top:26px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:rgba(10,12,10,.45);display:grid;gap:7px}
+
+/* hizmet dizini */
+.index__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;
+  margin-bottom:clamp(26px,4vh,44px)}
+.index__head h2{font-size:clamp(32px,4.4vw,64px)}
+.index__head p{max-width:34ch;font-size:14px;line-height:1.6;color:rgba(10,12,10,.65)}
+.rows{border-top:1px solid var(--rule)}
+.row{position:relative;display:grid;grid-template-columns:54px minmax(0,1fr) minmax(0,.9fr) 34px;
+  gap:clamp(12px,2vw,34px);align-items:baseline;padding:clamp(18px,2.4vh,26px) 0;border-bottom:1px solid var(--rule);
+  transition:padding .5s var(--ease)}
+.row__n{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(10,12,10,.42)}
+.row__name{font-family:var(--serif);font-size:clamp(26px,3vw,44px);line-height:1;letter-spacing:-.015em;
+  transition:transform .5s var(--ease),color .4s}
+.row__d{font-size:13.5px;line-height:1.55;color:rgba(10,12,10,.6);max-width:40ch;
+  opacity:.55;transform:translateX(-8px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.row__a{justify-self:end;font-family:var(--mono);font-size:13px;color:rgba(10,12,10,.35);
+  transform:translateX(-4px);transition:transform .45s var(--ease),color .4s}
+.row:hover{padding-left:10px}
+.row:hover .row__name{transform:translateX(4px)}
+.row:hover .row__d{opacity:1;transform:none}
+.row:hover .row__a{transform:none;color:var(--ink)}
+.row:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+
+/* hat */
+.route{background:var(--ink);color:var(--bone);padding:clamp(76px,13vh,170px) 0;overflow:hidden}
+.route h2{font-size:clamp(36px,5.8vw,92px);max-width:16ch}
+.route h2 em{font-style:italic;color:var(--acid)}
+.route__meta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(40px,7vh,80px)}
+.route__meta p{max-width:36ch;font-size:14px;line-height:1.6;color:rgba(242,238,227,.62)}
+.route__line{position:relative;height:1px;background:rgba(242,238,227,.16);margin:0 0 clamp(26px,4vh,44px)}
+.route__line i{position:absolute;inset:0;background:var(--acid);transform:scaleX(var(--f,0));transform-origin:left}
+.stops{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,2vw,30px)}
+.stop{position:relative;padding-top:18px}
+.stop::before{content:"";position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;
+  background:var(--acid);box-shadow:0 0 0 5px rgba(217,255,87,.1)}
+.stop b{display:block;font-family:var(--serif);font-size:clamp(22px,2.4vw,34px);font-weight:400;line-height:1.1}
+.stop small{display:block;margin-top:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:rgba(242,238,227,.45)}
+
+/* rakamlar */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.num{padding:clamp(26px,4vh,46px) 0;border-right:1px solid var(--rule)}
+.num:last-child{border-right:0}
+.num b{display:block;font-family:var(--serif);font-size:clamp(44px,6vw,92px);line-height:.9;letter-spacing:-.02em}
+.num b span{color:#6B7A3A}
+.num small{display:block;margin-top:10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:rgba(10,12,10,.45)}
+.numbers .num + .num{padding-left:clamp(16px,2vw,32px)}
+
+/* iletişim */
+.contact{background:var(--ink);color:var(--bone);padding:clamp(90px,16vh,190px) 0 clamp(40px,6vh,70px)}
+.contact h2{font-size:clamp(38px,6.6vw,112px);max-width:20ch}
+.contact h2 em{font-style:italic;color:var(--acid)}
+.contact__tel{display:inline-block;margin-top:clamp(30px,5vh,54px);font-family:var(--serif);
+  font-size:clamp(38px,6.4vw,104px);line-height:1;letter-spacing:-.02em;border-bottom:1px solid rgba(242,238,227,.28);
+  padding-bottom:6px;transition:border-color .4s,color .4s}
+.contact__tel:hover{border-color:var(--acid);color:var(--acid)}
+.contact__row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.contact__meta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:clamp(48px,8vh,90px);
+  padding-top:20px;border-top:1px solid var(--rule-d);font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:rgba(242,238,227,.45)}
+.contact__meta a:hover{color:var(--bone)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv .ln>span{transform:translateY(112%);transition:transform 1.05s var(--ease);transition-delay:var(--d,0s)}
+.rv.in .ln>span{transform:none}
+
+/* ---------- mobil ---------- */
+@media (max-width:900px){
+  .hd__nav{display:none}
+  .manifesto__grid{grid-template-columns:1fr;align-items:start}
+  .manifesto__side{margin-top:6px}
+  .stops{grid-template-columns:repeat(2,1fr);gap:22px 18px}
+  .numbers{grid-template-columns:repeat(2,1fr)}
+  .num{border-bottom:1px solid var(--rule)}
+  .num:nth-child(2n){border-right:0;padding-left:clamp(16px,4vw,32px)}
+  .num:nth-child(n+3){border-bottom:0}
+  .row{grid-template-columns:38px minmax(0,1fr);row-gap:6px;padding:16px 0}
+  .row__d{grid-column:2;opacity:.8;transform:none;font-size:12.5px;max-width:46ch}
+  .row__a{display:none}
+  .row:hover{padding-left:0}
+  .row:hover .row__name{transform:none}
+}
+@media (max-width:760px){
+  .film{height:380svh}
+  .film__meta{display:none}
+  .rail{display:none}
+  .chapters{bottom:calc(96px + env(safe-area-inset-bottom))}
+  .ch .kicker{margin-bottom:12px;font-size:9.5px}
+  .ch__h{font-size:clamp(34px,9.4vw,52px);line-height:.96}
+  .ch__p{margin-top:14px;font-size:13.5px;max-width:34ch}
+  .ch__cta{margin-top:18px;gap:8px}
+  .btn{padding:12px 16px;font-size:10px}
+  .film__foot{bottom:calc(22px + env(safe-area-inset-bottom));gap:12px;font-size:9px}
+  .film__hint{display:none}
+  .sec{padding:clamp(64px,9vh,96px) 0}
+  .contact__tel{font-size:clamp(34px,11vw,52px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+  .rv .ln>span{transform:none!important}
+  .film__hint::after{animation:none}
+  .btn,.row,.row__name,.row__d,.row__a{transition:none}
+}
+/* mobil arama çubuğu: tek dokunuşla telefon */
+.callbar{display:none}
+@media (max-width:900px){
+  body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .callbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:80;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(242,238,227,.94);backdrop-filter:blur(10px);border-top:1px solid rgba(17,17,17,.12)}
+  .callbar a{flex:1;text-align:center;text-decoration:none;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.14em;text-transform:uppercase;padding:14px 12px;border-radius:100px;transition:none}
+  .callbar__tel{background:var(--ink);color:var(--bone)}
+  .callbar__wa{background:transparent;border:1px solid var(--ink);color:var(--ink);flex:0 0 36%}
+}
+
+/* ---- TEK TİPOGRAFİ: sitedeki bütün yazılar Inter Tight ---- */
+:root{--serif:var(--sans);--mono:var(--sans)}
+h1,h2,h3,h4,.serif,.row__name,.stats b,.final .tel,.final .phone,.rate .big,
+.hero__row div b,.row .ad,.row__name,.ch__h{font-family:var(--sans);font-weight:650;
+  letter-spacing:-.012em;line-height:1.05;text-wrap:balance;overflow-wrap:break-word}
+h1{line-height:1.02}
+h1 em,h2 em,h1 i,.manifesto h2 em,.route h2 em{font-style:normal}
+p,li,.lead,.chip,.kicker,.eyebrow,.idx,.row__d,.row__n,.meta,.film__foot{overflow-wrap:break-word}
+@media(max-width:520px){h1{letter-spacing:-.02em}}
+</style>
+<link rel="canonical" href="https://profesyonelofis-oss.github.io/anasayfa">
+</head>
+<body>
+<a class="skip" href="#hizmetler">İçeriğe geç</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hd" id="hd">
+  <a class="hd__brand" href="#top" aria-label="Saruhanlı Oto Kurtarma">
+    <span class="hd__dot" aria-hidden="true"></span>
+    <span class="hd__name">Saruhanlı<small>OTO KURTARMA</small></span>
+  </a>
+  <nav class="hd__nav" aria-label="Bölümler">
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#hat">Hat</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a class="hd__tel" href="tel:05071299439">0507 129 94 39</a>
+</header>
+
+<main id="top">
+
+  <!-- ============ FİLM ============ -->
+  <section class="film" id="film" aria-label="Çekici filmi">
+    <div class="film__pin">
+      <div class="film__yt" aria-hidden="true"><video src="img/hero-1.mp4" poster="img/hero-1.jpg"
+        muted loop playsinline preload="none" tabindex="-1"></video></div>
+      <div class="film__scrim" aria-hidden="true"></div>
+
+      <div class="film__meta" aria-hidden="true">
+        <span>O-5 · İzmir — Savaştepe</span><i></i><span>7/24</span>
+      </div>
+
+      <div class="chapters" id="chapters">
+        <article class="ch" data-in="-0.30" data-out="0.55">
+          <div class="ch__in">
+            <span class="kicker">O-5 · İzmir — Savaştepe</span>
+            <h1 class="ch__h">
+              <span class="ln"><span>Yolda kaldın.</span></span>
+              <span class="ln"><span><em>Biz zaten</em></span></span>
+              <span class="ln"><span>yoldayız.</span></span>
+            </h1>
+            <p class="ch__p">7/24 çekici, oto kurtarma, yakıt ve akü desteği. Konumunuzu gönderin; en yakın ekip yola çıksın.</p>
+          </div>
+        </article>
+
+        <article class="ch" data-in="0.45" data-out="0.95">
+          <div class="ch__in">
+            <span class="kicker">01 — Yükleme</span>
+            <h2 class="ch__h">
+              <span class="ln"><span>Aracı yüklemek,</span></span>
+              <span class="ln"><span><em>işin kolay</em> kısmı.</span></span>
+            </h2>
+            <p class="ch__p">Hasarsız yükleme, istediğiniz servise teslim. Fiyat yola çıkmadan söylenir; teslimde değişmez.</p>
+          </div>
+        </article>
+
+        <article class="ch" data-in="0.85" data-out="1.45">
+          <div class="ch__in">
+            <span class="kicker">02 — Askı</span>
+            <h2 class="ch__h">
+              <span class="ln"><span>Kayışlar gergin,</span></span>
+              <span class="ln"><span><em>yük dengede.</em></span></span>
+            </h2>
+            <p class="ch__p">Dört noktadan bağlanır, vinç yükü eşit dağıtır. Kaportaya el değmez; boya ve jant korunur.</p>
+          </div>
+        </article>
+
+        <article class="ch" data-in="1.35" data-out="2.15">
+          <div class="ch__in">
+            <span class="kicker">03 — Kurtarma</span>
+            <h2 class="ch__h">
+              <span class="ln"><span>Vinç hazır,</span></span>
+              <span class="ln"><span><em>ekip yolda.</em></span></span>
+            </h2>
+            <p class="ch__p">Aracın yolda kaldıysa bir telefon yeter: 0507 129 94 39.</p>
+            <div class="ch__cta">
+              <a class="btn btn--acid" href="tel:05071299439">Hemen ara</a>
+              <a data-konum="Saruhanlı / Manisa" class="btn btn--ghost" href="https://wa.me/905071299439?text=Merhaba%2C%20arac%C4%B1m%20yolda%20kald%C4%B1%3B%20konumumu%20g%C3%B6nderiyorum." target="_blank" rel="noopener">WhatsApp'tan konum gönder</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="rail" id="rail" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="film__foot" aria-hidden="true">
+        <span><b id="tcNow">00:00</b> / <span id="tcAll">00:02</span></span>
+        <span class="film__hint">kaydır · film ilerler</span>
+        <span class="film__bar"><i id="filmBar"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MANİFESTO ============ -->
+  <section class="bone sec manifesto" data-hd="light">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i><span>01 — Neden</span></div>
+      <div class="manifesto__grid">
+        <h2 class="serif rv">
+          <span class="ln"><span style="--d:.05s">Yolda kalmak</span></span>
+          <span class="ln"><span style="--d:.12s">bir <em>zamanlama</em></span></span>
+          <span class="ln"><span style="--d:.19s">meselesi.</span></span>
+        </h2>
+        <div class="manifesto__side rv" style="--d:.1s">
+          <p>O-5'in Saruhanlı–Savaştepe hattında 7/24 çalışıyoruz. Aracınızı hasarsız yükler, istediğiniz servise bırakırız. Fiyatı yola çıkmadan söyleriz.</p>
+          <div class="meta">
+            <span>Tek numara · tek işletme</span>
+            <span>7 ilçe · 8 hizmet</span>
+            <span>Gece, hafta sonu, resmi tatil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HİZMET DİZİNİ ============ -->
+  <section class="bone sec" id="hizmetler" data-hd="light">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i><span>02 — Hizmetler</span></div>
+      <div class="index__head">
+        <h2 class="serif rv"><span class="ln"><span>Sekiz iş, tek numara.</span></span></h2>
+        <p class="rv" style="--d:.08s">Çekici gerekmeden çözülen her arızada önce yerinde müdahale; olmuyorsa hasarsız yükleme.</p>
+      </div>
+      <div class="rows">
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">01</span><span class="row__name">Çekici</span>
+          <span class="row__d">Otomobil ve hafif ticari; hasarsız yükleme, istediğiniz servise teslim.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">02</span><span class="row__name">Oto kurtarma</span>
+          <span class="row__d">Kaza, şarampol, otoyol; güvenli bölgeye alma ve kurtarma.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">03</span><span class="row__name">Yol yardım 7/24</span>
+          <span class="row__d">Gece yarısı dahil; telefonda net süre ve net fiyat.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">04</span><span class="row__name">En yakın çekici</span>
+          <span class="row__d">Konumunuza göre en yakın ekibi yönlendiririz.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">05</span><span class="row__name">Benzin destek</span>
+          <span class="row__d">Yakıt bittiyse en yakın istasyondan benzin getirilir.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">06</span><span class="row__name">Mazot takviye</span>
+          <span class="row__d">Dizel araçlar için yerinde mazot takviyesi.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">07</span><span class="row__name">Akü takviye</span>
+          <span class="row__d">Marş basmıyorsa yerinde takviye, gerekirse akü değişimi.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" href="tel:05071299439">
+          <span class="row__n">08</span><span class="row__name">Akücü</span>
+          <span class="row__d">Akü kontrolü, takviye ve değişim yönlendirmesi.</span>
+          <span class="row__a" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HAT ============ -->
+  <section class="route" id="hat" data-hd="dark">
+    <div class="wrap">
+      <div class="eyebrow rv" style="color:rgba(242,238,227,.5)"><i></i><span>03 — Hat</span></div>
+      <div class="route__meta">
+        <h2 class="serif rv">
+          <span class="ln"><span>Kemalpaşa'dan</span></span>
+          <span class="ln"><span>Savaştepe'ye,</span></span>
+          <span class="ln"><span><em>tek hatta.</em></span></span>
+        </h2>
+        <p class="rv" style="--d:.1s">Kemalpaşa'dan Savaştepe'ye kadar O-5 koridoru; aynı ekip, aynı numara. İlçe başına ayrı profil açmıyoruz.</p>
+      </div>
+      <div class="route__line" aria-hidden="true"><i id="routeFill"></i></div>
+      <div class="stops">
+        <div class="stop rv"><b>Kemalpaşa</b><small>K22 · 389. km</small></div>
+        <div class="stop rv" style="--d:.06s"><b>Saruhanlı</b><small>K19 · 339. km</small></div>
+        <div class="stop rv" style="--d:.12s"><b>Akhisar</b><small>K18 · 315. km</small></div>
+        <div class="stop rv" style="--d:.18s"><b>Savaştepe</b><small>K15 · 262. km</small></div>
+        <div class="stop rv" style="--d:.24s"><b>O-5</b><small>Kemalpaşa – Savaştepe</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RAKAMLAR ============ -->
+  <section class="bone sec" data-hd="light">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i><span>04 — Rakamlarla</span></div>
+      <div class="numbers">
+        <div class="num rv"><b>7/24</b><small>Saat açık</small></div>
+        <div class="num rv" style="--d:.06s"><b>20–30<span>dk</span></b><small>Bölge içi varış</small></div>
+        <div class="num rv" style="--d:.12s"><b>30</b><small>Bölge kapsama</small></div>
+        <div class="num rv" style="--d:.18s"><b>8</b><small>Hizmet kalemi</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ İLETİŞİM ============ -->
+  <section class="contact" id="iletisim" data-hd="dark">
+    <div class="wrap">
+      <div class="eyebrow rv" style="color:rgba(242,238,227,.5)"><i></i><span>05 — İletişim</span></div>
+      <h2 class="serif rv">
+        <span class="ln"><span>Aracın yolda kaldıysa,</span></span>
+        <span class="ln"><span><em>bir telefon yeter.</em></span></span>
+      </h2>
+      <a class="contact__tel rv" style="--d:.1s" href="tel:05071299439">0507 129 94 39</a>
+      <div class="contact__row rv" style="--d:.16s">
+        <a class="btn btn--acid" href="tel:05071299439"><span>Hemen ara</span></a>
+        <a class="btn btn--ghost" href="https://wa.me/905071299439?text=Merhaba%2C%20arac%C4%B1m%20yolda%20kald%C4%B1%3B%20konumumu%20g%C3%B6nderiyorum." target="_blank" rel="noopener">WhatsApp'tan yaz</a>
+      </div>
+      <div class="contact__row rv" style="--d:.2s">
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=Saruhanl%C4%B1%2C+Manisa" target="_blank" rel="noopener">Yol tarifi</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Saruhanl%C4%B1+Oto+Kurtarma" target="_blank" rel="noopener">Google'da yorum bırak</a>
+      </div>
+      <div class="contact__meta">
+        <span>Saruhanlı / Manisa · İzmir, Manisa, Balıkesir (Savaştepe), O-5</span>
+        <span>© 2026 Saruhanlı Oto Kurtarma</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Saruhanlı Oto Kurtarma","telephone":"+905071299439","contactPoint":{"@type":"ContactPoint","telephone":"+905071299439","contactType":"emergency","availableLanguage":["Turkish"],"areaServed":["Kemalpaşa","Turgutlu","Saruhanlı","Akhisar","Kırkağaç","Soma","Savaştepe"]},"address":{"@type":"PostalAddress","addressLocality":"Saruhanlı","addressRegion":"Manisa","postalCode":"45800","addressCountry":"TR"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},"areaServed":[{"@type":"AdministrativeArea","name":"İzmir"},{"@type":"AdministrativeArea","name":"Manisa"},{"@type":"AdministrativeArea","name":"Balıkesir"},{"@type":"AdministrativeArea","name":"O-5 Otoyolu"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Çekici hizmetleri","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"çekici"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"oto kurtarma"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"yol yardım 7/24"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"en yakın çekici"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"benzin destek"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"mazot takviye"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"akü takviye"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"akücü"}}]},"description":"Saruhanlı / Manisa merkezli 7/24 çekici, oto kurtarma ve yol yardım. O-5 otoyolunda Kemalpaşa'dan Savaştepe'ye 7 ilçede hizmet.","aggregateRating":{"@type":"AggregateRating","ratingValue":5.0,"reviewCount":16,"bestRating":5},"priceRange":"₺₺","currenciesAccepted":"TRY","paymentAccepted":"Nakit, Kredi kartı, Havale/EFT","serviceType":["çekici","oto kurtarma","yol yardım 7/24","akü takviye","benzin destek","mazot takviye","lastik değişimi","kaza kurtarma"],"hasMap":"https://www.google.com/maps/search/?api=1&query=39.004814,28.116757","sameAs":["https://wa.me/905071299439"],"geo":{"@type":"GeoCoordinates","latitude":39.004814,"longitude":28.116757}}
+</script>
+
+<script>
+(function(){
+  'use strict';
+  var azalt = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var mobil = matchMedia('(max-width: 760px)').matches;
+  var $ = function(s, r){ return (r || document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var sinir = function(v, a, b){ return Math.min(b, Math.max(a, v)); };
+  var yumusak = function(a, b, x){
+    var t = sinir((x - a) / (b - a || 1), 0, 1);
+    return t * t * (3 - 2 * t);
+  };
+  var iki = function(n){ return String(Math.max(0, Math.floor(n))).padStart(2, '0'); };
+  function zaman(s){ return iki(s / 60) + ':' + iki(s % 60); }
+
+  /* ---------- film: gerçek çekim (YouTube, sessiz + döngü) ---------- */
+  var film = $('#film');
+  var dur = 2.0;
+  var hazir = false;
+  function filmHazir(){ if(hazir) return; hazir = true; film.classList.add('ready'); oku(true); }
+
+  (function () {
+    var v = document.querySelector('.film__yt video');
+    if(!v){ filmHazir(); return; }
+    var yavas = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(yavas || (navigator.connection && navigator.connection.saveData)){ filmHazir(); return; }
+    var p = v.play();
+    if(p && p.then){ p.then(filmHazir).catch(filmHazir); } else { filmHazir(); }
+    setTimeout(filmHazir, 2500);
+  })();
+
+  /* ---------- film ilerlemesi ---------- */
+  var chapters = $$('.ch'), rail = $$('#rail span');
+  var bar = $('#filmBar'), tcNow = $('#tcNow'), tcAll = $('#tcAll');
+  var hedef = 0, simdi = 0, raf = 0, gorunur = true;
+
+  if(tcAll) tcAll.textContent = zaman(dur);
+
+  function ilerleme(){
+    var r = film.getBoundingClientRect();
+    var toplam = film.offsetHeight - innerHeight;
+    if(toplam <= 0) return 0;
+    return sinir(-r.top / toplam, 0, 1);
+  }
+
+  function metinleriGuncelle(t){
+    for(var i = 0; i < chapters.length; i++){
+      var el = chapters[i];
+      var a = parseFloat(el.dataset['in']), b = parseFloat(el.dataset['out']);
+      var yerel = (t - a) / (b - a);
+      var giris = yumusak(0.0, 0.10, yerel);
+      var cikis = 1 - yumusak(0.90, 0.99, yerel);
+      var gor = Math.min(giris, cikis);
+      if(yerel < -0.12 || yerel > 1.12) gor = 0;
+      el.style.opacity = gor.toFixed(3);
+      el.style.transform = 'translate3d(0,' + ((1 - giris) * 24).toFixed(1) + 'px,0)';
+      el.style.pointerEvents = gor > 0.55 ? 'auto' : 'none';
+      el.setAttribute('aria-hidden', gor > 0.3 ? 'false' : 'true');
+
+      var satirlar = el.querySelectorAll('.ln > span');
+      for(var j = 0; j < satirlar.length; j++){
+        var k = yumusak(0.0 + j * 0.014, 0.07 + j * 0.014, yerel);
+        satirlar[j].style.transform = 'translateY(' + ((1 - k) * 112).toFixed(1) + '%)';
+      }
+    }
+    var aktif = 0;
+    for(var c = 0; c < chapters.length; c++){
+      if(t >= parseFloat(chapters[c].dataset['in']) - 0.15) aktif = c;
+    }
+    for(var r = 0; r < rail.length; r++) rail[r].classList.toggle('on', r === aktif);
+  }
+
+  var ytF = null;
+  function ciz(p){
+    if(!ytF) ytF = document.querySelector('.film__yt iframe, .film__yt video');
+    if(ytF) ytF.style.transform = 'translate(-50%,-50%) scale(' + (1.06 - 0.06 * p).toFixed(4) + ')';
+    if(bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+    if(tcNow) tcNow.textContent = zaman(simdi);
+    metinleriGuncelle(simdi);
+  }
+
+  function adim(){
+    raf = 0;
+    var p = ilerleme();
+    hedef = p * Math.max(0.1, dur - 0.05);
+    simdi += (hedef - simdi) * 0.16;
+    if(Math.abs(hedef - simdi) < 0.004) simdi = hedef;
+    ciz(p);
+    if(gorunur) raf = requestAnimationFrame(adim);
+  }
+
+  function basla(){ if(!raf && gorunur) raf = requestAnimationFrame(adim); }
+
+  /* rAF'ten bağımsız okuma: gizli sekmede ve hızlı kaydırmada da senkron kalır */
+  function oku(hemen){
+    var p = ilerleme();
+    hedef = p * Math.max(0.1, dur - 0.05);
+    if(hemen) simdi = hedef;
+    ciz(p);
+  }
+
+  addEventListener('scroll', function(){ oku(document.hidden || azalt); }, {passive:true});
+  addEventListener('resize', function(){ oku(true); }, {passive:true});
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden) oku(true); });
+
+  if(!azalt){
+    new IntersectionObserver(function(g){
+      gorunur = g[0].isIntersecting;
+      if(gorunur) basla();
+    }, {threshold: 0}).observe(film);
+    oku(true);
+    basla();
+  } else {
+    metinleriGuncelle(0);
+    if(tcNow) tcNow.textContent = '00:00';
+    if(bar) bar.style.transform = 'scaleX(0)';
+  }
+
+  /* ---------- reveal ---------- */
+  if('IntersectionObserver' in window && !azalt){
+    var io = new IntersectionObserver(function(girisler){
+      girisler.forEach(function(g){
+        if(g.isIntersecting){ g.target.classList.add('in'); io.unobserve(g.target); }
+      });
+    }, {threshold: 0.16, rootMargin: '0px 0px -8% 0px'});
+    $$('.rv').forEach(function(el){ io.observe(el); });
+  } else {
+    $$('.rv').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- header teması ---------- */
+  var hd = $('#hd'), temali = $$('[data-hd]');
+  function hdTema(){
+    var sec = null;
+    for(var i = 0; i < temali.length; i++){
+      var r = temali[i].getBoundingClientRect();
+      if(r.top <= 42 && r.bottom > 42) sec = temali[i];
+    }
+    hd.classList.toggle('light', !!(sec && sec.dataset.hd === 'light'));
+  }
+  addEventListener('scroll', hdTema, {passive:true});
+  hdTema();
+
+  /* ---------- hat çizgisi ---------- */
+  var rota = $('#hat'), dolgu = $('#routeFill');
+  if(rota && dolgu && !azalt){
+    var rotaRaf = 0;
+    function rotaCiz(){
+      rotaRaf = 0;
+      var r = rota.getBoundingClientRect();
+      var p = sinir((innerHeight * 0.82 - r.top) / (r.height * 0.8), 0, 1);
+      dolgu.style.setProperty('--f', p.toFixed(3));
+    }
+    addEventListener('scroll', rotaCiz, {passive:true});
+    addEventListener('resize', rotaCiz, {passive:true});
+    rotaCiz();
+  } else if(dolgu){ dolgu.style.setProperty('--f', '1'); }
+})();
+</script>
+<div class="callbar" aria-label="Hızlı arama">
+  <a class="callbar__tel" href="tel:05071299439">Hemen ara · 0507 129 94 39</a>
+  <a class="callbar__wa" href="https://wa.me/905071299439?text=Merhaba%2C%20arac%C4%B1m%20yolda%20kald%C4%B1%3B%20konumumu%20g%C3%B6nderiyorum." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+<script id="konum-gonder-js">
+(function () {
+  var TEL = '905071299439';
+  var BEKCI_MS = 12000;
+
+  function gonder(metin) {
+    window.location.href = 'https://wa.me/' + TEL + '?text=' + encodeURIComponent(metin);
+  }
+
+  function mesaj(lat, lon, dogruluk, bolge) {
+    var yer = 'https://www.google.com/maps?q=' + lat.toFixed(6) + ',' + lon.toFixed(6);
+    var s = 'Merhaba, aracım yolda kaldı. Anlık konumum: ' + yer;
+    return s + ' · Lütfen en yakın ekibi yönlendirin. 0507 129 94 39' + (dogruluk ? ' · Konum doğruluğu: ±' + Math.round(dogruluk) + ' m.' +
+               (dogruluk > 50 ? ' Konumum yaklaşık, kesin yer için beni arayın.' : '') : '');
+  }
+
+  function bag(l, href) {
+    l.href = href;
+    l.style.cssText = 'color:#7a5b06;font-weight:600';
+    return l;
+  }
+
+  function notEkle(a, yedek, metin) {
+    var eski = a.parentNode.querySelector('.konum-not');
+    if (eski) eski.remove();
+    var n = document.createElement('div');
+    n.className = 'konum-not';
+    n.setAttribute('role', 'status');
+    n.style.cssText = 'flex:1 0 100%;margin-top:10px;font:500 12.5px/1.55 system-ui,' +
+      '-apple-system,Segoe UI,Roboto,Arial;max-width:38ch;padding:10px 12px;border-radius:10px;' +
+      'background:#fff7e6;color:#5c4a16;border:1px solid #e8d9ae';
+    n.appendChild(document.createTextNode(metin));
+
+    var wa = document.createElement('a');
+    wa.textContent = 'konum olmadan yaz';
+    n.appendChild(bag(wa, yedek));
+
+    n.appendChild(document.createTextNode(' ya da '));
+
+    var tel = document.createElement('a');
+    tel.textContent = '0507 129 94 39';
+    n.appendChild(bag(tel, 'tel:05071299439'));
+
+    n.appendChild(document.createTextNode('.'));
+    a.parentNode.insertBefore(n, a.nextSibling);
+  }
+
+  function bagla(a) {
+    if (a.getAttribute('data-konum-hazir')) return;
+    a.setAttribute('data-konum-hazir', '1');
+    var bolge = a.getAttribute('data-konum') || '';
+    var yedek = a.getAttribute('href') || '';
+    var eski = a.textContent;
+    var kosuyor = false;
+    var bekci = null;
+
+    function dur() {
+      if (bekci) { clearTimeout(bekci); bekci = null; }
+      kosuyor = false;
+      a.textContent = eski;
+      a.removeAttribute('aria-busy');
+    }
+
+    function hata() {
+      dur();
+      a.textContent = 'Konum alınamadı · tekrar dene';
+      notEkle(a, yedek, 'Konum izni verilmedi. Adres çubuğundaki kilit simgesi → Konum → ' +
+        'İzin ver, sonra düğmeye tekrar bas. Hemen ulaşmak istersen ');
+    }
+
+    function ok(p) {
+      if (!kosuyor) return;
+      dur();
+      gonder(mesaj(p.coords.latitude, p.coords.longitude, p.coords.accuracy, bolge));
+    }
+
+    // Masaüstünde hassas konum çoğu zaman düşer; kaba (ağ tabanlı) konumu dene.
+    function kaba() {
+      if (!kosuyor) return;
+      navigator.geolocation.getCurrentPosition(ok, function () {
+        if (!kosuyor) return;
+        hata();
+      }, { enableHighAccuracy: false, timeout: 6000, maximumAge: 300000 });
+    }
+
+    a.addEventListener('click', function (e) {
+      if (!navigator.geolocation) return;              // eski davranış: bağlantı açılır
+      e.preventDefault();
+      if (kosuyor) return;
+      kosuyor = true;
+      var eskiNot = document.querySelectorAll('.konum-not');
+      for (var i = 0; i < eskiNot.length; i++) eskiNot[i].remove();
+      a.setAttribute('aria-busy', 'true');
+      a.textContent = 'Konum izni verin…';
+      // Tarayıcı izin penceresi cevaplanmazsa istek asılı kalır: kendi sayacımızı kur.
+      bekci = setTimeout(function () {
+        if (!kosuyor) return;
+        hata();
+      }, BEKCI_MS);
+      navigator.geolocation.getCurrentPosition(ok, kaba,
+        { enableHighAccuracy: true, timeout: 4000, maximumAge: 0 });
+    });
+  }
+
+  var liste = document.querySelectorAll('a[data-konum]');
+  for (var i = 0; i < liste.length; i++) bagla(liste[i]);
+})();
+</script>
+</body>
+</html>

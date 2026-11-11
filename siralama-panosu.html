@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sıralama panosu · Saruhanlı Oto Kurtarma · O-5 koridoru</title>
+<style>
+  :root{
+    --yesil:#12523f; --yesil-koyu:#0d3a2d; --altin:#b8860b; --gri:#9aa6a0;
+    --murekkep:#111814; --kagit:#f4f7f3; --cizgi:#dde5df; --soluk:#5b665f;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#eef1ec; color:var(--murekkep);
+    font:15px/1.55 system-ui,"Segoe UI",Roboto,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sayfa{max-width:1180px;margin:0 auto;padding:24px 16px 56px}
+
+  header{
+    display:flex;flex-wrap:wrap;gap:14px 18px;align-items:flex-end;justify-content:space-between;
+    padding-bottom:16px;border-bottom:1px solid var(--cizgi);
+  }
+  .marka{display:flex;gap:13px;align-items:center;min-width:0}
+  .rozet{
+    width:50px;height:50px;border-radius:14px;flex:0 0 50px;
+    background:linear-gradient(150deg,var(--yesil),var(--yesil-koyu));
+    color:#fff;display:grid;place-items:center;font-weight:700;font-size:16px;
+    box-shadow:0 8px 20px rgba(18,82,63,.22);
+  }
+  h1{margin:0;font-size:clamp(20px,2.6vw,28px);line-height:1.15;letter-spacing:-.015em}
+  .alt{margin:5px 0 0;font-size:12.5px;color:var(--soluk)}
+  .kunye{font-size:12.5px;color:var(--soluk);line-height:1.5}
+  .kunye b{display:block;font-size:18px;color:var(--murekkep);letter-spacing:.01em}
+  .kunye .tel{font-variant-numeric:tabular-nums;color:var(--murekkep);font-weight:600}
+
+  .kart{background:#fff;border:1px solid var(--cizgi);border-radius:16px;box-shadow:0 14px 34px rgba(15,35,26,.06)}
+
+  .olcumler{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+  .olcum{padding:14px 14px 12px;border-radius:14px;background:#fff;border:1px solid var(--cizgi)}
+  .olcum b{display:block;font-size:25px;line-height:1.05;letter-spacing:-.02em}
+  .olcum span{display:block;margin-top:5px;font-size:10.5px;color:var(--soluk);letter-spacing:.05em;text-transform:uppercase}
+  .olcum.iyi b{color:var(--yesil)}
+  .olcum.uyari b{color:var(--altin)}
+
+  .duzen{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:start}
+  @media (max-width:980px){ .duzen{grid-template-columns:1fr} .olcumler{grid-template-columns:repeat(2,1fr)} }
+
+  .harita{padding:16px}
+  .harita h2,.yan h2,.plan h2,.kural h2,.takvim h2{margin:0;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--soluk)}
+  .not2{font-size:12px;color:var(--soluk);margin:5px 0 14px}
+
+  .koridor{position:relative;max-width:720px;margin:0 auto;padding:6px 0}
+  .koridor::before{
+    content:"";position:absolute;left:23px;top:20px;bottom:20px;width:7px;border-radius:4px;
+    background:linear-gradient(180deg,#1c6b52,#0d3a2d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);
+  }
+  .yon{font-size:10px;letter-spacing:.14em;color:#8a958f;margin:0 0 4px 62px}
+  .yon.alt{text-align:left;margin:4px 0 0 62px}
+
+  .istasyon{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start;padding:7px 0;position:relative}
+  .dugum{
+    width:48px;height:48px;border-radius:50%;display:grid;place-items:center;
+    font-weight:700;font-size:15px;color:#fff;background:#c3ccc6;
+    border:3px solid #fff;box-shadow:0 0 0 1px #dbe3dc,0 2px 6px rgba(15,35,26,.12);
+    position:relative;z-index:1;
+  }
+  .dugum.var{background:var(--yesil);font-size:19px;box-shadow:0 0 0 4px rgba(18,82,63,.14),0 2px 8px rgba(18,82,63,.28)}
+  .bilgi{min-width:0;padding-top:1px}
+  .satir1{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:baseline}
+  .satir1 b{font-size:15px}
+  .satir1 .km{font-size:11.5px;color:var(--soluk);font-variant-numeric:tabular-nums}
+  .bilgi p{margin:2px 0 0;font-size:12px;color:var(--soluk);line-height:1.45}
+  .bilgi p .vurgu{color:var(--yesil);font-weight:700}
+  .hedef{
+    display:inline-block;margin-top:5px;font-size:10.5px;font-weight:700;
+    padding:2px 8px;border-radius:999px;letter-spacing:.02em;
+  }
+  .hedef.yakin{background:#f6e7c9;color:#7a5b06}
+  .hedef.var{background:#d7e8de;color:#12523f}
+  .hedef.zor{background:#f3e4e0;color:#8a4a3a}
+
+  .efsane{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:11.5px;color:var(--soluk);
+    padding:11px 2px 2px;border-top:1px solid var(--cizgi);margin-top:12px}
+  .efsane i{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:-1px}
+
+  .yan{padding:16px}
+  .faktor{display:grid;gap:10px;margin-top:12px}
+  .faktor div{padding:11px 12px;border-radius:12px;background:var(--kagit);border:1px solid #e6ece6;position:relative}
+  .faktor b{display:block;font-size:12.5px;margin-bottom:3px;padding-right:64px}
+  .faktor p{margin:0;font-size:12px;color:var(--soluk);line-height:1.5}
+  .etiket{position:absolute;top:10px;right:10px;font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 7px;border-radius:999px}
+  .etiket.dusuk{background:#f6e7c9;color:#7a5b06}
+  .etiket.orta{background:#e3ece5;color:#2c5a45}
+  .etiket.iyi{background:#d7e8de;color:#12523f}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 9px;border-bottom:1px solid #e9efe9;vertical-align:top}
+  th{font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--soluk);font-weight:600;background:#f8faf7}
+  td.sayi,th.sayi{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+
+  .plan{margin-top:16px;padding:18px}
+  .adimlar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+  @media (max-width:980px){ .adimlar{grid-template-columns:1fr} }
+  .adim{border:1px solid var(--cizgi);border-radius:14px;padding:14px;background:#fbfcfa}
+  .adim .no{font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--altin);text-transform:uppercase}
+  .adim h3{margin:5px 0 7px;font-size:15px;line-height:1.25}
+  .adim ul{margin:0;padding-left:16px;font-size:12.5px;color:#26302a}
+  .adim li{margin:5px 0}
+  .adim code{font-size:11.5px;background:#eef1ec;padding:1px 4px;border-radius:4px}
+  .adim .kim{margin-top:9px;font-size:11px;color:var(--soluk);border-top:1px dashed var(--cizgi);padding-top:7px}
+
+  .merdiven{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;margin-top:12px}
+  @media (max-width:880px){ .merdiven{grid-template-columns:repeat(2,1fr)} }
+  .basamak{border-radius:12px;padding:10px 9px;background:var(--kagit);border:1px solid #e6ece6}
+  .basamak b{display:block;font-size:12px;margin-bottom:6px}
+  .basamak .cubuk{height:6px;border-radius:4px;background:#dde5df;overflow:hidden;margin-bottom:6px}
+  .basamak .cubuk i{display:block;height:100%;background:var(--yesil);border-radius:4px}
+  .basamak span{display:block;font-size:10.5px;color:var(--soluk);font-variant-numeric:tabular-nums}
+
+  .takvim,.kural{margin-top:16px;padding:18px}
+  .kural{border-color:#f0e2c4;background:#fffdf7}
+  .kural ul{margin:9px 0 0;padding-left:17px;font-size:12.5px;color:#4b4636}
+  .kural li{margin:5px 0}
+  .kural b{color:#7a5b06}
+
+  footer{margin-top:18px;font-size:11px;color:#7b857f;line-height:1.6}
+  footer code{font-size:10.5px;background:#e7ece7;padding:1px 4px;border-radius:4px}
+
+  @media print{ body{background:#fff} .kart,.olcum{box-shadow:none} .sayfa{padding:0} }
+</style>
+</head>
+<body>
+<div class="sayfa">
+
+<header>
+  <div class="marka">
+    <div class="rozet">SO</div>
+    <div>
+      <h1>O-5 koridoru · sıralama panosu</h1>
+      <p class="alt">Kemalpaşa → Savaştepe · 7 ilçe · “çekici &lt;ilçe&gt;” · ölçüm 10–11 Kasım 2026</p>
+    </div>
+  </div>
+  <div class="kunye">
+    <b>Saruhanlı Oto Kurtarma</b>
+    <span class="tel">0507 129 94 39</span> · 24 saat açık<br>
+    5,0 ★ · 16 yorum · Çekici Hizmeti
+  </div>
+</header>
+
+<div class="olcumler">
+  <div class="olcum"><b>7</b><span>kapsamdaki ilçe</span></div>
+  <div class="olcum iyi"><b>1</b><span>göründüğümüz ilçe</span></div>
+  <div class="olcum iyi"><b>3.</b><span>en iyi sıra · çekici saruhanlı</span></div>
+  <div class="olcum uyari"><b>6</b><span>ilk 6’da olmadığımız ilçe</span></div>
+</div>
+
+<div class="duzen">
+  <section class="kart harita">
+    <h2>Harita · kim nerede</h2>
+    <p class="not2">Otoyol boyunca sıralama. Yeşil = ilk 3’teyiz, gri = ilk 6’da yokuz. Her satır bir ilçe, kilometreler İzmir girişinden.</p>
+
+    <div class="koridor">
+      <p class="yon">▲ İZMİR GİRİŞİ</p>
+
+      <div class="istasyon">
+        <div class="dugum">–</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Kemalpaşa</b><span class="km">K22 · 0 km</span></div>
+          <p>Rakip profil zayıf: 2 yorumlu işletme bile listede (Kemalpaşa Güzeliş Vinç)</p>
+          <span class="hedef yakin">ilk 3 ≈ 12 yorum</span>
+        </div>
+      </div>
+
+      <div class="istasyon">
+        <div class="dugum">–</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Turgutlu</b><span class="km">viyadük · 30 km</span></div>
+          <p>Turgutlu Oto Çekici / OTO ERTEM — yorum eşiği düşük</p>
+          <span class="hedef yakin">ilk 3 ≈ 15 yorum</span>
+        </div>
+      </div>
+
+      <div class="istasyon">
+        <div class="dugum var">3.</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Saruhanlı · merkez</b><span class="km">K19 · 50 km</span></div>
+          <p>Lider 23 yorum · “oto kurtarma saruhanlı” → <span class="vurgu">2.</span> · “yol yardım saruhanlı” → ilk 4’te yok</p>
+          <span class="hedef var">1. sıra ≈ 45 yorum</span>
+        </div>
+      </div>
+
+      <div class="istasyon">
+        <div class="dugum">–</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Akhisar</b><span class="km">Akhisar kavşağı · 74 km</span></div>
+          <p>ÇETİNLER Yol Yardım Oto Kurtarma · 42 yorum</p>
+          <span class="hedef yakin">ilk 3 ≈ 50 yorum</span>
+        </div>
+      </div>
+
+      <div class="istasyon">
+        <div class="dugum">–</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Kırkağaç</b><span class="km">K17 · 90 km</span></div>
+          <p>Kırkağaç Oto Kurtarma · 66 yorum</p>
+          <span class="hedef zor">reklamsız ilk 3 zor</span>
+        </div>
+      </div>
+
+      <div class="istasyon">
+        <div class="dugum">–</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Soma</b><span class="km">K16 · 112 km</span></div>
+          <p>Soma Yol Yardım · 20 yorum</p>
+          <span class="hedef yakin">ilk 3 ≈ 25 yorum</span>
+        </div>
+      </div>
+
+      <div class="istasyon">
+        <div class="dugum">–</div>
+        <div class="bilgi">
+          <div class="satir1"><b>Savaştepe</b><span class="km">Savaştepe kavşağı · 127 km</span></div>
+          <p>Akgül Oto Kurtarma · 108 yorum (sponsorlu)</p>
+          <span class="hedef zor">reklamsız ilk 3 zor</span>
+        </div>
+      </div>
+
+      <p class="yon alt">▼ BALIKESİR ÇIKIŞI</p>
+    </div>
+
+    <div class="efsane">
+      <span><i style="background:#12523f"></i>İlk 3 — görünüyoruz</span>
+      <span><i style="background:#c3ccc6"></i>İlk 6’da yok</span>
+      <span>Kaynak: Google Haritalar, konum kapalı, TR</span>
+    </div>
+  </section>
+
+  <aside class="kart yan">
+    <h2>Neden sadece Saruhanlı’da varız</h2>
+    <div class="faktor">
+      <div>
+        <span class="etiket dusuk">zayıf</span>
+        <b>Mesafe (en güçlü faktör)</b>
+        <p>Google yerel listeyi arayanın konumuna göre sıralar. Merkez Saruhanlı olduğu için K19 civarında
+        üstteyiz; Savaştepe’ye 127 km uzakta ilk 6’ya girmeyi mesafe engelliyor. Yorum tek başına bunu kırmaz.</p>
+      </div>
+      <div>
+        <span class="etiket orta">kısmen</span>
+        <b>Alaka (kategori + hizmet + site)</b>
+        <p>Birincil kategori “Çekici Hizmeti” doğru. Eksik: <b>Oto Kurtarma</b>, <b>Yol Yardım Hizmeti</b>,
+        <b>Akü Hizmeti</b> ikincil kategorileri. “yol yardım saruhanlı”da görünmememizin sebebi bu.</p>
+      </div>
+      <div>
+        <span class="etiket iyi">iyi</span>
+        <b>İtibar (puan + yorum)</b>
+        <p>5,0 ★ · 16 yorum. Saruhanlı lideri 23 yorumda; aradaki tek fark yorum sayısı.
+        Yorumlar tek profile yazıldığı için <b>her yeni yorum 7 ilçenin tamamını</b> etkiler.</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<section class="kart plan">
+  <h2>Üst sıralara çıkmak için · sırayla</h2>
+  <div class="adimlar">
+    <div class="adim">
+      <span class="no">1 · bu hafta, 15 dakika</span>
+      <h3>Profili eksiksiz hale getir</h3>
+      <ul>
+        <li><b>Web sitesi alanı:</b> hâlâ <code>wa.me</code> yazıyor → <b>saruhanliotokurtarma.surge.sh</b>. WhatsApp ayrı buton kalsın.</li>
+        <li><b>İkincil kategoriler:</b> Oto Kurtarma · Yol Yardım Hizmeti · Akü Hizmeti.</li>
+        <li><b>8 hizmet</b> fiyat aralığıyla: çekici, oto kurtarma, yol yardım 7/24, en yakın çekici, benzin destek, mazot takviye, akü takviye, akücü.</li>
+        <li><b>10 gerçek fotoğraf:</b> vinç çalışırken, kayış bağlı araç, gece, ekip.</li>
+        <li><b>5 soru-cevap</b> · hizmet alanına 7 ilçe · “24 saat açık”.</li>
+      </ul>
+      <p class="kim">Kim yapar: sen (Google paneli) · Etki: alaka + görünürlük, 3–7 gün</p>
+    </div>
+
+    <div class="adim">
+      <span class="no">2 · 30 gün</span>
+      <h3>Yorumu 16 → 43’e çıkar</h3>
+      <ul>
+        <li>Her işten <b>10 dakika sonra</b> tek WhatsApp mesajı; hazır yorum bağlantısı.</li>
+        <li>Günde 1–2 yorum, haftada 6–8. Aynı gün 5’ten fazla istemeyin (Google filtresi).</li>
+        <li>Yorum metnini siz yazmayın, yıldız istemeyin, para/indirim karşılığı olmasın.</li>
+        <li>Gelen her yoruma <b>24 saat içinde</b>, ilçe adıyla cevap yazın.</li>
+        <li>QR kart: makbuz arkası / araç içi, aynı yorum bağlantısı.</li>
+      </ul>
+      <p class="kim">Kim yapar: sen + ekip · Etki: en yüksek — sıralamanın itibar ayağı</p>
+    </div>
+
+    <div class="adim">
+      <span class="no">3 · sürekli</span>
+      <h3>Profili canlı tut, siteyi tazele</h3>
+      <ul>
+        <li>Haftada 1 Google gönderisi (hizmet / bölge / güven metinleri hazır).</li>
+        <li>Ayda 1: 7 ilçe sıra ölçümü + sitede yorum sayısı güncellemesi (5,0 ★ 16 → güncel).</li>
+        <li>Her ilçe sayfasına o ilçeden <b>gerçek iş fotoğrafı</b> ve kısa saha notu.</li>
+        <li>NAP tutarlılığı: Google, Bing Places, Yandex, Apple Maps, Facebook, Instagram — aynı ad/telefon.</li>
+      </ul>
+      <p class="kim">Kim yapar: ben (site + şema + ölçüm) · sen (panel + fotoğraf)</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:20px">İlçe bazında yorum merdiveni</h2>
+  <p class="not2">Çubuk: bugünkü 16 yorumun ilk 3 hedefine oranı. Hedefler 10.11.2026 lider sayılarına göre.</p>
+  <div class="merdiven">
+    <div class="basamak"><b>Saruhanlı</b><div class="cubuk"><i style="width:53%"></i></div><span>16 / 30 · 1. sıra 45</span></div>
+    <div class="basamak"><b>Kemalpaşa</b><div class="cubuk"><i style="width:100%"></i></div><span>16 / 12 · 1. sıra 25</span></div>
+    <div class="basamak"><b>Turgutlu</b><div class="cubuk"><i style="width:100%"></i></div><span>16 / 15 · 1. sıra 30</span></div>
+    <div class="basamak"><b>Soma</b><div class="cubuk"><i style="width:64%"></i></div><span>16 / 25 · 1. sıra 40</span></div>
+    <div class="basamak"><b>Akhisar</b><div class="cubuk"><i style="width:32%"></i></div><span>16 / 50 · 1. sıra 70</span></div>
+    <div class="basamak"><b>Kırkağaç</b><div class="cubuk"><i style="width:21%"></i></div><span>16 / 75 · 1. sıra 95</span></div>
+    <div class="basamak"><b>Savaştepe</b><div class="cubuk"><i style="width:13%"></i></div><span>16 / 120 · 1. sıra 140</span></div>
+  </div>
+  <p class="not2" style="margin-top:10px">
+    Kemalpaşa ve Turgutlu’da yorum eşiği zaten aşılmış görünüyor; sıçramayı <b>profil doluluğu ve o ilçelerden
+    gelen yorumlar</b> açar. Kırkağaç ve Savaştepe’de mesafe ağırlığı yorumdan güçlü: reklamsız ilk 3 kısa vadede
+    gerçekçi değil, hedef “ilk 6 → ilk 5”.
+  </p>
+</section>
+
+<section class="kart takvim">
+  <h2>Beklenen seyir (reklamsız)</h2>
+  <table>
+    <thead><tr><th>Dönem</th><th class="sayi">Yorum</th><th>Saruhanlı</th><th>Kemalpaşa / Turgutlu</th><th>Soma</th><th>Akhisar</th></tr></thead>
+    <tbody>
+      <tr><td>Bugün (11.11)</td><td class="sayi">16</td><td>3.</td><td>ilk 6’da yok</td><td>ilk 6’da yok</td><td>ilk 6’da yok</td></tr>
+      <tr><td>2–3 hafta</td><td class="sayi">22–26</td><td>2.</td><td>ilk 6’ya giriş</td><td>ilk 6’ya giriş</td><td>—</td></tr>
+      <tr><td>4 hafta</td><td class="sayi">30–35</td><td><b>1.</b></td><td>ilk 3 denemesi</td><td>ilk 3</td><td>—</td></tr>
+      <tr><td>6–8 hafta</td><td class="sayi">43–50</td><td>1.</td><td>ilk 3</td><td>1.–2.</td><td>ilk 3</td></tr>
+      <tr><td>90 gün</td><td class="sayi">60+</td><td>1.</td><td>ilk 3</td><td>1.</td><td>ilk 3</td></tr>
+    </tbody>
+  </table>
+  <p class="not2" style="margin:10px 0 0">
+    Reklam (günlük ~120–280 TL) açılırsa Kırkağaç ve Savaştepe’de “Sponsorlu” olarak 7 gün içinde listenin en
+    üstünde çıkılır — organik sıra değişmez, tıklama satın alınır.
+  </p>
+</section>
+
+<section class="kart kural">
+  <h2 style="color:#7a5b06">Yapılmayacaklar · ceza riski</h2>
+  <ul>
+    <li><b>Olmayan adrese pin / sanal ofis:</b> profil askıya alınır, tüm sıralar sıfırlanır.</li>
+    <li><b>Yorum satın almak, tanıdığa yazdırmak:</b> yorum filtresi + sıralama kaybı.</li>
+    <li><b>İlçe başına ayrı profil:</b> Google bunları tek kayda birleştirir; ikinci kayıt kapanır.</li>
+    <li><b>Anahtar kelime doldurma:</b> alaka artmaz, ceza riski. Metin doğal ve ilçeye özel kalmalı.</li>
+    <li><b>NAP tutarsızlığı:</b> panelde ad/telefon değişip sitede güncellenmemesi sıralamayı düşürür.</li>
+  </ul>
+</section>
+
+<footer>
+  Ölçüm: Google Haritalar, <code>hl=tr</code>, konum belirtilmeden, “çekici &lt;ilçe&gt;” sorgusu (liste en fazla 6 sonuç gösterir).
+  Sıra, arayanın konumuna göre değişir; bu pano “konumsuz” görünümdür — ayda bir tekrarlanmalı.
+  Yorum ve lider sayıları 10.11.2026 ölçümündendir. Kaynak: <code>bolgesel/saruhanliotokurtarma/siralama-olcum.md</code>,
+  <code>top3-plani.md</code>, <code>30-gun-plani.md</code>.
+</footer>
+
+</div>
+</body>
+</html>
