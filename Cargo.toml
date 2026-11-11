@@ -9,7 +9,7 @@ eframe = "0.27"
 image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-ureq = "2"
+ureq = "3"
 # Google Maps Platform: asenkron istekler Tokio + reqwest ile atılır.
 tokio = { version = "1", features = ["rt-multi-thread", "time", "net"] }
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
