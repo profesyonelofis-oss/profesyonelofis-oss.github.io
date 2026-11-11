@@ -1,0 +1,20 @@
+2026/11/06-23:16:54.168 1a48 Reusing MANIFEST D:\ollama_proje\.gecici\webview2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/06-23:16:54.169 1a48 Recovering log #76
+2026/11/06-23:16:54.169 1a48 Level-0 table #79: started
+2026/11/06-23:16:54.172 1a48 Level-0 table #79: 29032 bytes OK
+2026/11/06-23:16:54.174 1a48 Delete type=0 #76
+2026/11/06-23:17:03.978 4dc8 Level-0 table #82: started
+2026/11/06-23:17:03.983 4dc8 Level-0 table #82: 50212 bytes OK
+2026/11/06-23:17:03.985 4dc8 Delete type=0 #80
+2026/11/06-23:17:03.985 1a48 Compacting 4@0 + 1@1 files
+2026/11/06-23:17:03.991 1a48 Generated table #83@0: 240 keys, 86058 bytes
+2026/11/06-23:17:03.991 1a48 Compacted 4@0 + 1@1 files => 86058 bytes
+2026/11/06-23:17:03.992 1a48 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/06-23:17:03.992 1a48 Delete type=2 #72
+2026/11/06-23:17:03.992 1a48 Delete type=2 #75
+2026/11/06-23:17:03.992 1a48 Delete type=2 #77
+2026/11/06-23:17:03.992 1a48 Delete type=2 #79
+2026/11/06-23:17:03.992 1a48 Delete type=2 #82
+2026/11/06-23:17:28.630 4dc8 Level-0 table #85: started
+2026/11/06-23:17:28.632 4dc8 Level-0 table #85: 28140 bytes OK
+2026/11/06-23:17:28.633 4dc8 Delete type=0 #81

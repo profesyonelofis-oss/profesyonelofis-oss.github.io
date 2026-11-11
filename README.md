@@ -15,28 +15,79 @@ Arayüz açık temadır: beyaz paneller, koyu yeşil vurgu (#14663d) ve ince
 kenarlar. Uzun süre bakılan bir satış aracı olduğu için kontrast gözetildi;
 vurgu zeminler üzerindeki yazı beyazdır.
 
-81 il ve tüm ilçeler, 47 grupta 320 sektör. Tarama OpenStreetMap (Overpass)
+81 il ve tüm ilçeler, 11 grupta 20 sektör. İşletme taraması OpenStreetMap (Overpass)
 üzerinden yapılır; ilçe boş dönerse Google Places yedeği devreye girer ve
 ücretsiz kota defterde sayılır. Listeye yalnızca **telefonu olan ve gerçek web
-sitesi olmayan** işletmeler girer: numarası olmayan kayıt teklif götürülebilir
-bir müşteri sayılmaz, eleme 20'lik sınırdan önce yapılır.
+sitesi olmayan** işletmeler girer. OSM kaydında numara yoksa aynı işletme
+a Google'da adıyla aranır ve numara oradan tamamlanır. Eşleşme ad benzerliği
+(yazım ve Türkçe karakter farkına dayanıklı) ile mesafe puanının birlikte
+hesaplanmasıyla yapılır: 300 m'den uzak, adındaki sayı farklı ya da adı çok
+kısa kayıtlar eşleşmez. Boş kalan çalışma saati, yıldız ve inceleme sayısı da
+aynı eşleşmeden dolar. Eşleşme çıkmazsa
+kayıt listeye alınmaz ve 20'lik sınır bu elemeden sonra uygulanır.
 
-Overpass kayıtları telefonu seyrek taşıdığı (ölçüm: 100 sitesiz cafenin
-yalnızca 4'ünde numara var) hibrit taramada OSM listesi **8 kaydın altında**
-kalırsa Google'dan tamamlanır; tarama başına en fazla 5 ilçe için. Takviyeli
-liste önbelleğe yazılır, aynı ilçe tekrar taranınca kota ikinci kez harcanmaz. Bulunan işletme için demo sayfası, dijital
+Overpass telefonu seyrek taşıdığı için (ölçüm: 100 sitesiz cafenin yalnızca
+4'ünde numara var) hibrit taramada numarası eksik kayıt varsa ya da liste
+**8 kaydın altında** kalırsa Google'a gidilir; tarama başına en fazla 5 ilçe
+için. Tamamlanmış liste önbelleğe yazılır, aynı ilçe tekrar taranınca kota
+ikinci kez harcanmaz. Yalnız OSM modunda Google'a hiç gidilmez: numarasız
+kayıt listede görünmez. Bulunan işletme için demo sayfası, dijital
 görünürlük karnesi ve GitHub Pages yayın linki üretilir.
 
 Demo tek dosyalık bir sayfadır: sabit cam menü, sektöre göre renklenen
 animasyonlu hero, mobil menü, kaydırdıkça açılan bölümler ve mobilde sabit
 arama düğmesi. Kendi CSS'i ve gömülü fontu vardır; CSS/JS çatısı, CDN veya
 ücretli API kullanmaz (ağdan yalnızca gömülü OSM harita çerçevesi gelir).
-İşletmenin kendi fotoğrafı varsa (Google Places veya OSM `image` etiketi)
-indirilip sayfaya gömülür; yoksa uydurma görsel konmaz.
+
+**Tasarım dili.** Sektöre göre iki tipografi çifti var: restoran, kafe,
+pastane, kuaför, klinik, otel ve eğlencede başlık **Instrument Serif**
+(editoryal, yüksek kontrastlı), mağaza/kurum/ofis/teknik serviste **Space
+Grotesk**. Gövde her yerde **Geist**; Inter bilinçli olarak kullanılmıyor
+(AI üretimi sitelerin en belirgin izi). Hareket katmanı: manşet **kelime
+kelime** maskesinden açılır, bölüm çizgileri kaydırınca soldan sağa çizilir,
+hero sahnesi kırpılarak belirir, imleci izleyen ışık hedefe atlamayıp
+arkasından yumuşakça gelir, birincil buton imlece göre birkaç piksel kayar.
+Hepsi tek dosyada, kütüphanesiz; `prefers-reduced-motion` açıksa hareket
+tamamen kapanır, JS kapalıysa içerik doğrudan görünür.
+
+**Bölümler.** `Hakkında` bölümü, galeriden ayrılan bir kareyle görsellenir
+(aynı fotoğraf sayfada iki kez görünmez); hero'da sektör renginden iki yumuşak
+ışık lekesi var. Sayfanın en altında **satıcı bandı** durur: “Bu taslağı size
+özel hale getirelim” + gönderen numarasına WhatsApp düğmesi. Mesaj işletme
+adını taşıdığı için gelen yazışmada hangi demo olduğu karışmıyor; numara
+tanımlı değilse bant hiç çizilmez.
+
+**Tasarım referansları.** `sablonlar/` altında lisansı temiz (MIT) şablonlar
+ve `sablonlar/sablonlar.json` kaydı durur: Start Bootstrap Creative / One Page
+Wonder, Tailwind Toolbox Landing ve dört tek dosyalık küçük işletme şablonu.
+Bunlar müşteriye teslim edilmez; bölüm sırası ve düzen fikri alınıp HTML kendi
+üreticimizde yazılır. Hangi kaynağın hangi fikri verdiği ve yasaklı lisanslar
+`sablonlar/README.md` içinde.
+Galeri üç kademeli dolar: (1) işletmenin Google Places fotoğrafları, (2)
+işletmenin koordinatından **Google Street View** karesi, (3) aynı sektörün
+gömülü örnek kareleri (`varliklar/foto`, Wikimedia Commons, CC/PD). Karelerin
+kaynağı sayfada yazar ("Google Street View · işletmenin sokağından" /
+"örnek kareler") ve atıflar altbilgiye eklenir. Fiyat listesi hiçbir şablonda
+yoktur; fiyat teklifi görüşmede verilir.
+
+**Street View karesi.** Panorama var mı sorusu ücretsiz metadata uçağına
+sorulur; panorama yoksa hiç görüntü istenmez (boşa fatura çıkmaz). İki zıt yön
+(0° ve 180°) 640x480 olarak alınır — ücretsiz kademenin boyut sınırı. Kareler
+`onbellek/streetview` altında tutulur: renk değiştirmek veya önizlemeyi
+tazelemek aynı işletme için yeniden ücret ödetmez. Her görüntü isteği arama
+kotasıyla **aynı** günlük/aylık sayaçtan düşer; üst şeritteki pil toplam
+Google harcamasını gösterir. Street View kapalıysa, panorama yoksa veya bütçe
+bittiyse galeri sessizce örnek karelere döner.
+
+Street View'i açmak için Cloud Console'da harita API'leri kütüphanesinden
+**Street View Static API**'yi etkinleştir:
+<https://console.cloud.google.com/apis/library?filter=category:maps> (anahtar
+aynı `GOOGLE_PLACES_API_KEY`). Etkin değilken uygulama çalışmaya devam eder,
+yalnızca bu kademe atlanır.
 
 ```bash
 cargo run                 # derle ve aç
-cargo test --all-targets  # 120 test (3 ağ testi varsayılan kapalı)
+cargo test --all-targets  # 136 test (6 ağ testi varsayılan kapalı)
 cargo clippy --all-targets -- -D warnings
 cargo fmt --all -- --check
 ```
@@ -63,23 +114,44 @@ cargo fmt --all -- --check
 9. Üst şeritteki **Bugünün listesi**, potansiyele göre sıradaki işletmeleri
    (kara liste, bugün yazılanlar ve telefondan yoksunlar hariç) günlük hak
    kadar listeler; satırdaki **Hazırla** mesaj önizlemesini açar.
-10. Renklendirme panelindeki **Mevcut demolara uygula**, demos klasöründeki
-    üretilmiş sayfaları seçili renklerle yeniden yazar (hareket ve metin
-    değişmez; karneler kendi paletini korur).
+10. **Özelleştirme** paneli (üst şeritteki renk düğmesi) demoyu altı yerden
+    değiştirir: (a) üç renk — arka plan, yazı, vurgu — ve beş hazır palet;
+    (b) **bölüm anahtarları** — galeri, yorumlar, harita, saatler; kapatılan
+    bölüm sayfada hiç çizilmez; (c) **metinler** — manşetin iki satırı, marka
+    cümlesi, hakkında başlığı ve iki paragrafı, bölüm etiketi/başlığı/alt
+    yazısı, dört hizmet satırı (ad + açıklama) ve iki yorum (söz + isim);
+    (d) **butonlar** — birincil ve ikincil buton metni; (e) **fotoğraflar** —
+    manşet için işletme fotoğrafı / fotoğrafsız tipografik sahne / kendi
+    dosyanız, galeri için otomatik kareler, otomatik + eklediklerim, yalnız
+    eklediklerim veya kapalı, kare sayısı 1–6, JPEG/PNG/WebP dosyası ekleme
+    (panel üzerine sürükle-bırak ya da yol yazma); (f) **köşe biçimi** —
+    keskin / dengeli / yumuşak. Boş bırakılan her alan sektör şablonundan
+    gelir; hareket ve düzen değişmez. Seçimler `ayarlar.json`'a yazılır
+    (fotoğraf yolları saklanır, görüntü değil) ve yeni üretilen demolara
+    uygulanır. Paneldeki **Mevcut demolara uygula** demos klasöründeki
+    sayfaları güncel ayarlarla **baştan üretir**: metinler, butonlar,
+    fotoğraflar, bölümler ve renkler. Bunun için her demo yazılırken kaynak
+    işletme kaydı `demos/kaynak/<sayfa>.json` olarak saklanır (koordinat,
+    çalışma saatleri ve yorumlar yalnız burada yaşar; defterde yok). Kaynağı
+    bulunmayan — elle yapılmış ya da eski — sayfalara yalnız renkler işlenir,
+    böylece hiçbiri bozulmaz; günlük kaç sayfanın yenilendiğini yazar. Yayına
+    gönderilmiş sayfalar kendiliğinden değişmez, yeniden yayınlamak gerekir.
 
 **Kurallar ve sınırlar**
 
 | Konu | Davranış |
 |---|---|
-| Günlük gönderim | En fazla **15** mesaj; sayaç defterde, yeniden başlatınca da sürer; kalan hak WhatsApp ayarında ve önizlemede yazar |
+| Günlük gönderim | En fazla **20** mesaj (`GUNLUK_GONDERIM_LIMITI`); sayaç defterde, yeniden başlatınca da sürer; kalan hak WhatsApp ayarında ve önizlemede yazar |
 | Mesaj uzunluğu | wa.me bağlantısına sığması için 900 karakterde kırpılır (fazlası "…" ile kesilir) |
-| Arama süzgeci | Telefonu olmayan ve gerçek web sitesi olan kayıt listeye alınmaz (sabit hat geçerlidir; sosyal medya hesabı site sayılmaz) |
+| Arama süzgeci | Gerçek web sitesi olan kayıt listeye alınmaz; numarası olmayan kayıt hibritte Google'da aranıp tamamlanır, bulunamazsa listeden çıkar (sabit hat geçerlidir, sosyal medya hesabı site sayılmaz) |
+| Google kotası | Üst şeritteki pil kalan günlük/aylık hakkı gösterir (3 saniyede bir tazelenir, tarama bitince hemen); üzerine gelince son kullanım tarihi ve limitler görünür. Hak bitince kırmızı, son 2 gün/20 ay kalınca turuncu |
 | Kara liste | "RET" / "Reddetti" işaretlenen işletmeye bir daha mesaj hazırlanmaz |
 | A/B denemesi | Varyant sektör içinde dengeli dağıtılır, kayıtta sabit kalır |
 | Örneklem | Kol başına 30 gönderimin altında panel "örneklem yetersiz" uyarısı verir |
 | Google kotası | `GOOGLE_GUNLUK_LIMIT` (vars. 10) · `GOOGLE_AYLIK_LIMIT` (vars. 200) |
 | Defter | `musteri_kayitlari.json`; her yazmadan önce `musteri_kayitlari.yedek.json` |
-| Ayarlar | `ayarlar.json`: gönderen WhatsApp numarası; açılışta geri okunur |
+| Ayarlar | `ayarlar.json`: gönderen WhatsApp numarası, demo renkleri, bölüm anahtarları, marka cümlesi/buton metni ve köşe biçimi; açılışta geri okunur. Bu alanları içermeyen eski dosyada bölümler açık, metinler otomatik sayılır |
+| Demo kaynağı | `demos/kaynak/<sayfa>.json`: sayfanın üretildiği işletme kaydı; demo yeniden üretimi buradan beslenir, bu dosya yoksa arama önbelleğine bakılır |
 | Teklif | Paket seçilince varsayılan tutar yazılır (4.500 / 8.500 / 750 ₺); elle değiştirilebilir |
 | Ödeme | Teklif verilince "bekliyor"; kısmi tutar ayrı tutulur, kalan bakiye hesaplanır |
 | Yayın | Demo ve karne `gh-pages` dalına gider; "Yayından kaldır" dosyaları siler |
