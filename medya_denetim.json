@@ -1,0 +1,3594 @@
+{
+  "tarih": null,
+  "sektor_tanim": 320,
+  "sektor_klasor": 200,
+  "manifestli_sektor": 200,
+  "manifest_eksik_sektor": [
+    "Yüzme Kursu",
+    "Sanat Kursu",
+    "Anaokulu",
+    "Meslek Kursu",
+    "Dershane",
+    "Mimarlık",
+    "Mühendislik",
+    "İnşaat",
+    "Emlak",
+    "Harita Mühendisi",
+    "Bina Yönetimi",
+    "Muhasebe",
+    "Avukat",
+    "Noter",
+    "Vergi Danışmanı",
+    "Tercüme Bürosu",
+    "Banka",
+    "Döviz Bürosu",
+    "Sigorta",
+    "Postane",
+    "Finans Danışmanı",
+    "Dernek",
+    "Vakıf",
+    "Yazılım",
+    "Reklam",
+    "Matbaa",
+    "İnsan Kaynakları",
+    "Danışmanlık",
+    "Telekomünikasyon",
+    "Yayınevi",
+    "Gazete",
+    "Güvenlik",
+    "Araştırma",
+    "Grafik Tasarım",
+    "Ortak Çalışma Ofisi",
+    "Web Tasarım",
+    "Sosyal Medya",
+    "Nakliyat",
+    "Turizm Acentası",
+    "Kurye",
+    "Oto Tamir",
+    "Lastikçi",
+    "Oto Yıkama",
+    "Oto Kiralama",
+    "Akaryakıt",
+    "Motosiklet Tamiri",
+    "Şarj İstasyonu",
+    "Otopark",
+    "Oto Kaporta",
+    "Oto Döşeme",
+    "Oto Muayene",
+    "Oto Elektrik",
+    "Egzoz",
+    "Tesisatçı",
+    "Elektrikçi",
+    "Klima",
+    "Çilingir",
+    "Boyacı",
+    "Marangoz",
+    "Camcı",
+    "Fayansçı",
+    "Sıvacı",
+    "Çatıcı",
+    "Zemin Döşeme",
+    "Taş Ustası",
+    "Demirci",
+    "Kaynakçı",
+    "PVC Doğrama",
+    "Metal İşleri",
+    "Peyzaj",
+    "İlaçlama",
+    "Spor Salonu",
+    "Sauna",
+    "Binicilik",
+    "Golf",
+    "Buz Pisti",
+    "Su Parkı",
+    "Yoga Stüdyosu",
+    "Pilates Stüdyosu",
+    "Dövüş Sporları",
+    "Trambolin Parkı",
+    "Halı Saha",
+    "Yüzme Havuzu",
+    "Atış Poligonu",
+    "Tenis Kortu",
+    "Düğün Salonu",
+    "Gece Kulübü",
+    "Konser Salonu",
+    "Konferans Merkezi",
+    "Organizasyon",
+    "Fuar Merkezi",
+    "Sinema",
+    "Tiyatro",
+    "Oyun Salonu",
+    "Bowling",
+    "Lunapark",
+    "Oyun Parkı",
+    "Escape Oyunu",
+    "İnternet Kafe",
+    "Karaoke",
+    "Go-Kart",
+    "Mini Golf",
+    "Kapalı Oyun Alanı",
+    "Müze",
+    "Sanat Galerisi",
+    "Hayvanat Bahçesi",
+    "Akvaryum",
+    "Planetaryum",
+    "Marina",
+    "Fabrika",
+    "Şarap Üretimi",
+    "Bira Fabrikası",
+    "Zeytinyağı",
+    "Ambalaj",
+    "Tarım Makineleri",
+    "Arıcılık",
+    "Çiftlik",
+    "Sera",
+    "Traktör",
+    "Zirai İlaç"
+  ],
+  "kayit": 3047,
+  "video": 1113,
+  "foto": 1990,
+  "eksik_dosya": 0,
+  "yetim_dosya": 64,
+  "kaynaksiz": 253,
+  "basliksiz": 253,
+  "dogrulanan": 2794,
+  "kucuk_dosya": 4,
+  "yasak_ihlal": 0,
+  "zayif_eslesme": 894,
+  "genel_yedek": 84,
+  "supheli": 810,
+  "alakalilik_orani": 68.0,
+  "teknik_ornek": 211,
+  "teknik_sorunlu": 0,
+  "tekrar_grup": 406,
+  "tekrar_fazla_dosya": 2526,
+  "tekrar_ornek": [
+    [
+      "restoran/video/hero_1.mp4",
+      "restoran/video/hero_10.mp4",
+      "restoran/video/hero_2.mp4",
+      "restoran/video/hero_3.mp4",
+      "restoran/video/hero_8.mp4",
+      "kebapci/video/hero_1.mp4",
+      "kebapci/video/hero_2.mp4",
+      "kebapci/video/hero_3.mp4",
+      "kebapci/video/hero_5.mp4",
+      "kebapci/video/hero_7.mp4",
+      "pideci/video/hero_1.mp4",
+      "pideci/video/hero_2.mp4",
+      "pideci/video/hero_3.mp4",
+      "pideci/video/hero_7.mp4",
+      "kofteci/video/hero_1.mp4",
+      "kofteci/video/hero_10.mp4",
+      "kofteci/video/hero_2.mp4",
+      "kofteci/video/hero_3.mp4",
+      "kofteci/video/hero_5.mp4",
+      "kofteci/video/hero_9.mp4",
+      "mantici/video/hero_1.mp4",
+      "mantici/video/hero_2.mp4",
+      "mantici/video/hero_3.mp4",
+      "mantici/video/hero_9.mp4",
+      "ev_yemekleri/video/hero_1.mp4",
+      "ev_yemekleri/video/hero_10.mp4",
+      "ev_yemekleri/video/hero_2.mp4",
+      "ev_yemekleri/video/hero_3.mp4",
+      "ev_yemekleri/video/hero_4.mp4",
+      "balik_restorani/video/hero_1.mp4",
+      "balik_restorani/video/hero_10.mp4",
+      "balik_restorani/video/hero_2.mp4",
+      "balik_restorani/video/hero_7.mp4",
+      "pilavci/video/hero_1.mp4",
+      "pilavci/video/hero_2.mp4",
+      "pilavci/video/hero_7.mp4"
+    ],
+    [
+      "fast_food/video/hero_1.mp4",
+      "fast_food/video/hero_2.mp4",
+      "fast_food/video/hero_4.mp4",
+      "donerci/video/hero_1.mp4",
+      "donerci/video/hero_2.mp4",
+      "donerci/video/hero_4.mp4",
+      "donerci/video/hero_9.mp4",
+      "lahmacuncu/video/hero_1.mp4",
+      "lahmacuncu/video/hero_10.mp4",
+      "lahmacuncu/video/hero_2.mp4",
+      "lahmacuncu/video/hero_8.mp4",
+      "cig_kofteci/video/hero_1.mp4",
+      "cig_kofteci/video/hero_2.mp4",
+      "cig_kofteci/video/hero_7.mp4",
+      "cig_kofteci/video/hero_9.mp4",
+      "hamburgerci/video/hero_1.mp4",
+      "hamburgerci/video/hero_2.mp4",
+      "hamburgerci/video/hero_4.mp4",
+      "pizza_salonu/video/hero_1.mp4",
+      "pizza_salonu/video/hero_2.mp4",
+      "pizza_salonu/video/hero_4.mp4",
+      "tavukcu/video/hero_1.mp4",
+      "tavukcu/video/hero_10.mp4",
+      "tavukcu/video/hero_2.mp4",
+      "tavukcu/video/hero_6.mp4",
+      "bufe/video/hero_1.mp4",
+      "bufe/video/hero_10.mp4",
+      "bufe/video/hero_2.mp4"
+    ],
+    [
+      "borekci/video/hero_3.mp4",
+      "baklavaci/video/hero_3.mp4",
+      "pastane/video/hero_3.mp4",
+      "tatlici/video/hero_3.mp4",
+      "dondurmaci/video/hero_3.mp4",
+      "yemek_servisi/video/hero_4.mp4",
+      "mutfak_magazasi/video/hero_3.mp4",
+      "zuccaciye/video/hero_4.mp4",
+      "ic_dekorasyon/video/hero_3.mp4",
+      "supurge_magazasi/video/hero_3.mp4",
+      "perde_stor/video/hero_3.mp4",
+      "bahce_merkezi/video/hero_5.mp4",
+      "cicekci/video/hero_5.mp4",
+      "kamp_malzemeleri/video/hero_2.mp4",
+      "plak_cd/video/hero_4.mp4",
+      "parti_malzemeleri/video/hero_1.mp4",
+      "avcilik/video/hero_4.mp4",
+      "balik_malzemeleri/video/hero_1.mp4",
+      "hobi_magazasi/video/hero_3.mp4",
+      "dalis_malzemeleri/video/hero_1.mp4",
+      "spor_magazasi/video/hero_6.mp4",
+      "muzik_aletleri/video/hero_6.mp4",
+      "isitme_cihazi/video/hero_2.mp4"
+    ],
+    [
+      "borekci/video/hero_4.mp4",
+      "baklavaci/video/hero_4.mp4",
+      "pastane/video/hero_4.mp4",
+      "tatlici/video/hero_4.mp4",
+      "dondurmaci/video/hero_4.mp4",
+      "yemek_servisi/video/hero_5.mp4",
+      "mutfak_magazasi/video/hero_4.mp4",
+      "zuccaciye/video/hero_5.mp4",
+      "ic_dekorasyon/video/hero_4.mp4",
+      "supurge_magazasi/video/hero_4.mp4",
+      "perde_stor/video/hero_4.mp4",
+      "bahce_merkezi/video/hero_6.mp4",
+      "cicekci/video/hero_6.mp4",
+      "kamp_malzemeleri/video/hero_3.mp4",
+      "plak_cd/video/hero_5.mp4",
+      "parti_malzemeleri/video/hero_2.mp4",
+      "avcilik/video/hero_5.mp4",
+      "balik_malzemeleri/video/hero_2.mp4",
+      "hobi_magazasi/video/hero_4.mp4",
+      "dalis_malzemeleri/video/hero_2.mp4",
+      "spor_magazasi/video/hero_7.mp4",
+      "muzik_aletleri/video/hero_7.mp4",
+      "isitme_cihazi/video/hero_3.mp4"
+    ],
+    [
+      "borekci/video/hero_5.mp4",
+      "baklavaci/video/hero_5.mp4",
+      "pastane/video/hero_5.mp4",
+      "tatlici/video/hero_5.mp4",
+      "dondurmaci/video/hero_5.mp4",
+      "yemek_servisi/video/hero_6.mp4",
+      "mutfak_magazasi/video/hero_5.mp4",
+      "zuccaciye/video/hero_6.mp4",
+      "ic_dekorasyon/video/hero_5.mp4",
+      "supurge_magazasi/video/hero_5.mp4",
+      "perde_stor/video/hero_5.mp4",
+      "bahce_merkezi/video/hero_7.mp4",
+      "cicekci/video/hero_7.mp4",
+      "kamp_malzemeleri/video/hero_4.mp4",
+      "plak_cd/video/hero_6.mp4",
+      "parti_malzemeleri/video/hero_3.mp4",
+      "avcilik/video/hero_6.mp4",
+      "balik_malzemeleri/video/hero_3.mp4",
+      "hobi_magazasi/video/hero_5.mp4",
+      "dalis_malzemeleri/video/hero_3.mp4",
+      "spor_magazasi/video/hero_8.mp4",
+      "muzik_aletleri/video/hero_8.mp4",
+      "isitme_cihazi/video/hero_4.mp4"
+    ],
+    [
+      "borekci/video/hero_6.mp4",
+      "baklavaci/video/hero_6.mp4",
+      "pastane/video/hero_6.mp4",
+      "tatlici/video/hero_6.mp4",
+      "dondurmaci/video/hero_6.mp4",
+      "yemek_servisi/video/hero_7.mp4",
+      "mutfak_magazasi/video/hero_6.mp4",
+      "zuccaciye/video/hero_7.mp4",
+      "ic_dekorasyon/video/hero_6.mp4",
+      "supurge_magazasi/video/hero_6.mp4",
+      "perde_stor/video/hero_6.mp4",
+      "bahce_merkezi/video/hero_8.mp4",
+      "cicekci/video/hero_8.mp4",
+      "kamp_malzemeleri/video/hero_5.mp4",
+      "plak_cd/video/hero_7.mp4",
+      "parti_malzemeleri/video/hero_4.mp4",
+      "avcilik/video/hero_7.mp4",
+      "balik_malzemeleri/video/hero_4.mp4",
+      "hobi_magazasi/video/hero_6.mp4",
+      "dalis_malzemeleri/video/hero_4.mp4",
+      "spor_magazasi/video/hero_9.mp4",
+      "muzik_aletleri/video/hero_9.mp4",
+      "isitme_cihazi/video/hero_5.mp4"
+    ],
+    [
+      "borekci/video/hero_7.mp4",
+      "baklavaci/video/hero_7.mp4",
+      "pastane/video/hero_7.mp4",
+      "tatlici/video/hero_7.mp4",
+      "dondurmaci/video/hero_7.mp4",
+      "yemek_servisi/video/hero_8.mp4",
+      "mutfak_magazasi/video/hero_7.mp4",
+      "zuccaciye/video/hero_8.mp4",
+      "ic_dekorasyon/video/hero_7.mp4",
+      "supurge_magazasi/video/hero_7.mp4",
+      "perde_stor/video/hero_7.mp4",
+      "bahce_merkezi/video/hero_9.mp4",
+      "cicekci/video/hero_9.mp4",
+      "kamp_malzemeleri/video/hero_6.mp4",
+      "plak_cd/video/hero_8.mp4",
+      "parti_malzemeleri/video/hero_5.mp4",
+      "avcilik/video/hero_8.mp4",
+      "balik_malzemeleri/video/hero_5.mp4",
+      "hobi_magazasi/video/hero_7.mp4",
+      "dalis_malzemeleri/video/hero_5.mp4",
+      "spor_magazasi/video/hero_10.mp4",
+      "muzik_aletleri/video/hero_10.mp4",
+      "isitme_cihazi/video/hero_6.mp4"
+    ],
+    [
+      "borekci/video/hero_8.mp4",
+      "baklavaci/video/hero_8.mp4",
+      "pastane/video/hero_8.mp4",
+      "tatlici/video/hero_8.mp4",
+      "dondurmaci/video/hero_8.mp4",
+      "yemek_servisi/video/hero_9.mp4",
+      "mutfak_magazasi/video/hero_8.mp4",
+      "zuccaciye/video/hero_9.mp4",
+      "ic_dekorasyon/video/hero_8.mp4",
+      "supurge_magazasi/video/hero_8.mp4",
+      "perde_stor/video/hero_8.mp4",
+      "bahce_merkezi/video/hero_10.mp4",
+      "cicekci/video/hero_10.mp4",
+      "kamp_malzemeleri/video/hero_7.mp4",
+      "plak_cd/video/hero_9.mp4",
+      "parti_malzemeleri/video/hero_6.mp4",
+      "avcilik/video/hero_9.mp4",
+      "balik_malzemeleri/video/hero_6.mp4",
+      "hobi_magazasi/video/hero_8.mp4",
+      "dalis_malzemeleri/video/hero_6.mp4",
+      "isitme_cihazi/video/hero_7.mp4"
+    ],
+    [
+      "mobilya/video/hero_2.mp4",
+      "mobilya/video/hero_8.mp4",
+      "mobilya/video/hero_9.mp4",
+      "mutfak_magazasi/video/hero_1.mp4",
+      "mutfak_magazasi/video/hero_2.mp4",
+      "banyo/video/hero_1.mp4",
+      "banyo/video/hero_10.mp4",
+      "banyo/video/hero_8.mp4",
+      "yatak/video/hero_1.mp4",
+      "yatak/video/hero_2.mp4",
+      "yatak/video/hero_3.mp4",
+      "aydinlatma/video/hero_1.mp4",
+      "aydinlatma/video/hero_7.mp4",
+      "aydinlatma/video/hero_8.mp4",
+      "zuccaciye/video/hero_1.mp4",
+      "zuccaciye/video/hero_2.mp4",
+      "zuccaciye/video/hero_3.mp4",
+      "ic_dekorasyon/video/hero_2.mp4",
+      "cerceve/video/hero_2.mp4",
+      "supurge_magazasi/video/hero_2.mp4",
+      "perde_stor/video/hero_2.mp4"
+    ],
+    [
+      "market/video/hero_1.mp4",
+      "bakkal/video/hero_1.mp4",
+      "kasap/video/hero_1.mp4",
+      "manav/video/hero_1.mp4",
+      "sarkuteri/video/hero_1.mp4",
+      "balikci/video/hero_1.mp4",
+      "peynirci/video/hero_1.mp4",
+      "cay_dukk_ni/video/hero_1.mp4",
+      "cikolata/video/hero_1.mp4",
+      "kuruyemisci/video/hero_1.mp4",
+      "baharatci/video/hero_1.mp4",
+      "sut_urunleri/video/hero_1.mp4",
+      "aktar/video/hero_2.mp4",
+      "aktar/video/hero_7.mp4",
+      "toptanci/video/hero_2.mp4",
+      "dondurulmus_gida/video/hero_2.mp4",
+      "takviye_gida/video/hero_2.mp4",
+      "su_bayii/video/hero_2.mp4",
+      "saglikli_gida/video/hero_2.mp4",
+      "saglikli_gida/video/hero_7.mp4"
+    ],
+    [
+      "borekci/video/hero_9.mp4",
+      "baklavaci/video/hero_9.mp4",
+      "pastane/video/hero_9.mp4",
+      "tatlici/video/hero_9.mp4",
+      "dondurmaci/video/hero_9.mp4",
+      "yemek_servisi/video/hero_10.mp4",
+      "mutfak_magazasi/video/hero_9.mp4",
+      "zuccaciye/video/hero_10.mp4",
+      "ic_dekorasyon/video/hero_9.mp4",
+      "supurge_magazasi/video/hero_9.mp4",
+      "perde_stor/video/hero_9.mp4",
+      "kamp_malzemeleri/video/hero_8.mp4",
+      "plak_cd/video/hero_10.mp4",
+      "parti_malzemeleri/video/hero_7.mp4",
+      "avcilik/video/hero_10.mp4",
+      "balik_malzemeleri/video/hero_7.mp4",
+      "hobi_magazasi/video/hero_9.mp4",
+      "dalis_malzemeleri/video/hero_7.mp4",
+      "isitme_cihazi/video/hero_8.mp4"
+    ],
+    [
+      "restoran/video/hero_4.mp4",
+      "restoran/video/hero_9.mp4",
+      "kebapci/video/hero_4.mp4",
+      "kebapci/video/hero_6.mp4",
+      "kebapci/video/hero_8.mp4",
+      "pideci/video/hero_4.mp4",
+      "pideci/video/hero_8.mp4",
+      "kofteci/video/hero_4.mp4",
+      "kofteci/video/hero_6.mp4",
+      "mantici/video/hero_10.mp4",
+      "mantici/video/hero_4.mp4",
+      "mantici/video/hero_5.mp4",
+      "ev_yemekleri/video/hero_5.mp4",
+      "balik_restorani/video/hero_3.mp4",
+      "balik_restorani/video/hero_8.mp4",
+      "pilavci/video/hero_3.mp4",
+      "pilavci/video/hero_8.mp4"
+    ],
+    [
+      "fast_food/photos/img_1.webp",
+      "fast_food/photos/img_3.webp",
+      "donerci/photos/img_1.webp",
+      "donerci/photos/img_3.webp",
+      "lahmacuncu/photos/img_1.webp",
+      "lahmacuncu/photos/img_3.webp",
+      "cig_kofteci/photos/img_1.webp",
+      "cig_kofteci/photos/img_3.webp",
+      "hamburgerci/photos/img_1.webp",
+      "hamburgerci/photos/img_3.webp",
+      "pizza_salonu/photos/img_1.webp",
+      "pizza_salonu/photos/img_3.webp",
+      "tavukcu/photos/img_1.webp",
+      "tavukcu/photos/img_3.webp",
+      "bufe/photos/img_1.webp",
+      "bufe/photos/img_10.webp",
+      "bufe/photos/img_3.webp"
+    ],
+    [
+      "restoran/photos/img_1.webp",
+      "restoran/photos/img_3.webp",
+      "kebapci/photos/img_1.webp",
+      "kebapci/photos/img_3.webp",
+      "pideci/photos/img_1.webp",
+      "pideci/photos/img_3.webp",
+      "kofteci/photos/img_1.webp",
+      "kofteci/photos/img_3.webp",
+      "mantici/photos/img_1.webp",
+      "mantici/photos/img_3.webp",
+      "ev_yemekleri/photos/img_1.webp",
+      "ev_yemekleri/photos/img_3.webp",
+      "balik_restorani/photos/img_1.webp",
+      "balik_restorani/photos/img_3.webp",
+      "pilavci/photos/img_1.webp",
+      "pilavci/photos/img_3.webp"
+    ],
+    [
+      "restoran/photos/img_2.webp",
+      "restoran/photos/img_4.webp",
+      "kebapci/photos/img_2.webp",
+      "kebapci/photos/img_4.webp",
+      "pideci/photos/img_2.webp",
+      "pideci/photos/img_4.webp",
+      "kofteci/photos/img_2.webp",
+      "kofteci/photos/img_4.webp",
+      "mantici/photos/img_2.webp",
+      "mantici/photos/img_4.webp",
+      "ev_yemekleri/photos/img_2.webp",
+      "ev_yemekleri/photos/img_4.webp",
+      "balik_restorani/photos/img_2.webp",
+      "balik_restorani/photos/img_4.webp",
+      "pilavci/photos/img_2.webp",
+      "pilavci/photos/img_4.webp"
+    ]
+  ],
+  "en_zayif_sektorler": [
+    {
+      "sektor": "Restoran",
+      "grup": "Lokanta & Kebap",
+      "kayit": 22,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Kebapçı",
+      "grup": "Lokanta & Kebap",
+      "kayit": 20,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Pideci",
+      "grup": "Lokanta & Kebap",
+      "kayit": 20,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Köfteci",
+      "grup": "Lokanta & Kebap",
+      "kayit": 20,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Mantıcı",
+      "grup": "Lokanta & Kebap",
+      "kayit": 20,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Ev Yemekleri",
+      "grup": "Lokanta & Kebap",
+      "kayit": 11,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "grup": "Lokanta & Kebap",
+      "kayit": 20,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Pilavcı",
+      "grup": "Lokanta & Kebap",
+      "kayit": 20,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Lahmacuncu",
+      "grup": "Fast Food & Büfe",
+      "kayit": 6,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Çekici",
+      "grup": "Oto Servis",
+      "kayit": 3,
+      "eslesen": 0,
+      "oran": 0.0
+    },
+    {
+      "sektor": "Fast Food",
+      "grup": "Fast Food & Büfe",
+      "kayit": 20,
+      "eslesen": 2,
+      "oran": 10.0
+    },
+    {
+      "sektor": "Dönerci",
+      "grup": "Fast Food & Büfe",
+      "kayit": 20,
+      "eslesen": 2,
+      "oran": 10.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "grup": "Fast Food & Büfe",
+      "kayit": 7,
+      "eslesen": 1,
+      "oran": 14.3
+    },
+    {
+      "sektor": "Hamburgerci",
+      "grup": "Fast Food & Büfe",
+      "kayit": 20,
+      "eslesen": 3,
+      "oran": 15.0
+    },
+    {
+      "sektor": "Fotokopi",
+      "grup": "Kitap & Kırtasiye",
+      "kayit": 20,
+      "eslesen": 3,
+      "oran": 15.0
+    }
+  ],
+  "zayif_ornek": [
+    {
+      "sektor": "Fast Food",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Dönerci",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Lahmacuncu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Hamburgerci",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Tavukçu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Tavukçu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Tavukçu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Moon Close Up (Free to Use Stock Video Footage).webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "1992 stock units 91045, 92045 et al departing from Bank station towards St Paul's, Jan 2022.webm",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Fırın",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Simitçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Porto Santo from a moving car.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "WP25 Anthem video.webm",
+      "dosya": "video/hero_5.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Clean.webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Caption.webm",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9.webm",
+      "dosya": "video/hero_8.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9 Caption.webm",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 30\" AI 9x16.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    }
+  ],
+  "yasak_ornek": [],
+  "eksik_ornek": [],
+  "kucuk_ornek": [
+    "antikaci/video/hero_10.mp4 (21945 bayt)",
+    "antikaci/video/hero_4.mp4 (21945 bayt)",
+    "model_maket/video/hero_1.mp4 (37643 bayt)",
+    "model_maket/video/hero_10.mp4 (37643 bayt)"
+  ],
+  "kucuk_detay": [
+    {
+      "dosya": "antikaci/video/hero_10.mp4",
+      "bayt": 21945,
+      "ffprobe": "ok"
+    },
+    {
+      "dosya": "antikaci/video/hero_4.mp4",
+      "bayt": 21945,
+      "ffprobe": "ok"
+    },
+    {
+      "dosya": "model_maket/video/hero_1.mp4",
+      "bayt": 37643,
+      "ffprobe": "ok"
+    },
+    {
+      "dosya": "model_maket/video/hero_10.mp4",
+      "bayt": 37643,
+      "ffprobe": "ok"
+    }
+  ],
+  "supheli_ornek": [
+    {
+      "sektor": "Fast Food",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Dönerci",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Lahmacuncu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Hamburgerci",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Tavukçu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Tavukçu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Tavukçu",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Moon Close Up (Free to Use Stock Video Footage).webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "1992 stock units 91045, 92045 et al departing from Bank station towards St Paul's, Jan 2022.webm",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Büfe",
+      "grup": "Fast Food & Büfe",
+      "baslik": "Creation of a Papa Murphy’s Pizza.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Fırın",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Simitçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Porto Santo from a moving car.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "WP25 Anthem video.webm",
+      "dosya": "video/hero_5.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Clean.webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Caption.webm",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9.webm",
+      "dosya": "video/hero_8.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9 Caption.webm",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 30\" AI 9x16.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Porto Santo from a moving car.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "WP25 Anthem video.webm",
+      "dosya": "video/hero_5.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Clean.webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Caption.webm",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9.webm",
+      "dosya": "video/hero_8.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9 Caption.webm",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 30\" AI 9x16.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Porto Santo from a moving car.webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "WP25 Anthem video.webm",
+      "dosya": "video/hero_5.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Clean.webm",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 15 9x16 Caption.webm",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9.webm",
+      "dosya": "video/hero_8.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 Anthem 15\" 16x9 Caption.webm",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Kin Wikipedia 25 30\" AI 9x16.webm",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Tatlıcı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "How to cook Poffertjes for fast Money..webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Tatlıcı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Porto Santo from a moving car.webm",
+      "dosya": "video/hero_4.mp4"
+    }
+  ],
+  "genel_yedek_ornek": [
+    {
+      "sektor": "Börekçi",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Baklavacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Pastane",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Tatlıcı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Dondurmacı",
+      "grup": "Fırın & Tatlı",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Yemek Servisi",
+      "grup": "Yemek Servisi",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Market",
+      "grup": "Gıda Perakende",
+      "baslik": "San Antonio, TX, Food Bank (20111031 FNS LSC 9001).webm",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Mutfak Mağazası",
+      "grup": "Mobilya & Dekorasyon",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Züccaciye",
+      "grup": "Mobilya & Dekorasyon",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "İç Dekorasyon",
+      "grup": "Mobilya & Dekorasyon",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Süpürge Mağazası",
+      "grup": "Mobilya & Dekorasyon",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Perde & Stor",
+      "grup": "Mobilya & Dekorasyon",
+      "baslik": "Boston by streetcar, 1903. Boston Elevated Railway trolley and elevated cars..theora.ogv",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Boya Bayii",
+      "grup": "Yapı & Hırdavat",
+      "baslik": "Backlight (Ambilight) from \"DreamScreen\" mounted to TV screen including sidekick lights.webm",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Boya Bayii",
+      "grup": "Yapı & Hırdavat",
+      "baslik": "Backlight (Ambilight) from \"DreamScreen\" mounted to TV screen including sidekick lights edited 0.webm",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Boya Bayii",
+      "grup": "Yapı & Hırdavat",
+      "baslik": "The People's Garden (20120824 DM LSC 9004).webm",
+      "dosya": "video/hero_6.mp4"
+    }
+  ],
+  "yetim_ornek": [
+    "ev_yemekleri/video/hero_3.mp4",
+    "ev_yemekleri/photos/img_10.webp",
+    "ev_yemekleri/photos/img_3.webp",
+    "ev_yemekleri/photos/img_4.webp",
+    "ev_yemekleri/photos/img_5.webp",
+    "ev_yemekleri/photos/img_6.webp",
+    "ev_yemekleri/photos/img_7.webp",
+    "ev_yemekleri/photos/img_8.webp",
+    "ev_yemekleri/photos/img_9.webp",
+    "lahmacuncu/video/hero_2.mp4",
+    "lahmacuncu/video/hero_3.mp4",
+    "lahmacuncu/video/hero_4.mp4",
+    "lahmacuncu/video/hero_5.mp4",
+    "lahmacuncu/video/hero_6.mp4",
+    "lahmacuncu/video/hero_7.mp4",
+    "lahmacuncu/photos/img_10.webp",
+    "lahmacuncu/photos/img_3.webp",
+    "lahmacuncu/photos/img_4.webp",
+    "lahmacuncu/photos/img_5.webp",
+    "lahmacuncu/photos/img_6.webp",
+    "lahmacuncu/photos/img_7.webp",
+    "lahmacuncu/photos/img_8.webp",
+    "lahmacuncu/photos/img_9.webp",
+    "cig_kofteci/video/hero_2.mp4",
+    "cig_kofteci/video/hero_3.mp4",
+    "cig_kofteci/video/hero_4.mp4",
+    "cig_kofteci/video/hero_5.mp4",
+    "cig_kofteci/video/hero_6.mp4",
+    "cig_kofteci/photos/img_10.webp",
+    "cig_kofteci/photos/img_3.webp",
+    "cig_kofteci/photos/img_4.webp",
+    "cig_kofteci/photos/img_5.webp",
+    "cig_kofteci/photos/img_6.webp",
+    "cig_kofteci/photos/img_7.webp",
+    "cig_kofteci/photos/img_8.webp",
+    "cig_kofteci/photos/img_9.webp",
+    "bufe/photos/img_3.webp",
+    "bufe/photos/img_4.webp",
+    "bufe/photos/img_5.webp",
+    "bufe/photos/img_6.webp"
+  ],
+  "basliksiz_ornek": [
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_1.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_4.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_5.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_6.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_7.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_8.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_8.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_9.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_10.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "video/hero_2.mp4"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_1.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_2.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_3.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_4.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_5.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_6.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_7.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_8.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_9.webp"
+    },
+    {
+      "sektor": "Restoran",
+      "dosya": "photos/img_10.webp"
+    },
+    {
+      "sektor": "Kebapçı",
+      "dosya": "video/hero_1.mp4"
+    },
+    {
+      "sektor": "Kebapçı",
+      "dosya": "video/hero_3.mp4"
+    },
+    {
+      "sektor": "Kebapçı",
+      "dosya": "video/hero_4.mp4"
+    }
+  ],
+  "teknik": [
+    {
+      "sektor": "Antikacı",
+      "dosya": "video/hero_7.mp4",
+      "tur": "video",
+      "bayt": 986434,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Antikacı",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 986434,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Antikacı",
+      "dosya": "video/hero_9.mp4",
+      "tur": "video",
+      "bayt": 1635651,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Antikacı",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 561548,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Antikacı",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 438936,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Antikacı",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 272012,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1126,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kan Merkezi",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 335960,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kan Merkezi",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 357446,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1430,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kan Merkezi",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 1189302,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2844,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kafe",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2773180,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Kafe",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 593288,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kafe",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 593288,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kafe",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 593288,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kahveci",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 449288,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1380,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kahveci",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 326130,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kahveci",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 306206,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1224,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Depolama",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 1791531,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Depolama",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 1634706,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Depolama",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 4087617,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Depolama",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 275756,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 964,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Depolama",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 350504,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Depolama",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 916086,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1440,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Tavukçu",
+      "dosya": "video/hero_8.mp4",
+      "tur": "video",
+      "bayt": 2220096,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Tavukçu",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 2220096,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Tavukçu",
+      "dosya": "video/hero_9.mp4",
+      "tur": "video",
+      "bayt": 3785127,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Tavukçu",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 147880,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 900,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Tavukçu",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 349220,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Tavukçu",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 349408,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Elektronik",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 735450,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2936,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Elektronik",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 115024,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1088,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Elektronik",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 361982,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Ses Sistemleri",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 115024,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1088,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Ses Sistemleri",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 924188,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2854,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Ses Sistemleri",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 363194,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Aktar",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 1683913,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Aktar",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 3867103,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Aktar",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 964188,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Aktar",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 589922,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Aktar",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 403404,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Aktar",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 454026,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Takviye Gıda",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 3867103,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Takviye Gıda",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 1683913,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Takviye Gıda",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 964188,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Takviye Gıda",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 403404,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Takviye Gıda",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 193738,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1046,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Takviye Gıda",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 589922,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Pastane",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 3785127,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Pastane",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 1648555,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Pastane",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 1653902,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Pastane",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 23816,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 736,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Pastane",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 328964,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Pastane",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 430848,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Sürücü Kursu",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 261882,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Sürücü Kursu",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 277376,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Sürücü Kursu",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 228658,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Hastane",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 335960,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Hastane",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 483812,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1186,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Hastane",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 314254,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kahvaltı Salonu",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2773180,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Kahvaltı Salonu",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 413666,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1064,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kahvaltı Salonu",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 320842,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kahvaltı Salonu",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 326130,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Okul",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 179238,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Okul",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 872880,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Okul",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 352852,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Model & Maket",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 640482,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Model & Maket",
+      "dosya": "video/hero_7.mp4",
+      "tur": "video",
+      "bayt": 1191334,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Model & Maket",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 1554959,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Model & Maket",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 233730,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Model & Maket",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 352088,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1184,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Model & Maket",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 438936,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Züccaciye",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 2511008,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Züccaciye",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 1667180,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 10.67
+    },
+    {
+      "sektor": "Züccaciye",
+      "dosya": "video/hero_7.mp4",
+      "tur": "video",
+      "bayt": 1798283,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Züccaciye",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 265994,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 832,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Züccaciye",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 411968,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Züccaciye",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 852746,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Epilasyon",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 167901,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Epilasyon",
+      "dosya": "video/hero_6.mp4",
+      "tur": "video",
+      "bayt": 1888540,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Epilasyon",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 3363372,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Epilasyon",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 134476,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Epilasyon",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 113218,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Epilasyon",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 743118,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "dosya": "video/hero_6.mp4",
+      "tur": "video",
+      "bayt": 3527724,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "dosya": "video/hero_8.mp4",
+      "tur": "video",
+      "bayt": 3750947,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 886398,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 656188,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1172,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 734878,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2014,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Balık Restoranı",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 423030,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1472,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dondurmacı",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 1648555,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dondurmacı",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 1653902,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dondurmacı",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 2511008,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dondurmacı",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 767598,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dondurmacı",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 459526,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dondurmacı",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 392794,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Halı Yıkama",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 482161,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Halı Yıkama",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 1197615,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Halı Yıkama",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2926959,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Halı Yıkama",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 602986,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Halı Yıkama",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 711070,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Halı Yıkama",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 660258,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Akvaryumcu",
+      "dosya": "video/hero_9.mp4",
+      "tur": "video",
+      "bayt": 3797835,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Akvaryumcu",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 3797835,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Akvaryumcu",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2698312,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Akvaryumcu",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 634762,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1206,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Akvaryumcu",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 380982,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Akvaryumcu",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 387362,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1090,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 3339952,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 2676026,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 3339952,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 349408,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 412344,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çiğ Köfteci",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 554956,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kamyon & Ticari Araç",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 1983344,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Kamyon & Ticari Araç",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 1410278,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Kamyon & Ticari Araç",
+      "dosya": "video/hero_8.mp4",
+      "tur": "video",
+      "bayt": 1558587,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Kamyon & Ticari Araç",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 283542,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kamyon & Ticari Araç",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 513008,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kamyon & Ticari Araç",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 294208,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kitapçı",
+      "dosya": "video/hero_6.mp4",
+      "tur": "video",
+      "bayt": 3325134,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 10.0
+    },
+    {
+      "sektor": "Kitapçı",
+      "dosya": "video/hero_8.mp4",
+      "tur": "video",
+      "bayt": 714235,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 11.8
+    },
+    {
+      "sektor": "Kitapçı",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 1000412,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Kitapçı",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 376146,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kitapçı",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 485760,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Kitapçı",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 452958,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1202,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Oto Galeri",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1558587,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Oto Galeri",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 1558587,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Oto Galeri",
+      "dosya": "video/hero_9.mp4",
+      "tur": "video",
+      "bayt": 1410278,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Oto Galeri",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 294208,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Oto Galeri",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 513008,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Oto Galeri",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 292014,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Bungalov",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1716160,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Bungalov",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 1224549,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Bungalov",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 3475580,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 11.87
+    },
+    {
+      "sektor": "Bungalov",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 192044,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Bungalov",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 196428,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Bungalov",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 193488,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1184,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Parfümeri",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 167901,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Parfümeri",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 4536032,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Parfümeri",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 849134,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Parfümeri",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 254420,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Parfümeri",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 322448,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Parfümeri",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 460086,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Göz Kliniği",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 2983667,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Göz Kliniği",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1491914,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 11.97
+    },
+    {
+      "sektor": "Göz Kliniği",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 1211901,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Göz Kliniği",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 780746,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1826,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Göz Kliniği",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 335960,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Göz Kliniği",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 357446,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1430,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Birahane",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 804709,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Birahane",
+      "dosya": "video/hero_9.mp4",
+      "tur": "video",
+      "bayt": 4532317,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Birahane",
+      "dosya": "video/hero_8.mp4",
+      "tur": "video",
+      "bayt": 1239950,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Birahane",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 369272,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Birahane",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 197464,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Birahane",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 367960,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Apart Otel",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1716160,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Apart Otel",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 3475580,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 11.87
+    },
+    {
+      "sektor": "Apart Otel",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 2588909,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Apart Otel",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 193488,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1184,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Apart Otel",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 375578,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2844,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Apart Otel",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 104692,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 618,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çanta",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 1506007,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çanta",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 1847569,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çanta",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2826230,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çanta",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 452334,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çanta",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 792180,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çanta",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 640532,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Bahçe Merkezi",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 5203849,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Bahçe Merkezi",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 2511008,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Bahçe Merkezi",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 568969,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Bahçe Merkezi",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 589534,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Bahçe Merkezi",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 505982,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1062,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Bahçe Merkezi",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 234744,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Terzi",
+      "dosya": "video/hero_6.mp4",
+      "tur": "video",
+      "bayt": 1143838,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Terzi",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 2727629,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Terzi",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2611803,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Terzi",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 407296,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Terzi",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 307776,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Terzi",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 926904,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2170,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dövme",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 849134,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dövme",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 3368649,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dövme",
+      "dosya": "video/hero_6.mp4",
+      "tur": "video",
+      "bayt": 1888540,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dövme",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 254420,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dövme",
+      "dosya": "photos/img_10.webp",
+      "tur": "foto",
+      "bayt": 369742,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dövme",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 322448,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2400,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Manav",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 964188,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Manav",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1604796,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Manav",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 222834,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1070,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Manav",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 583598,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2418,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Manav",
+      "dosya": "photos/img_5.webp",
+      "tur": "foto",
+      "bayt": 340926,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1092,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Perdeci",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 2428993,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Perdeci",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1017809,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Perdeci",
+      "dosya": "photos/img_9.webp",
+      "tur": "foto",
+      "bayt": 630192,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Perdeci",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 785928,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Perdeci",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 883244,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1066,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dönerci",
+      "dosya": "video/hero_4.mp4",
+      "tur": "video",
+      "bayt": 3339952,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dönerci",
+      "dosya": "video/hero_5.mp4",
+      "tur": "video",
+      "bayt": 2970907,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 10.2
+    },
+    {
+      "sektor": "Dönerci",
+      "dosya": "video/hero_6.mp4",
+      "tur": "video",
+      "bayt": 2220096,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Dönerci",
+      "dosya": "photos/img_3.webp",
+      "tur": "foto",
+      "bayt": 412344,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dönerci",
+      "dosya": "photos/img_7.webp",
+      "tur": "foto",
+      "bayt": 554956,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2134,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Dönerci",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 349408,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çikolata",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 964188,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Çikolata",
+      "dosya": "photos/img_1.webp",
+      "tur": "foto",
+      "bayt": 222834,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1070,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çikolata",
+      "dosya": "photos/img_4.webp",
+      "tur": "foto",
+      "bayt": 593504,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2350,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Çikolata",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 641894,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2350,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Plaj Tesisi",
+      "dosya": "video/hero_1.mp4",
+      "tur": "video",
+      "bayt": 3475580,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 11.87
+    },
+    {
+      "sektor": "Plaj Tesisi",
+      "dosya": "video/hero_3.mp4",
+      "tur": "video",
+      "bayt": 2588909,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Plaj Tesisi",
+      "dosya": "video/hero_2.mp4",
+      "tur": "video",
+      "bayt": 1716160,
+      "sorun": [],
+      "genislik": 1280,
+      "yukseklik": 720,
+      "codec": "h264",
+      "sure": 12.0
+    },
+    {
+      "sektor": "Plaj Tesisi",
+      "dosya": "photos/img_6.webp",
+      "tur": "foto",
+      "bayt": 196428,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1200,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Plaj Tesisi",
+      "dosya": "photos/img_8.webp",
+      "tur": "foto",
+      "bayt": 375578,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 2844,
+      "codec": "webp",
+      "sure": 0.0
+    },
+    {
+      "sektor": "Plaj Tesisi",
+      "dosya": "photos/img_2.webp",
+      "tur": "foto",
+      "bayt": 193488,
+      "sorun": [],
+      "genislik": 1600,
+      "yukseklik": 1184,
+      "codec": "webp",
+      "sure": 0.0
+    }
+  ]
+}
