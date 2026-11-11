@@ -1,0 +1,161 @@
+{
+  "gun": "2026-11-06",
+  "hedefler": [
+    {
+      "anahtar": "google:ChIJ72vBq2ucuRQRRDlMuwEX2JM",
+      "ad": "SALİHLİ DİVAN ODUN KÖFTE & ÇORBA SALONU",
+      "adres": "Çarşı Çimentepe Cad. Çimentepe cad: No:9/1 Manisa eski ptt arkası Salihli divan çorbacı merkez, Çarşı, 45010 Manisa Merkez/Manisa",
+      "telefon": "(0236) 231 77 80",
+      "sektor": "Restoran",
+      "konum": [
+        38.6133876,
+        27.430903599999997
+      ],
+      "lead_idx": 0,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJbQL9VhOcuRQRcclH_VuLnK4",
+      "ad": "Taş Fabrika",
+      "adres": "1. Anafartalar, Konuk Cd. No:8, 45020 Şehzadeler/Manisa",
+      "telefon": "(0236) 250 00 00",
+      "sektor": "Restoran",
+      "konum": [
+        38.6147184,
+        27.4333552
+      ],
+      "lead_idx": 1,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJZ2L3cWycuRQRlEJ6Da-r4-8",
+      "ad": "Menekşe Kasap Lokantası",
+      "adres": "Peker, Hakkı İplikçi Cd. No:42, 45020 Manisa Merkez/Manisa",
+      "telefon": "(0236) 222 22 00",
+      "sektor": "Restoran",
+      "konum": [
+        38.6164516,
+        27.4279516
+      ],
+      "lead_idx": 2,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJ2x60xdCcuRQRp8YF6cvr78o",
+      "ad": "Efendi Restoran",
+      "adres": "Uncubozköy, 5553. Sk. No:1, 45030 Manisa Merkez/Manisa",
+      "telefon": "(0236) 233 36 45",
+      "sektor": "Restoran",
+      "konum": [
+        38.6114542,
+        27.3716557
+      ],
+      "lead_idx": 3,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJ_bRc5x-duRQR1BbGzd6oJyQ",
+      "ad": "Gölet Restaurant Manisa",
+      "adres": "Kent ormanı, Uncubozköy, 45030 Yunusemre/Manisa",
+      "telefon": "0534 647 99 44",
+      "sektor": "Restoran",
+      "konum": [
+        38.6021395,
+        27.3867298
+      ],
+      "lead_idx": 4,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJw3UrpgeduRQRzxzJjg5VylM",
+      "ad": "Emret Steakhouse (Keçiliköy Şubesi)",
+      "adres": "Keçili Köy, 5642. Sk. No:25 D:3, 45110 Yunusemre/Manisa",
+      "telefon": "0554 934 63 35",
+      "sektor": "Restoran",
+      "konum": [
+        38.6112723,
+        27.362241899999997
+      ],
+      "lead_idx": 5,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJPx5bl2ucuRQR-X2F8CFcYB4",
+      "ad": "Teras Restoran",
+      "adres": "Yarhasanlar, Konuk Cd. 52 C, 45020 Merkez/Şehzadeler/Manisa",
+      "telefon": "(0236) 231 33 93",
+      "sektor": "Restoran",
+      "konum": [
+        38.614933,
+        27.4284477
+      ],
+      "lead_idx": 6,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJ5femQhOcuRQRpQxvRZy--uc",
+      "ad": "Dergah Cafe&Bar Ocakbaşı Restoran",
+      "adres": "1. Anafartalar, Belediye Cd. 5 A, 45020 Merkez/Manisa",
+      "telefon": "0539 308 47 59",
+      "sektor": "Restoran",
+      "konum": [
+        38.6152897,
+        27.433689899999997
+      ],
+      "lead_idx": 7,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJs8BQnMuduRQRrfbIosJ6yig",
+      "ad": "Şafak Ayhan Usta",
+      "adres": "Çarşı, Çimentepe Cd. No:3/A, 45010 Şehzadeler/Manisa",
+      "telefon": "0533 767 19 81",
+      "sektor": "Restoran",
+      "konum": [
+        38.6133816,
+        27.4312615
+      ],
+      "lead_idx": 8,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJT8PREk-duRQRBrXa-7qw_nE",
+      "ad": "Cajun Corner Manisa Şehzadeler",
+      "adres": "Utku, Çimentepe Cd. No:6 D:C, 45000 Şehzadeler/Manisa",
+      "telefon": "0552 777 37 33",
+      "sektor": "Restoran",
+      "konum": [
+        38.613503699999995,
+        27.429947
+      ],
+      "lead_idx": 9,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJ92xrgsmduRQR7GxdY54Q1Fg",
+      "ad": "Elezz ızgara,Manisa kebap,pide ve lahmacun",
+      "adres": "1. Anafartalar, 1601. Sk. No:14, 45020 Şehzadeler/Manisa",
+      "telefon": "(0236) 233 00 01",
+      "sektor": "Restoran",
+      "konum": [
+        38.6136991,
+        27.4309269
+      ],
+      "lead_idx": 10,
+      "tamam": false
+    },
+    {
+      "anahtar": "google:ChIJR_WMmmeduRQRsnMpPRfG5nQ",
+      "ad": "Beyoğlu Restaurant Manisa",
+      "adres": "Mahallesi, 1. Anafartalar, 1612. Sk. No:5/1, 45060 Şehzadeler/Manisa",
+      "telefon": "(0236) 222 19 19",
+      "sektor": "Restoran",
+      "konum": [
+        38.6144517,
+        27.431169900000004
+      ],
+      "lead_idx": 11,
+      "tamam": false
+    }
+  ]
+}

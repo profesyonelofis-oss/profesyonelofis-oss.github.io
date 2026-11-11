@@ -1,0 +1,152 @@
+NEXUS ENTERPRISE - MASAÜSTÜ UYGULAMASI (ollama_proje.exe)
+Web sitesi olmayan işletmeleri bulan, onlara hazır demo site üreten ve WhatsApp
+üzerinden satış takibini yürüten tek dosyalık Windows programı. Kurulum
+gerektirmez; veriler exe'nin yanında durur. Harici CDN, CSS/JS çatısı veya
+ücretli API kullanmaz.
+
+1) NE YAPAR (KISACA)
+- 81 il ve tüm ilçelerde, 11 grupta 20 sektör içinde işletme tarar.
+- Listeye yalnızca telefonu olan ve gerçek web sitesi olmayan işletmeler girer.
+- Her işletme için tek dosyalık demo site, dijital karne ve yayın linki üretir.
+- Sektör medyasını manuel panelden ekler; yerel Qwen doğrulaması ve onay akışı uygular.
+- WhatsApp mesajını önizler, günlük limiti sayar, takip ve tahsilatı izler.
+
+2) KEŞİF VE RADAR
+- İl/ilçe yazarak aranır (en fazla 5 öneri); 81 il, 973 ilçe.
+- Tarama OpenStreetMap (Overpass) üzerinden ücretsiz yürür.
+- İlçe boş dönerse Google Places yedeği devreye girer, her istek kotaya yazılır.
+- OSM'de telefon yoksa işletme Google'da adıyla aranır; ad benzerliği + mesafe
+  puanıyla eşleşir, bulunamazsa kayıt elenir.
+- Sonuçlar satın alma potansiyeline göre sıralanır.
+- Seçilen işletmeler haritada işaretlenir (gömülü WebView2 harita, kota harcamaz).
+- "Bugünün listesi": günlük haktaki sıradaki işletmeler hazır mesajla çıkar.
+- Sol panelde sektör verimi: hangi sektörün kaç kayıt döndürdüğü görünür.
+- Sonuç içinde arama, filtre ve CSV indirme vardır.
+
+3) DEMO MOTORU (tek dosya HTML)
+- Üç profil: Klasik (çok bölümlü), Ajans (5 bölüm), Sinematik (3-6 sahne).
+- Sabit cam menü, sektöre göre renklenen hero, kaydırınca açılan bölümler,
+  mobil menü, gömülü font; dış istek yok.
+- Sektöre göre tipografi çifti (Instrument Serif / Space Grotesk), gövde Geist.
+- Galeri üç kademeli dolar: işletme fotoğrafları, Street View karesi, aynı
+  sektörden örnek kareler; kaynak ve atıf sayfada yazar.
+- Sinematik premium katman: yükleme perdesi (ad + yüzde sayacı), harf harf
+  maskeli manşet, kaydırmayla ölçek/opaklık, sahne geçiş perdesi ve sticky
+  üst üste binme, cam menü, masaüstü özel imleç, manyetik butonlar, kayan yazı
+  şeridi, film greni, vinyet, video üstü okunabilirlik karartması.
+- Mobilde büyük dokunma alanları, sabit Ara/WhatsApp çubuğu, yatay taşma yok.
+- "Animasyonu azalt" açıksa tüm hareket kapanır; JS kapalıysa içerik görünür.
+- "Temiz derleme": müşteri sürümünde demo şeridi, taslak notu, saatlik sayaç,
+  örnek yorumlar ve stok kareler sayfadan çıkarılır.
+
+4) SİNEMATİK VARLIKLAR (YEREL VİDEO, API'SİZ)
+- Sektör grubu seç → videoyu pencereye sürükle-bırak veya dosya yolunu yapıştır.
+- Program ffmpeg ile hazırlar: 720p, her kare anahtar kare, sessiz, en çok 8 sn;
+  poster.webp üretir, boyut ve süreyi gösterir, kaydeder.
+- 8 sn'den uzun videoda "başlangıç saniyesi" kutusuyla en güzel bölüm seçilir.
+- Üç künye alanı: kaynak bağlantısı, çekimi yapan, lisans notu (boş olabilir);
+  dolu alanlar KAYNAK.json'a yazılır, "atıf göster" işaretliyse altbilgiye girer.
+- Aynı sektöre birden fazla video kaydedilebilir; üretimde işletme adı+adresten
+  türeyen tohumla biri seçilir, komşu işletmeler farklı video alır.
+- mp4, mov, webm kabul eder; bozuk dosyada sade Türkçe hata verir.
+- Video yoksa sayfa sessizce shader'lı sinematik sürüme düşer.
+- Pexels/Pixabay araması ve anahtar kasası arayüzü kapalı; panelde anahtar
+  isteyen hiçbir alan yok (kod silinmedi, tek anahtarla açılabilir).
+
+5) MANUEL MEDYA PANELİ (YEREL AI DOĞRULAMALI)
+- Otomatik medya taraması kaldırıldı; panel yalnız `ollama_proje.exe --onizleme`
+  ile açılır (http://127.0.0.1:8080).
+- Güncel yapıdaki 20 sektörün medyası sektör seçilerek elle eklenir: kaynak
+  bağlantısı yapıştırılır ya da dosya yüklenir.
+- Her aday yerel Ollama/Qwen görsel modeliyle sektör etiketine göre doğrulanır;
+  skor %100 değilse dosya kuyruğa alınmaz (fail-closed).
+- Video 1920×1080 H.264, fotoğraf WebP olarak hazırlanır; kaynak ve lisans
+  bilgisi korunur.
+- Adaylar media/pending/<sektör>/ altında bekler; ONAYLA media/stock/<sektör>/
+  altına taşır, REDDET dosyayı diskten siler. Kota: 2 video + 2 fotoğraf.
+- Panelde bekleyen kuyruk ve sektör doluluk durumu görünür; tarama, duraklatma
+  veya toplu indirme düğmesi yoktur.
+- Onaylı video demo hero'sunda, fotoğraflar galeride kullanılır; atıf altbilgiye
+  eklenir. İçerik yoksa eski akış (grup videosu → shader) aynen sürer.
+
+6) ÖZELLEŞTİRME PANELİ
+- Renkler: zemin, yazı, vurgu + hazır paletler.
+- Bölüm anahtarları: galeri, yorumlar, harita, saatler (kapalıysa çizilmez).
+- Metinler: manşetin iki satırı, slogan, hakkında başlığı ve paragrafları,
+  bölüm etiketi/başlığı/alt yazısı, dört hizmet satırı, iki yorum.
+- Butonlar: birincil/ikincil buton yazısı.
+- Fotoğraflar: işletme fotoğrafı, fotoğrafsız tipografik sahne veya kendi
+  dosyan (JPEG/PNG/WebP); galeri otomatik/eklenen/kapalı, 1-6 kare.
+- Köşe biçimi: keskin / dengeli / yumuşak. Seçimler ayarlar.json'a yazılır.
+- "Mevcut demolara uygula": demos klasöründeki sayfaları güncel ayarlarla
+  baştan üretir; kaynağı olmayan eski sayfalara yalnız renkler işlenir.
+
+7) DİJİTAL KARNE
+- Her işletme için görünürlük karnesi: 100 üzerinden puan ve eksikler listesi.
+- LocalBusiness JSON-LD künyesi (ad, adres, telefon, koordinat); kayıtta
+  olmayan alan hiç yazılmaz.
+- Karne ayrı dosya olarak yazılır, demo sayfasına rozet olarak bağlanır.
+
+8) DOMAIN VE YAYIN
+- Alan adı uygunluğu RDAP ile ücretsiz sorgulanır; uzantıya göre yıllık
+  maliyet tahmini listelenir (.com.tr için "doğrulanamadı" der, uydurmaz).
+- Demo GitHub Pages'e yayınlanır, paylaşılabilir link üretilir.
+- "Yayından kaldır" dosyaları siler, link 404 döner, adres kayıttan temizlenir.
+- Temiz derleme yapılmadan yayın başlatılmaz.
+
+9) GELEN KUTUSU VE YEREL YAPAY ZEKÂ
+- Uygulama 127.0.0.1:8777 üzerinde küçük bir dinleyici açar (/gelen, /gönder,
+  /durum). Dışarıya bağlantı kurmaz, port yalnız yerel arayüze bakar.
+- Müşteri yanıtları gelen_kutusu.json'da tutulur; niyet (sıcak, fiyat,
+  beklemede, ret) anahtar sözcüklerle yerelde sınıflanır.
+- Yerel Ollama modeli varsa yanıt taslağı önerilir; gönderme kararı kullanıcıya
+  aittir, veri dışarı çıkmaz. Model yoksa elle yanıt akışı aynen çalışır.
+
+10) WHATSAPP SATIŞ AKIŞI
+- Mesaj önce önizlenir: metin, karakter sayısı, link sayısı, kalan günlük hak.
+- wa.me sınırına sığması için mesaj 900 karakterde kırpılır.
+- Günde en fazla 20 mesaj; sayaç defterde tutulur, yeniden açılışta sürer.
+- "WhatsApp'ı aç ve gönder" veya "Metni kopyala" (WhatsApp Desktop).
+- Sabit hat numaraları "sabit hat" diye işaretlenir.
+- "Gönderdim" işaretlenen kayıt takip kuyruğuna girer; 3 gün sonra tek tuşla
+  hatırlatma mesajı hazırlanır.
+- Paket (tek sayfa / çok sayfa / bakım), tutar ve ödeme durumu girilir; kısmi
+  ödemede kalan bakiye görünür; "Ödeme bekleyen" üç günü dolanları listeler.
+- "RET" işaretlenen işletme kara listeye düşer, bir daha mesaj hazırlanmaz.
+- A/B mesaj denemesi: varyant sektör içinde dengeli dağıtılır; 30 gönderimin
+  altında "örneklem yetersiz" uyarısı verilir.
+
+11) KOTA VE MALİYET KORUMASI
+- Google istekleri tek modülden geçer; anahtar başka yerde okunmaz.
+- Günlük/aylık sınır istek atılmadan önce sayılır (ayarlar.json: 20 / 400);
+  eşzamanlı istekler kotayı iki kez harcayamaz.
+- Tekrarlanan ilçe taramaları önbellekten gelir, kota ikinci kez harcanmaz.
+- Harita paneli ağa hiç çıkmaz.
+- Street View karesi yalnız panorama varsa ve bütçe yeterliyse istenir; kareler
+  önbellekte tutulur, renk değiştirmek yeniden ücret ödetmez.
+
+12) VERİ, GÜVENLİK, BAKIM
+- Google API anahtarı düz metin yazılmaz: AES-256-GCM şifreli kasa, makineye
+  bağlı anahtar; eski .env anahtarı ilk açılışta kasaya taşınır.
+- İşletme defteri musteri_kayitlari.json; her yazmadan önce otomatik yedek.
+- Açılışta sağlık denetimi: veri dosyaları, WhatsApp köprüsü, yapay zekâ ve
+  harita bağlantısı sınanır; çözülebilen sorunlar kendiliğinden onarılır.
+- Hafif öğrenme hafızası (memory/agent_learning.json): onaylanan palet ve
+  animasyon sınıfı sonraki demolarda uygulanır, panelden temizlenir.
+- Beklenmeyen hatada pencere kapanmaz; sade Türkçe açıklama ve log gösterilir.
+- Yedekleme betikleri: YEDEK_AL.bat / YEDEK_KUR.bat / YEDEK_SIL.bat.
+
+13) ÇALIŞMA ORTAMI VE DOSYALAR
+- Windows 10/11 (64-bit), WebView2 Runtime, internet bağlantısı.
+- Kurulum yok; exe çift tıkla açılır.
+- Veriler exe'nin yanında: musteri_kayitlari.json, ayarlar.json, demos/,
+  onbellek/, media/, media_manifest.json, gelen_kutusu.json.
+- Klasör çıktısı: demos/sinematik/<işletme>/index.html + media/ (hero.mp4,
+  poster.webp, KAYNAK.json).
+
+14) İLKELER
+- Uydurma veri yok: puan, yorum, adres, fiyat yalnız kayıtta varsa yazılır.
+- Fiyat listesi hiçbir sayfada yoktur; teklif görüşmede verilir.
+- Ücretli API ve CDN kullanılmaz; medya yalnız ücretsiz lisanslı kaynaklardan
+  ve kullanıcının onayıyla indirilir.
+- Toplu otomatik WhatsApp gönderimi yapılmaz; gönderimi kullanıcı onaylar.
