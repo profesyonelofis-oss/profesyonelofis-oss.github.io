@@ -1,0 +1,9 @@
+2026/11/06-23:15:28.659 37b0 Reusing MANIFEST D:\ollama_proje\.gecici\webview2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/06-23:15:28.659 37b0 Recovering log #70
+2026/11/06-23:15:28.661 37b0 Reusing old log D:\ollama_proje\.gecici\webview2\EBWebView\Default\Local Storage\leveldb/000070.log 
+2026/11/06-23:15:38.331 5bc8 Level-0 table #75: started
+2026/11/06-23:15:38.334 5bc8 Level-0 table #75: 55265 bytes OK
+2026/11/06-23:15:38.335 5bc8 Delete type=0 #70
+2026/11/06-23:16:17.815 5bc8 Level-0 table #77: started
+2026/11/06-23:16:17.820 5bc8 Level-0 table #77: 27860 bytes OK
+2026/11/06-23:16:17.821 5bc8 Delete type=0 #74
