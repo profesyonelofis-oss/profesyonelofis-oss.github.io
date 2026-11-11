@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bölge sıralama haritası · Saruhanlı Oto Kurtarma</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root{--yesil:#12523f;--sari:#b8860b;--gri:#9aa6a0;--murekkep:#111814}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font:15px/1.5 system-ui,"Segoe UI",Arial;color:var(--murekkep);background:#eef1ec}
+  #harita{position:absolute;inset:0}
+  .panel{position:absolute;left:22px;top:22px;z-index:500;width:326px;background:#fff;border-radius:14px;
+    padding:18px 18px 14px;box-shadow:0 18px 40px rgba(15,35,26,.16);border:1px solid #dde5df}
+  .panel h1{margin:0;font-size:19px;line-height:1.25;letter-spacing:-.01em}
+  .panel .alt{margin:6px 0 14px;font-size:12px;color:#5b665f}
+  .olcu{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px}
+  .olcu div{background:#f4f7f3;border-radius:9px;padding:8px 9px}
+  .olcu b{display:block;font-size:19px;line-height:1.1}
+  .olcu span{font-size:10.5px;color:#5b665f;letter-spacing:.02em}
+  .lej{margin:0;padding:0;list-style:none;font-size:12.5px}
+  .lej li{display:flex;align-items:center;gap:9px;padding:4px 0}
+  .nokta{width:13px;height:13px;border-radius:50%;display:inline-block;flex:0 0 13px}
+  .not{margin:12px 0 0;padding-top:10px;border-top:1px solid #e6ece6;font-size:11px;color:#6b766f}
+  .leaflet-popup-content{font-size:13px;line-height:1.5}
+  .leaflet-popup-content b{font-size:14px}
+  @media (max-width:720px){
+    .panel{left:10px;right:10px;top:10px;width:auto;padding:14px}
+    .panel h1{font-size:16px}
+  }
+</style>
+</head>
+<body>
+<div id="harita"></div>
+<div class="panel">
+  <h1>Bölge sıralama haritası</h1>
+  <p class="alt">Google Haritalar · “çekici &lt;ilçe&gt;” · 10 Kasım 2026</p>
+  <div class="olcu">
+    <div><b>30</b><span>bölge</span></div>
+    <div><b>1</b><span>görünür bölge</span></div>
+    <div><b>3.</b><span>en iyi sıra</span></div>
+  </div>
+  <ul class="lej">
+    <li><span class="nokta" style="background:#12523f"></span>İlk 3 — görünüyoruz</li>
+    <li><span class="nokta" style="background:#b8860b"></span>4–10 arası</li>
+    <li><span class="nokta" style="background:#9aa6a0"></span>İlk 6’da yok</li>
+  </ul>
+  <p class="not">Daire boyutu, o ilçede ilk sıradaki işletmenin yorum sayısını gösterir.
+  Konum belirtilmeden yapılan arama; kendi telefonunuzda sıra farklı çıkabilir.</p>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+var noktalar = [{"ad": "balikesir-merkez", "ilce": "Merkez", "il": "Balıkesir", "lat": 39.65, "lon": 27.89, "sira": 0, "rakip": 111}, {"ad": "balikesir-savastepe", "ilce": "Savaştepe", "il": "Balıkesir", "lat": 39.3836, "lon": 27.6553, "sira": 0, "rakip": 108}, {"ad": "balikesir-susurluk", "ilce": "Susurluk", "il": "Balıkesir", "lat": 39.91, "lon": 28.16, "sira": 0, "rakip": null}, {"ad": "bursa-gemlik", "ilce": "Gemlik", "il": "Bursa", "lat": 40.43, "lon": 29.15, "sira": 0, "rakip": 34}, {"ad": "bursa-karacabey", "ilce": "Karacabey", "il": "Bursa", "lat": 40.215, "lon": 28.36, "sira": 0, "rakip": null}, {"ad": "bursa-nilufer", "ilce": "Nilüfer", "il": "Bursa", "lat": 40.215, "lon": 28.97, "sira": 0, "rakip": 44}, {"ad": "bursa-orhangazi", "ilce": "Orhangazi", "il": "Bursa", "lat": 40.49, "lon": 29.31, "sira": 0, "rakip": 23}, {"ad": "istanbul-kartal", "ilce": "Kartal", "il": "İstanbul", "lat": 40.9, "lon": 29.19, "sira": 0, "rakip": null}, {"ad": "istanbul-pendik", "ilce": "Pendik", "il": "İstanbul", "lat": 40.877, "lon": 29.23, "sira": 0, "rakip": 25}, {"ad": "istanbul-tuzla", "ilce": "Tuzla", "il": "İstanbul", "lat": 40.8175, "lon": 29.3, "sira": 0, "rakip": 40}, {"ad": "izmir-aliaga", "ilce": "Aliağa", "il": "İzmir", "lat": 38.8, "lon": 26.97, "sira": 0, "rakip": 87}, {"ad": "izmir-bornova", "ilce": "Bornova", "il": "İzmir", "lat": 38.47, "lon": 27.22, "sira": 0, "rakip": 20}, {"ad": "izmir-cigli", "ilce": "Çiğli", "il": "İzmir", "lat": 38.5, "lon": 27.06, "sira": 0, "rakip": null}, {"ad": "izmir-gaziemir", "ilce": "Gaziemir", "il": "İzmir", "lat": 38.39, "lon": 27.13, "sira": 0, "rakip": 546}, {"ad": "izmir-menemen", "ilce": "Menemen", "il": "İzmir", "lat": 38.61, "lon": 27.07, "sira": 0, "rakip": null}, {"ad": "izmir-torbali", "ilce": "Torbalı", "il": "İzmir", "lat": 38.16, "lon": 27.36, "sira": 0, "rakip": 13}, {"ad": "kocaeli-cayirova", "ilce": "Çayırova", "il": "Kocaeli", "lat": 40.82, "lon": 29.375, "sira": 0, "rakip": 26}, {"ad": "kocaeli-dilovasi", "ilce": "Dilovası", "il": "Kocaeli", "lat": 40.78, "lon": 29.535, "sira": 0, "rakip": 53}, {"ad": "kocaeli-gebze", "ilce": "Gebze", "il": "Kocaeli", "lat": 40.8, "lon": 29.43, "sira": 0, "rakip": 19}, {"ad": "manisa-akhisar", "ilce": "Akhisar", "il": "Manisa", "lat": 38.92, "lon": 27.84, "sira": 0, "rakip": 42}, {"ad": "manisa-kirkagac", "ilce": "Kırkağaç", "il": "Manisa", "lat": 39.1, "lon": 27.67, "sira": 0, "rakip": 66}, {"ad": "manisa-saruhanli", "ilce": "Saruhanlı", "il": "Manisa", "lat": 38.735, "lon": 27.565, "sira": 3, "rakip": 23}, {"ad": "manisa-sehzadeler", "ilce": "Şehzadeler", "il": "Manisa", "lat": 38.61, "lon": 27.43, "sira": 0, "rakip": 174}, {"ad": "manisa-soma", "ilce": "Soma", "il": "Manisa", "lat": 39.19, "lon": 27.61, "sira": 0, "rakip": 20}, {"ad": "manisa-yunusemre", "ilce": "Yunusemre", "il": "Manisa", "lat": 38.6, "lon": 27.4, "sira": 0, "rakip": 184}, {"ad": "otoyol-izmiristanbulotoyolu", "ilce": "İzmir–İstanbul Otoyolu", "il": "Otoyol", "lat": 39.9, "lon": 28.3, "sira": null, "rakip": null}, {"ad": "otoyol-o5otoyolu", "ilce": "O-5 Otoyolu", "il": "Otoyol", "lat": 39.45, "lon": 28.45, "sira": 0, "rakip": null}, {"ad": "yalova-altinova", "ilce": "Altınova", "il": "Yalova", "lat": 40.7, "lon": 29.51, "sira": 0, "rakip": null}, {"ad": "yalova-ciftlikkoy", "ilce": "Çiftlikköy", "il": "Yalova", "lat": 40.665, "lon": 29.32, "sira": 0, "rakip": 48}, {"ad": "yalova-cinarcik", "ilce": "Çınarcık", "il": "Yalova", "lat": 40.645, "lon": 29.12, "sira": 0, "rakip": null}];
+var harita = L.map('harita', {zoomControl:true, scrollWheelZoom:true}).setView([39.45, 28.6], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18, attribution: '&copy; OpenStreetMap'
+}).addTo(harita);
+
+function renk(n){
+  if(n.sira === null) return '#c9d1cb';
+  if(n.sira >= 1 && n.sira <= 3) return '#12523f';
+  if(n.sira >= 4 && n.sira <= 10) return '#b8860b';
+  return '#9aa6a0';
+}
+function yaricap(n){
+  if(!n.rakip) return 8;
+  return Math.min(22, 8 + Math.sqrt(n.rakip) * 0.72);
+}
+function etiket(n){
+  if(n.sira === null) return 'ölçülmedi';
+  if(n.sira === 0) return 'ilk 6’da yok';
+  return n.sira + '. sıra';
+}
+noktalar.forEach(function(n){
+  var m = L.circleMarker([n.lat, n.lon], {
+    radius: yaricap(n), color: '#ffffff', weight: 2, fillColor: renk(n), fillOpacity: .92
+  }).addTo(harita);
+  var rakip = n.rakip ? (n.rakip + ' yorum') : 'bilinmiyor';
+  m.bindPopup('<b>' + n.ilce + (n.il ? ' · ' + n.il : '') + '</b><br>' + etiket(n) +
+              '<br><span style="color:#5b665f">İlk sıradaki rakip: ' + rakip + '</span>');
+  if(n.sira && n.sira > 0){
+    m.bindTooltip(n.ilce + ' · ' + n.sira + '.', {permanent:true, direction:'top',
+      className:'etk', offset:[0,-2]});
+  }
+});
+
+harita.fitBounds(L.latLngBounds(noktalar.map(function(n){ return [n.lat, n.lon]; })), {
+  paddingTopLeft: [372, 46], paddingBottomRight: [46, 46]
+});
+</script>
+</body>
+</html>

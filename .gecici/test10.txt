@@ -1,0 +1,1282 @@
+warning: use of deprecated constant `std::f64::NEG_INFINITY`: replaced by the `NEG_INFINITY` associated constant on `f64`
+   --> vendor\egui-0.27.2\src\input_state.rs:697:40
+    |
+697 |             last_click_time: std::f64::NEG_INFINITY,
+    |                                        ^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated constant `std::f64::NEG_INFINITY`: replaced by the `NEG_INFINITY` associated constant on `f64`
+   --> vendor\egui-0.27.2\src\input_state.rs:698:45
+    |
+698 |             last_last_click_time: std::f64::NEG_INFINITY,
+    |                                             ^^^^^^^^^^^^
+
+warning: use of deprecated constant `std::f64::NEG_INFINITY`: replaced by the `NEG_INFINITY` associated constant on `f64`
+   --> vendor\egui-0.27.2\src\input_state.rs:699:39
+    |
+699 |             last_move_time: std::f64::NEG_INFINITY,
+    |                                       ^^^^^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+ --> vendor\egui-0.27.2\src\layout.rs:2:15
+  |
+2 | use std::f32::INFINITY;
+  |               ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:402:32
+    |
+402 |                 cursor.max.x = INFINITY;
+    |                                ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:405:33
+    |
+405 |                 cursor.min.x = -INFINITY;
+    |                                 ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:408:32
+    |
+408 |                 cursor.max.y = INFINITY;
+    |                                ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:411:33
+    |
+411 |                 cursor.min.y = -INFINITY;
+    |                                 ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:540:34
+    |
+540 | ...                   pos2(INFINITY, new_top + new_row_height),
+    |                            ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:552:35
+    |
+552 | ...                   pos2(-INFINITY, new_top),
+    |                             ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:564:78
+    |
+564 | ...                   pos2(cursor.right() + spacing.x + new_col_width, INFINITY),
+    |                                                                        ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:574:63
+    |
+574 | ...                   pos2(cursor.right() + spacing.x, -INFINITY),
+    |                                                         ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:717:34
+    |
+717 | ...                   pos2(INFINITY, frame_rect.max.y),
+    |                            ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:722:35
+    |
+722 | ...                   pos2(-INFINITY, frame_rect.min.y),
+    |                             ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:729:52
+    |
+729 | ...                   pos2(frame_rect.max.x, INFINITY),
+    |                                              ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:734:53
+    |
+734 | ...                   pos2(frame_rect.min.x, -INFINITY),
+    |                                               ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:776:30
+    |
+776 |                         pos2(INFINITY, new_top + region.cursor.height()),
+    |                              ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\layout.rs:782:31
+    |
+782 |                         pos2(-INFINITY, new_top),
+    |                               ^^^^^^^^
+
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor\egui-0.27.2\src\memory.rs:555:40
+    |
+555 |         let mut best_score = std::f32::INFINITY;
+    |                                        ^^^^^^^^
+
+warning: use of deprecated constant `std::f64::INFINITY`: replaced by the `INFINITY` associated constant on `f64`
+   --> vendor\egui-0.27.2\src\widgets\slider.rs:943:15
+    |
+943 | use std::f64::INFINITY;
+    |               ^^^^^^^^
+
+warning: use of deprecated constant `std::f64::INFINITY`: replaced by the `INFINITY` associated constant on `f64`
+    --> vendor\egui-0.27.2\src\widgets\slider.rs:1051:29
+     |
+1051 |     if min == 0.0 && max == INFINITY {
+     |                             ^^^^^^^^
+
+warning: use of deprecated constant `std::f64::INFINITY`: replaced by the `INFINITY` associated constant on `f64`
+    --> vendor\egui-0.27.2\src\widgets\slider.rs:1059:22
+     |
+1059 |     } else if max == INFINITY {
+     |                      ^^^^^^^^
+
+warning: use of deprecated constant `std::f64::INFINITY`: replaced by the `INFINITY` associated constant on `f64`
+    --> vendor\egui-0.27.2\src\widgets\slider.rs:1075:36
+     |
+1075 |     let min_magnitude = if min == -INFINITY {
+     |                                    ^^^^^^^^
+
+warning: use of deprecated constant `std::f64::INFINITY`: replaced by the `INFINITY` associated constant on `f64`
+    --> vendor\egui-0.27.2\src\widgets\slider.rs:1080:35
+     |
+1080 |     let max_magnitude = if max == INFINITY {
+     |                                   ^^^^^^^^
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1081:40
+     |
+1081 |             window_stroke: Stroke::new(1.0, Color32::from_gray(60)),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+     = note: `#[warn(float_literal_f32_fallback)]` (part of `#[warn(future_incompatible)]`) on by default
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1097:38
+     |
+1097 |             text_cursor: Stroke::new(2.0, Color32::from_rgb(192, 222, 255)),
+     |                                      ^^^ help: explicitly specify the type as `f32`: `2.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1138:40
+     |
+1138 |             window_stroke: Stroke::new(1.0, Color32::from_gray(190)),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1149:38
+     |
+1149 |             text_cursor: Stroke::new(2.0, Color32::from_rgb(0, 83, 125)),
+     |                                      ^^^ help: explicitly specify the type as `f32`: `2.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1166:33
+     |
+1166 |             stroke: Stroke::new(1.0, Color32::from_rgb(192, 222, 255)),
+     |                                 ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1173:33
+     |
+1173 |             stroke: Stroke::new(1.0, Color32::from_rgb(0, 83, 125)),
+     |                                 ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1190:40
+     |
+1190 |                 bg_stroke: Stroke::new(1.0, Color32::from_gray(60)), // separators, indentation lines
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1191:40
+     |
+1191 |                 fg_stroke: Stroke::new(1.0, Color32::from_gray(140)), // normal text color
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1199:40
+     |
+1199 |                 fg_stroke: Stroke::new(1.0, Color32::from_gray(180)), // button text
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1206:40
+     |
+1206 |                 bg_stroke: Stroke::new(1.0, Color32::from_gray(150)), // e.g. hover over window edge or button
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1207:40
+     |
+1207 |                 fg_stroke: Stroke::new(1.5, Color32::from_gray(240)),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.5_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1214:40
+     |
+1214 |                 bg_stroke: Stroke::new(1.0, Color32::WHITE),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1215:40
+     |
+1215 |                 fg_stroke: Stroke::new(2.0, Color32::WHITE),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `2.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1222:40
+     |
+1222 |                 bg_stroke: Stroke::new(1.0, Color32::from_gray(60)),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1223:40
+     |
+1223 |                 fg_stroke: Stroke::new(1.0, Color32::from_gray(210)),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1235:40
+     |
+1235 |                 bg_stroke: Stroke::new(1.0, Color32::from_gray(190)), // separators, indentation lines
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1236:40
+     |
+1236 |                 fg_stroke: Stroke::new(1.0, Color32::from_gray(80)),  // normal text color
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1244:40
+     |
+1244 |                 fg_stroke: Stroke::new(1.0, Color32::from_gray(60)), // button text
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1251:40
+     |
+1251 |                 bg_stroke: Stroke::new(1.0, Color32::from_gray(105)), // e.g. hover over window edge or button
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1252:40
+     |
+1252 |                 fg_stroke: Stroke::new(1.5, Color32::BLACK),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.5_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1259:40
+     |
+1259 |                 bg_stroke: Stroke::new(1.0, Color32::BLACK),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1260:40
+     |
+1260 |                 fg_stroke: Stroke::new(2.0, Color32::BLACK),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `2.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1267:40
+     |
+1267 |                 bg_stroke: Stroke::new(1.0, Color32::from_gray(160)),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+    --> vendor\egui-0.27.2\src\style.rs:1268:40
+     |
+1268 |                 fg_stroke: Stroke::new(1.0, Color32::BLACK),
+     |                                        ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+     |
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+     = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+   --> vendor\egui-0.27.2\src\widget_text.rs:376:32
+    |
+376 |             crate::Stroke::new(1.0, line_color)
+    |                                ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+   --> vendor\egui-0.27.2\src\widget_text.rs:381:32
+    |
+381 |             crate::Stroke::new(1.0, line_color)
+    |                                ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+   --> vendor\egui-0.27.2\src\widgets\label.rs:251:29
+    |
+251 |                 Stroke::new(1.0, response_color)
+    |                             ^^^ help: explicitly specify the type as `f32`: `1.0_f32`
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+   --> vendor\egui-0.27.2\src\widgets\progress_bar.rs:176:58
+    |
+176 |                     .add(Shape::line(points, Stroke::new(2.0, visuals.text_color())));
+    |                                                          ^^^ help: explicitly specify the type as `f32`: `2.0_f32`
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: falling back to `f32` as the trait bound `f32: From<f64>` is not satisfied
+  --> vendor\egui-0.27.2\src\widgets\spinner.rs:58:54
+   |
+58 |                 .add(Shape::line(points, Stroke::new(3.0, color)));
+   |                                                      ^^^ help: explicitly specify the type as `f32`: `3.0_f32`
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #154024 <https://github.com/rust-lang/rust/issues/154024>
+
+warning: `egui` (lib) generated 53 warnings (run `cargo fix --lib -p egui` to apply 29 suggestions)
+   Compiling ollama_proje v0.1.0 (D:\ollama_proje)
+warning: fields `idx`, `anahtar`, and `mesaj` are never read
+   --> src\main.rs:120:5
+    |
+119 | struct Onizleme {
+    |        -------- fields in this struct
+120 |     idx: usize,
+    |     ^^^
+121 |     anahtar: String,
+    |     ^^^^^^^
+122 |     mesaj: String,
+    |     ^^^^^
+    |
+    = note: `Onizleme` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variant `Foto` is never constructed
+   --> src\main.rs:163:5
+    |
+162 | enum MedyaTuru {
+    |      --------- variant in this enum
+163 |     Foto,
+    |     ^^^^
+    |
+    = note: `MedyaTuru` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: methods `baslik`, `alt_baslik`, `kabul`, and `uzantilar` are never used
+   --> src\main.rs:168:8
+    |
+167 | impl MedyaTuru {
+    | -------------- methods in this implementation
+168 |     fn baslik(self) -> &'static str {
+    |        ^^^^^^
+...
+175 |     fn alt_baslik(self) -> &'static str {
+    |        ^^^^^^^^^^
+...
+182 |     fn kabul(self, yol: &std::path::Path) -> bool {
+    |        ^^^^^
+...
+194 |     fn uzantilar(self) -> &'static [&'static str] {
+    |        ^^^^^^^^^
+
+warning: multiple fields are never read
+   --> src\main.rs:304:5
+    |
+253 | pub struct LeadApp {
+    |            ------- fields in this struct
+...
+304 |     tema_panel_acik: bool,
+    |     ^^^^^^^^^^^^^^^
+305 |     /// Hafıza paneli: serbest revizyon notu, kayıt listesi ve temizleme.
+306 |     hafiza_not: String,
+    |     ^^^^^^^^^^
+307 |     hafiza_panel: bool,
+    |     ^^^^^^^^^^^^
+308 |     hafiza_liste: Vec<ogrenme::Kayit>,
+    |     ^^^^^^^^^^^^
+309 |     hafiza_temizle_onay: bool,
+    |     ^^^^^^^^^^^^^^^^^^^
+...
+335 |     stok_foto_yol: String,
+    |     ^^^^^^^^^^^^^
+...
+338 |     stok_grup: String,
+    |     ^^^^^^^^^
+339 |     stok_yol: String,
+    |     ^^^^^^^^
+340 |     stok_baslangic: String,
+    |     ^^^^^^^^^^^^^^
+341 |     stok_linki: String,
+    |     ^^^^^^^^^^
+342 |     stok_cekim: String,
+    |     ^^^^^^^^^^
+343 |     stok_lisans: String,
+    |     ^^^^^^^^^^^
+344 |     stok_atif_goster: bool,
+    |     ^^^^^^^^^^^^^^^^
+345 |     stok_durum: String,
+    |     ^^^^^^^^^^
+346 |     stok_kutuphane: Vec<stok_video::VideoBilgi>,
+    |     ^^^^^^^^^^^^^^
+347 |     stok_islem: Option<Receiver<StokOlay>>,
+    |     ^^^^^^^^^^
+348 |     stok_mesgul: bool,
+    |     ^^^^^^^^^^^
+...
+364 |     tema_foto_yolu: String,
+    |     ^^^^^^^^^^^^^^
+...
+390 |     onizleme_lead: Option<usize>,
+    |     ^^^^^^^^^^^^^
+391 |     /// Katman 2 (Medya): seçili işletme, yükleme yolu ve doğrulama durumu.
+392 |     medya_lead: Option<usize>,
+    |     ^^^^^^^^^^
+393 |     medya_yol: String,
+    |     ^^^^^^^^^
+394 |     /// Yüklenen/seçilen dosyaların küçük görsel önizlemeleri (yol → doku).
+395 |     medya_onizleme: HashMap<String, Option<egui::TextureHandle>>,
+    |     ^^^^^^^^^^^^^^
+396 |     /// 2 Medya arşivinde açık sekme: video veya fotoğraf.
+397 |     medya_arsiv_turu: MedyaTuru,
+    |     ^^^^^^^^^^^^^^^^
+398 |     /// Tıklanan medyanın büyük önizleme penceresi.
+399 |     medya_buyuk_onizleme: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^^
+400 |     /// Arşiv taramasının son imzası: yeni/değişen dosyada önbelleği tazeler.
+401 |     medya_arsiv_imza: Option<u64>,
+    |     ^^^^^^^^^^^^^^^^
+402 |     /// Yükleme doğrulanınca demoyu kendiliğinden üretip Katman 3'e geç.
+403 |     medya_oto_demo: bool,
+    |     ^^^^^^^^^^^^^^
+404 |     /// Arka plan yüklemesi bittiğinde bir kez tüketilen otomatik geçiş isteği.
+405 |     medya_oto_ac: bool,
+    |     ^^^^^^^^^^^^
+...
+408 |     medya_oto_hedef: Option<String>,
+    |     ^^^^^^^^^^^^^^^
+409 |     medya_mesaj: String,
+    |     ^^^^^^^^^^^
+410 |     medya_mesgul: bool,
+411 |     medya_hedef: Option<String>,
+    |     ^^^^^^^^^^^
+...
+415 |     medya_tarayici: Option<medya_tarayici::Tarayici>,
+    |     ^^^^^^^^^^^^^^
+416 |     #[cfg(target_os = "windows")]
+417 |     medya_tarayici_hedef: Option<(String, String)>,
+    |     ^^^^^^^^^^^^^^^^^^^^
+418 |     #[cfg(target_os = "windows")]
+419 |     medya_tarayici_slug: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^
+420 |     #[cfg(target_os = "windows")]
+421 |     medya_tarayici_url: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^
+422 |     #[cfg(target_os = "windows")]
+423 |     medya_tarayici_hata_url: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+424 |     #[cfg(target_os = "windows")]
+425 |     medya_tarayici_rect: Option<egui::Rect>,
+    |     ^^^^^^^^^^^^^^^^^^^
+426 |     #[cfg(target_os = "windows")]
+427 |     medya_tarayici_mesaj: String,
+    |     ^^^^^^^^^^^^^^^^^^^^
+428 |     #[cfg(target_os = "windows")]
+429 |     medya_tarayici_rx: Option<Receiver<medya_tarayici::Olay>>,
+    |     ^^^^^^^^^^^^^^^^^
+430 |     #[cfg(target_os = "windows")]
+431 |     medya_tarayici_kuyruk: Vec<(std::path::PathBuf, String, String)>,
+    |     ^^^^^^^^^^^^^^^^^^^^^
+...
+434 |     medya_tarayici_baslangic: Option<SystemTime>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^
+435 |     #[cfg(target_os = "windows")]
+436 |     medya_tarayici_son_tarama: Option<Instant>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+437 |     #[cfg(target_os = "windows")]
+438 |     medya_tarayici_gorulen: HashSet<std::path::PathBuf>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^
+...
+441 |     medya_tarayici_temizle: Option<std::path::PathBuf>,
+    |     ^^^^^^^^^^^^^^^^^^^^^^
+442 |     /// Önizlemede 550 px metin ölçüsü ve satır yüksekliği kılavuzu.
+443 |     onizleme_kilavuz: bool,
+    |     ^^^^^^^^^^^^^^^^
+444 |     /// Son temiz derlemenin dosya yolu ve sayfadan silinen demo izi sayısı.
+445 |     temiz_yol: Option<String>,
+    |     ^^^^^^^^^
+446 |     temiz_sayi: Option<usize>,
+    |     ^^^^^^^^^^
+447 |     /// Temiz derlemenin yayınlandığı adres (varsa).
+448 |     temiz_link: Option<String>,
+    |     ^^^^^^^^^^
+449 |     /// Katman 4: alan adı sorgusu.
+450 |     domain_ad: String,
+    |     ^^^^^^^^^
+451 |     domain_uzanti: usize,
+    |     ^^^^^^^^^^^^^
+...
+477 |     pipeline_aktif: bool,
+    |     ^^^^^^^^^^^^^^
+478 |     pipeline_mesaj: String,
+    |     ^^^^^^^^^^^^^^
+...
+481 |     yerel_ai: yerel_ai::YerelAi,
+    |     ^^^^^^^^
+...
+484 |     pipeline_foto_hedef: Option<String>,
+    |     ^^^^^^^^^^^^^^^^^^^
+485 |     /// Arşivden silinmek üzere onay bekleyen dosya (hızlı güvenlik adımı).
+486 |     medya_sil_onay: Option<String>,
+    |     ^^^^^^^^^^^^^^
+...
+489 |     onizleme_degisim: Option<Instant>,
+    |     ^^^^^^^^^^^^^^^^
+490 |     /// Otomatik demo denemeleri arasındaki bekleme (hata döngüsünü önler).
+491 |     pipeline_son_deneme: Option<Instant>,
+    |     ^^^^^^^^^^^^^^^^^^^
+
+warning: function `secim_cipi` is never used
+    --> src\main.rs:1155:4
+     |
+1155 | fn secim_cipi(ui: &mut egui::Ui, metin: &str, acik: &mut bool) -> bool {
+     |    ^^^^^^^^^^
+
+warning: function `secenek_cipleri` is never used
+    --> src\main.rs:1261:4
+     |
+1261 | fn secenek_cipleri(ui: &mut egui::Ui, deger: &mut String, secenekler: &[(&str, &str)]) -> bool {
+     |    ^^^^^^^^^^^^^^^
+
+warning: function `dosya_adi` is never used
+    --> src\main.rs:1289:4
+     |
+1289 | fn dosya_adi(yol: &str) -> String {
+     |    ^^^^^^^^^
+
+warning: function `whatsapp_ac` is never used
+    --> src\main.rs:1612:4
+     |
+1612 | fn whatsapp_ac(lead: &mut BusinessLead, gonderen: &str, logs: &mut Vec<String>) {
+     |    ^^^^^^^^^^^
+
+warning: methods `gonderimi_baslat`, `renklendirme_bolumu`, `foto_ekle`, `ayari_sessiz_yaz`, and `temayi_kaydet` are never used
+    --> src\main.rs:2267:8
+     |
+2019 | impl LeadApp {
+     | ------------ methods in this implementation
+...
+2267 |     fn gonderimi_baslat(&mut self, idx: usize, gonderen: &str) {
+     |        ^^^^^^^^^^^^^^^^
+...
+3583 |     pub(crate) fn renklendirme_bolumu(&mut self, ui: &mut egui::Ui) {
+     |                   ^^^^^^^^^^^^^^^^^^^
+...
+4414 |     fn foto_ekle(&mut self, yol: &str) -> bool {
+     |        ^^^^^^^^^
+...
+4443 |     fn ayari_sessiz_yaz(&self) {
+     |        ^^^^^^^^^^^^^^^^
+...
+4448 |     fn temayi_kaydet(&mut self) {
+     |        ^^^^^^^^^^^^^
+
+warning: constant `DEMO_PALETLER` is never used
+    --> src\main.rs:6040:7
+     |
+6040 | const DEMO_PALETLER: [(&str, &str, &str, &str); 7] = [
+     |       ^^^^^^^^^^^^^
+
+warning: function `renk_coz` is never used
+    --> src\main.rs:7278:4
+     |
+7278 | fn renk_coz(hex: &str) -> [u8; 3] {
+     |    ^^^^^^^^
+
+warning: function `renk_secici` is never used
+    --> src\main.rs:7289:4
+     |
+7289 | fn renk_secici(ui: &mut egui::Ui, etiket: &str, deger: &mut String, varsayilan: &str) -> bool {
+     |    ^^^^^^^^^^^
+
+warning: function `renk_yaz` is never used
+    --> src\main.rs:7312:4
+     |
+7312 | fn renk_yaz(rgb: [u8; 3]) -> String {
+     |    ^^^^^^^^
+
+warning: function `son_demo_boyutu` is never used
+    --> src\main.rs:7868:4
+     |
+7868 | fn son_demo_boyutu() -> Option<(usize, usize)> {
+     |    ^^^^^^^^^^^^^^^
+
+warning: variants `Hazir`, `Hata`, and `Bitti` are never constructed
+    --> src\main.rs:9996:5
+     |
+9995 | enum StokOlay {
+     |      -------- variants in this enum
+9996 |     Hazir(stok_video::Hazir),
+     |     ^^^^^
+9997 |     Hata(String),
+     |     ^^^^
+9998 |     Bitti,
+     |     ^^^^^
+
+warning: methods `manuel_medya_paneli`, `stok_paneli`, and `stok_baslat` are never used
+     --> src\main.rs:10004:8
+      |
+10001 | impl LeadApp {
+      | ------------ methods in this implementation
+...
+10004 |     fn manuel_medya_paneli(&self, ui: &mut egui::Ui) {
+      |        ^^^^^^^^^^^^^^^^^^^
+...
+10023 |     fn stok_paneli(&mut self, ui: &mut egui::Ui) {
+      |        ^^^^^^^^^^^
+...
+10273 |     fn stok_baslat(&mut self, ctx: egui::Context) {
+      |        ^^^^^^^^^^^
+
+warning: method `aciklama` is never used
+  --> src\domain.rs:81:12
+   |
+71 | impl Durum {
+   | ---------- method in this implementation
+...
+81 |     pub fn aciklama(&self) -> String {
+   |            ^^^^^^^^
+
+warning: fields `tam` and `uzanti` are never read
+  --> src\domain.rs:92:9
+   |
+91 | pub struct Sonuc {
+   |            ----- fields in this struct
+92 |     pub tam: String,
+   |         ^^^
+93 |     pub uzanti: usize,
+   |         ^^^^^^
+
+warning: field `zorluk` is never read
+  --> src\gelir.rs:34:9
+   |
+26 | pub struct Hizmet {
+   |            ------ field in this struct
+...
+34 |     pub zorluk: &'static str,
+   |         ^^^^^^
+
+warning: method `kayitlar` is never used
+   --> src\gelir.rs:637:12
+    |
+613 | impl Gelir {
+    | ---------- method in this implementation
+...
+637 |     pub fn kayitlar(&self) -> &[MusteriGelir] {
+    |            ^^^^^^^^
+
+warning: multiple methods are never used
+   --> src\katmanlar.rs:470:8
+    |
+456 | impl LeadApp {
+    | ------------ methods in this implementation
+...
+470 |     fn medya_dosya_sil(&mut self, yol: &str) {
+    |        ^^^^^^^^^^^^^^^
+...
+529 |     fn uretilen_fotografi_ekle(&mut self, yol: &str) {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^
+...
+565 |     fn medya_tarayici_paneli(&mut self, ui: &mut egui::Ui, slug: &str) {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+637 |     fn medya_tarayici_kapat(&mut self) {
+    |        ^^^^^^^^^^^^^^^^^^^^
+...
+655 |     fn medya_tarayici_indirilenleri_tara(&mut self) {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+692 |     fn medya_tarayici_kuyruga_ekle(&mut self, yol: std::path::PathBuf, slug: &str) {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+708 |     fn medya_tarayici_olaylari_isle(&mut self) {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+764 |     fn medya_tarayici_kuyruk_isle(&mut self) {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+783 |     fn medya_isle(&mut self) {
+    |        ^^^^^^^^^^
+...
+861 |     fn medya_yukle(&mut self, slug: String, anahtar: String) {
+    |        ^^^^^^^^^^^
+
+warning: function `medya_ozeti` is never used
+    --> src\katmanlar.rs:1098:4
+     |
+1098 | fn medya_ozeti(medya: &[String]) -> String {
+     |    ^^^^^^^^^^^
+
+warning: function `medya_video_onizleme` is never used
+    --> src\katmanlar.rs:1111:4
+     |
+1111 | fn medya_video_onizleme(video: &Path) -> Option<std::path::PathBuf> {
+     |    ^^^^^^^^^^^^^^^^^^^^
+
+warning: function `medya_dosya_sec` is never used
+    --> src\katmanlar.rs:1151:4
+     |
+1151 | fn medya_dosya_sec(tur: MedyaTuru) -> Option<std::path::PathBuf> {
+     |    ^^^^^^^^^^^^^^^
+
+warning: function `medya_dosya_sec_genel` is never used
+    --> src\katmanlar.rs:1168:4
+     |
+1168 | fn medya_dosya_sec_genel() -> Option<std::path::PathBuf> {
+     |    ^^^^^^^^^^^^^^^^^^^^^
+
+warning: struct `KartYaniti` is never constructed
+    --> src\katmanlar.rs:1208:8
+     |
+1208 | struct KartYaniti {
+     |        ^^^^^^^^^^
+
+warning: methods `medya_doku` and `medya_doku_boyut` are never used
+    --> src\katmanlar.rs:1293:8
+     |
+1290 | impl LeadApp {
+     | ------------ methods in this implementation
+...
+1293 |     fn medya_doku(&mut self, ctx: &egui::Context, yol: &str) -> Option<egui::TextureHandle> {
+     |        ^^^^^^^^^^
+...
+1299 |     fn medya_doku_boyut(
+     |        ^^^^^^^^^^^^^^^^
+
+warning: function `renk_coz` is never used
+    --> src\katmanlar.rs:1332:15
+     |
+1332 | pub(crate) fn renk_coz(metin: &str, varsayilan: egui::Color32) -> egui::Color32 {
+     |               ^^^^^^^^
+
+warning: constant `KEHRIBAR` is never used
+    --> src\katmanlar.rs:1346:7
+     |
+1346 | const KEHRIBAR: egui::Color32 = crate::katman34::KEHRIBAR;
+     |       ^^^^^^^^
+
+warning: variant `Indirme` is never constructed
+  --> src\medya_tarayici.rs:19:5
+   |
+18 | pub enum Olay {
+   |          ---- variant in this enum
+19 |     Indirme {
+   |     ^^^^^^^
+   |
+   = note: `Olay` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: fields `webview` and `son_bounds` are never read
+  --> src\medya_tarayici.rs:27:5
+   |
+26 | pub struct Tarayici {
+   |            -------- fields in this struct
+27 |     webview: wry::WebView,
+   |     ^^^^^^^
+28 |     son_bounds: Option<(f32, f32, f32, f32)>,
+   |     ^^^^^^^^^^
+
+warning: associated items `yeni` and `sinirlari_ayarla` are never used
+  --> src\medya_tarayici.rs:37:12
+   |
+31 | impl Tarayici {
+   | ------------- associated items in this implementation
+...
+37 |     pub fn yeni(
+   |            ^^^^
+...
+86 |     pub fn sinirlari_ayarla(
+   |            ^^^^^^^^^^^^^^^^
+
+warning: function `sistem_indirme_klasorleri` is never used
+   --> src\medya_tarayici.rs:141:8
+    |
+141 | pub fn sistem_indirme_klasorleri() -> Vec<PathBuf> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `son_indirilen_video` is never used
+   --> src\medya_tarayici.rs:174:8
+    |
+174 | pub fn son_indirilen_video(baslangic: SystemTime, haric: &HashSet<PathBuf>) -> Option<PathBuf> {
+    |        ^^^^^^^^^^^^^^^^^^^
+
+warning: method `medya_ayarla` is never used
+   --> src\musteriler.rs:510:12
+    |
+337 | impl Defter {
+    | ----------- method in this implementation
+...
+510 |     pub fn medya_ayarla(&mut self, anahtar: &str, medya: Vec<String>) {
+    |            ^^^^^^^^^^^^
+
+warning: function `onay` is never used
+   --> src\ogrenme.rs:194:8
+    |
+194 | pub fn onay(
+    |        ^^^^
+
+warning: function `kayitlar` is never used
+   --> src\ogrenme.rs:234:8
+    |
+234 | pub fn kayitlar() -> Vec<Kayit> {
+    |        ^^^^^^^^
+
+warning: function `sil` is never used
+   --> src\ogrenme.rs:245:8
+    |
+245 | pub fn sil(indeks: usize) -> bool {
+    |        ^^^
+
+warning: function `temizle` is never used
+   --> src\ogrenme.rs:262:8
+    |
+262 | pub fn temizle() {
+    |        ^^^^^^^
+
+warning: field `kayit_sayisi` is never read
+   --> src\ogrenme.rs:283:9
+    |
+274 | pub struct Ders {
+    |            ---- field in this struct
+...
+283 |     pub kayit_sayisi: usize,
+    |         ^^^^^^^^^^^^
+    |
+    = note: `Ders` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+
+warning: function `hazirla` is never used
+  --> src\uretim_pipeline.rs:47:8
+   |
+47 | pub fn hazirla(slug: &str) -> StokSecim {
+   |        ^^^^^^^
+
+warning: method `etiket` is never used
+  --> src\yerel_ai.rs:70:12
+   |
+68 | impl Durum {
+   | ---------- method in this implementation
+69 |     /// Kısa rozet metni.
+70 |     pub fn etiket(&self) -> &str {
+   |            ^^^^^^
+
+warning: fields `son_yol`, `son_sure`, and `otomatik_denendi` are never read
+   --> src\yerel_ai.rs:98:9
+    |
+ 87 | pub struct YerelAi {
+    |            ------- fields in this struct
+...
+ 98 |     pub son_yol: Option<String>,
+    |         ^^^^^^^
+ 99 |     /// Son üretimin saniye cinsinden süresi.
+100 |     pub son_sure: Option<f32>,
+    |         ^^^^^^^^
+...
+106 |     otomatik_denendi: bool,
+    |     ^^^^^^^^^^^^^^^^
+
+warning: associated items `hazirla`, `yeniden_baslat`, `isle`, and `hedef_ipucu` are never used
+   --> src\yerel_ai.rs:147:12
+    |
+122 | impl YerelAi {
+    | ------------ associated items in this implementation
+...
+147 |     pub fn hazirla(&mut self) {
+    |            ^^^^^^^
+...
+256 |     pub fn yeniden_baslat(&mut self) {
+    |            ^^^^^^^^^^^^^^
+...
+348 |     pub fn isle(&mut self) -> Option<String> {
+    |            ^^^^
+...
+380 |     pub fn hedef_ipucu(slug: &str, durum: &Durum) -> String {
+    |            ^^^^^^^^^^^
+
+warning: `ollama_proje` (bin "ollama_proje" test) generated 44 warnings
+    Finished `release` profile [optimized] target(s) in 21.73s
+     Running unittests src\main.rs (target\release\deps\ollama_proje-4df2917966f9ea92.exe)
+
+running 301 tests
+test ai::testler::gercek_ollama_taslak_uretir ... ignored, Ollama sunucusu ve yüklü model gerektirir
+test ai::testler::adres_ortam_degiskeninden_okunur ... ok
+test ai::testler::baslatma_hatasi_cokme_yerine_mesaj_doner ... ok
+test ai::testler::niyet_istemi_mesaji_ve_secenekleri_icerir ... ok
+test ai::testler::niyet_yaniti_cozulur ... ok
+test ai::testler::model_yaniti_temizlenir ... ok
+test ai::testler::ret_metni_fiyattan_once_gelir ... ok
+test ai::testler::sunucu_kapaliysa_bir_kez_baslatma_denenir ... ok
+test ai::testler::yanit_istemi_kurallari_icerir ... ok
+test anahtar::testler::gecersiz_anahtar_reddedilir ... ok
+test demo_site::acil_katman_testleri::dunya_tohumdan_tutarli_ve_benzersiz ... ok
+test demo_site::acil_katman_testleri::kucultme_raporu ... ignored
+test demo_site::acil_katman_testleri::harf_harf_manset_ekran_okuyucuya_duz_metin_verir ... ok
+test demo_site::acil_katman_testleri::diger_sektorlerde_asistan_cizilmez ... ok
+test demo_site::acil_katman_testleri::sektorel_tasarim_kimligi_sayfaya_yazilir ... ok
+test demo_site::acil_katman_testleri::cekici_sayfasinda_acil_katman_cizilir ... ok
+test demo_site::acil_katman_testleri::ai_brifi_ajans_ciktisini_gercekten_yonlendirir ... ok
+test demo_site::acil_katman_testleri::guven_bolumu_ve_sektor_stili_uretir ... ok
+test demo_site::acil_katman_testleri::ajans_acil_profilinde_asistan_ve_mobil_bar_korunur ... ok
+test demo_site::acil_katman_testleri::ajans_profili_alti_bolum_ve_sinematik_katman_uretir ... ok
+test demo_site::acil_katman_testleri::sinematik_hero_video_kesintisiz_dongude_oynar ... ok
+test demo_site::acil_katman_testleri::tohum_tutarli_ve_isleme_gore_farkli ... ok
+test demo_site::acil_katman_testleri::sinematik_hero_bir_galeri_iki_kare_kullanir ... ok
+test demo_site::acil_katman_testleri::sinematik_iskeleti_donusum_ve_yedekleri_tasir ... ok
+test domain::testler::bos_ad_sorgulanmaz ... ok
+test domain::testler::kok_turkce_karakterleri_sadelestirir ... ok
+test demo_site::acil_katman_testleri::sinematik_dunya_sayfaya_gomulur_ve_isletmeye_gore_degisir ... ok
+test domain::testler::tr_uzantisi_rdap_yok_der ... ok
+test domain::testler::fiyatlar_tanimli_ve_makul ... ok
+test gelen::guvenlik_testleri::govde_siniri_ve_icerik_uzunlugu_okunur ... ok
+test gelen::guvenlik_testleri::yalniz_bilinen_yontemler_islenir ... ok
+test gelen::guvenlik_testleri::gelen_mesaj_olay_uretir ... ok
+test demo_site::acil_katman_testleri::sinematik_premium_katman_taslari_basilir ... ok
+test gelen::testler::beklemede_ve_belirsiz_ayrilir ... ok
+test gelen::testler::bos_metin_reddedilir_ve_durum_yolu_yanitlar ... ok
+test demo_site::acil_katman_testleri::sinematik_sahne_sayisi_3_6_araligina_kirpilir ... ok
+test gelen::testler::fiyat_sorusu_fiyat_olarak_siniflanir ... ok
+test gelen::testler::gelen_ve_giden_mesaj_kaydedilir ... ok
+test gelen::testler::dolu_portta_sonraki_bos_port_secillir ... ok
+test gelen::testler::kopru_istegi_mesaji_ve_niyeti_dondurur ... ok
+test demo_site::acil_katman_testleri::kucultme_boyutu_dusurur_ve_yapiyi_korur ... ok
+test gelen::testler::ret_mesaji_sicak_sayilmaz ... ok
+test gelen::testler::json_gidis_donusu_bozulmaz ... ok
+test gelen::testler::satis_kapandi_asamasi_kanala_islenir ... ok
+test gelen::testler::sicak_mesaj_ayirt_edilir ... ok
+test gelir::testler::fatura_tarihi_yazilir ... ok
+test gelir::testler::bozuk_dosya_bos_gelir_verir ... ok
+test gelir::testler::gonderilmeyen_teklifler_siraya_girer ... ok
+test gelir::testler::ayni_gun_teklifi_guncellenir ... ok
+test gelir::testler::gunluk_gonderim_sayilir ... ok
+test gelir::testler::hizmet_ekle_cikar_idempotent ... ok
+test gelir::testler::katalog_kodlari_tekil ... ok
+test gelir::testler::oneri_eksik_profilde_baslangic_ve_kurulum_verir ... ok
+test gelir::testler::oneri_guclu_profilde_gorunurluk_paketi_verir ... ok
+test gelir::testler::kayit_diskten_geri_okunur ... ok
+test gelir::testler::oneri_sitesiz_musteriye_site_paketi_verir ... ok
+test gelir::testler::paket_aylik_fiyati_kullanir ... ok
+test gelir::testler::paketler_katalogdaki_hizmetleri_kullanir ... ok
+test gelir::testler::tek_hizmet_paketi_bozar_ve_toplami_degistirir ... ok
+test gelir::testler::tek_sefer_toplami_hesaplanir ... ok
+test gelir::testler::teklif_ayarlari_ve_varsayilanlar_korunur ... ok
+test gelir::testler::teklif_metni_paket_ve_fiyati_yazar ... ok
+test gelir::testler::teklif_olustur_tutar_ve_gerekce_yazar ... ok
+test google::testler::bulut_senkron_proje_yoksa_net_hata_verir ... ok
+test gelir::testler::teklifler_dissten_geri_okunur_ve_isaretlenir ... ok
+test google::testler::canli_geocode_ve_arama ... ignored, canlı Google API isteği harcar
+test google::testler::bulut_yaniti_gunluk_ve_aylik_toplar ... ok
+test google::testler::calisma_saatleri_osm_bicimine_cevrilir ... ok
+test google::testler::guvenlik_marji_son_dort_istegi_kilitler ... ok
+test google::testler::kota_alarm_esigi_80_yuzde ... ok
+test google::testler::seo_puani_canli_kaydi_oder ... ok
+test google::testler::kota_gunluk_ve_aylik_siniri_korur ... ok
+test google::testler::sifirlanma_saniyesi_bir_gun_icinde ... ok
+test hedef::testler::alt_satir_adres_telefon_koordinat_icerir ... ok
+test google::testler::siteli_kayitlar_mutlak_elenir ... ok
+test google::testler::es_zamanli_istekler_kotayi_asamaz ... ok
+test hedef::testler::sec_mevcut_ve_mukerrer_anahtari_atlar ... ok
+test hedef::testler::sec_telefonsuz_ve_kara_listedekileri_atlar ... ok
+test hedef::testler::sec_en_fazla_yirmi_kayit_alir ... ok
+test hedef::testler::tamamla_satiri_dusurur_ve_sayaci_artirir ... ok
+test hedef::testler::tamamlanan_slot_yeni_hedefe_acilir ... ok
+test hedef::testler::kontenjan_yirmiyi_asmaz_ve_mukerrer_eklenmez ... ok
+test hedef::testler::yeni_gun_listeyi_sifirlar_temizle_bosaltir ... ok
+test katman34::testler::canli_surum_arama_motoruna_acilir ... ok
+test katman34::testler::demo_izleri_ayiklanir ... ok
+test katman34::testler::iz_yoksa_sayfa_degismez ... ok
+test medya_arsiv::testler::arsiv_raporu_yazdirir ... ignored
+test medya_arsiv::testler::arsiv_tavani_pipeline_durdurur ... ok
+test medya_arsiv::testler::eksik_veya_fazla_dosya_reddedilir ... ok
+test medya_arsiv::testler::filigran_ve_lisanssiz_medya_indirilmez ... ok
+test hedef::testler::kaydet_ve_yukle_aynı_listeyi_verir ... ok
+test medya_arsiv::testler::sektor_butcesi_asilinca_reddedilir ... ok
+test medya_arsiv::testler::sure_cozunurluk_ve_boyut_siniri_korunur ... ok
+test katmanlar::testler::arsiv_imzasi_yeni_dosyada_degisir ... ok
+test medya_arsiv::testler::yollar_ve_adlar_duzenli ... ok
+test medya_arsiv::testler::tam_sektor_butce_icinde_gecer ... ok
+test medya_dogrulama::testler::disk_klasoru_tabloda_olmasa_da_etiketlenir ... ok
+test medya_dogrulama::testler::istem_sektor_adi_ve_ingilizce_karsiligini_icerir ... ok
+test anahtar::testler::anahtar_sifrelenip_geri_okunur ... ok
+test katmanlar::testler::arsiv_dosyasi_red_klasorune_tasinir ... ok
+test medya_dogrulama::testler::kesin_kararda_yedek_modele_gidilmez ... ok
+test medya_dogrulama::testler::konu_satirli_yanit_cozulur ... ok
+test medya_dogrulama::testler::sektor_etiketi_tablodan_gelir ... ok
+test medya_dogrulama::testler::sifir_tolerans_tek_hayir_yetmez ... ok
+test medya_dogrulama::testler::sonuc_metni_gerekceyi_tasir ... ok
+test medya_dogrulama::testler::video_kare_zamanlari_sinir_icinde ... ok
+test medya_dogrulama::testler::vram_olcumu_mb_olarak_cozulur ... ok
+test anahtar::testler::tuz_degisirse_kasa_cozulmez ... ok
+test medya_arsiv::testler::mevcut_durum_dosyalari_sayar ... ok
+test katmanlar::testler::stok_arsivi_alt_klasorleri_ve_medya_turlerini_tarar ... ok
+test demo_site::acil_katman_testleri::uretilen_tam_sayfa_kucultulunce_kuculur ... ok
+test medya_havuz::testler::loop_dosyalari_hero_secilmez ... ok
+test medya_havuz::testler::video_olmadan_da_fotograf_dagitilir ... ok
+test medya_islem::testler::alt_klasorden_cagrilinca_kok_gunlugu_kullanilir ... ok
+test medya_havuz::testler::ayni_sektor_farkli_tohum_farkli_kare_alir ... ok
+test medya_manuel::testler::basliklar_dosya_ve_linkten_temizlenir ... ok
+test medya_havuz::testler::havuz_sektorleri_ayirir_ve_videoyu_bulur ... ok
+test medya_manuel::testler::bilinmeyen_sektor_reddedilir ... ok
+test medya_manuel::testler::gercek_foto_ve_video_uctan_uca ... ignored, gerçek medya, FFmpeg ve yerel Qwen2.5-VL gerektirir
+test medya_manuel::testler::link_guvenligi_yerel_ve_dosya_adresini_reddeder ... ok
+test medya_manuel::testler::medya_turu_mime_uzanti_ve_sihirli_baytlardan_bulunur ... ok
+test medya_islem::testler::islem_satiri_tam_yol_ve_ek_ile_yazilir ... ok
+test demo_site::acil_katman_testleri::sinematik_olmayan_profil_butceden_etkilenmez ... ok
+test medya_manuel::testler::dusuk_cozunurluk_ai_cagrilmadan_reddedilir ... ok
+test medya_islem::testler::son_satirlar_en_yenileri_verir ... ok
+test medya_onay::testler::kuyruk_bekleyen_sektorleri_listeler ... ok
+test medya_onay::testler::panel_metaverisi_skor_ve_yerelligi_okur ... ok
+test medya_onay::testler::yuz_alti_skor_onaylanmaz ... ok
+test medya_tarayici::testler::hedefe_tasi_dosyayi_sektor_klasorune_tasir ... ok
+test medya_tarayici::testler::mutlak_ve_goreli_hedef_ayni_klasoru_gosterir ... ok
+test medya_onay::testler::silinen_dosya_onay_kaydindan_duser ... ok
+test medya_tarayici::testler::sektor_indirme_klasoru_dogrudan_stok_altinda ... ok
+test medya_onay::testler::red_dosyayi_diskten_siler ... ok
+test demo_site::acil_katman_testleri::sinematik_butce_fotograflari_dusurur ... ok
+test medya_tedarik::testler::dusuk_cozunurluk_reddedilir ... ok
+test medya_onay::testler::kota_dolunca_fazla_medya_onaylanmaz ... ok
+test medya_web::testler::durum_json_sayaclari_verir ... ok
+test medya_web::testler::dusuk_skorlu_medya_panelden_onaylanmaz ... ok
+test medya_onay::testler::onay_dosyayi_stoga_tasir_ve_kotayi_korur ... ok
+test medya_web::testler::manuel_link_ve_yukleme_rotalari_calisir ... ok
+test medya_web::testler::medya_yolu_ve_dizin_gezintisi_engellenir ... ok
+test medya_web::testler::tarayici_komutu_panel_adresini_hedefler ... ok
+test medya_havuz::testler::onaysiz_medya_demoya_girmez ... ok
+test medya_onay::testler::toplu_red_hem_bekleyeni_hem_stogu_siler ... ok
+test medya_web::testler::islemler_json_onay_yolunu_verir ... ok
+test medya_web::testler::panel_manuel_ekleme_alanini_ve_tam_yolu_gosterir ... ok
+test musteriler::testler::anahtar_kaynaga_gore_uretiltir ... ok
+test musteriler::testler::bozuk_dosya_bos_defter_dondurur ... ok
+test musteriler::testler::csv_ayraci_ve_tirnagi_kacirir ... ok
+test medya_web::testler::panel_bekleyen_medyayi_skorla_gosterir ... ok
+test medya_dogrulama::testler::birincil_hata_verirse_yedek_devralir ... ok
+test musteriler::testler::eski_kayit_varyantsiz_yuklenir ... ok
+test musteriler::testler::csv_varyanti_disa_aktarir ... ok
+test musteriler::testler::eski_kayit_teklif_alanlari_olmadan_yuklenir ... ok
+test musteriler::testler::gunluk_gonderim_ayni_gun_tekrar_sayilmaz ... ok
+test musteriler::testler::kara_liste_ozet_ve_durum_sirasi ... ok
+test musteriler::testler::ikinci_tarama_durumu_korur_ve_mukerrer_eklemez ... ok
+test musteriler::testler::gunluk_yirmi_gonderim_siniri_dolunca_kalan_kalmaz ... ok
+test musteriler::testler::kismi_odeme_tahsilati_ve_bakiyeyi_ayirir ... ok
+test musteriler::testler::orneklem_esigi_otuz_gonderim ... ok
+test musteriler::testler::takip_kuyrugu_zaman_gelenleri_listeler ... ok
+test medya_web::testler::tek_red_dosyayi_siler ... ok
+test musteriler::testler::teklif_ilk_tarihi_korur_ve_csvye_yazilir ... ok
+test musteriler::testler::teklif_ve_odeme_ciroyu_hesaplar ... ok
+test musteriler::testler::odeme_kuyrugu_geciken_tahsilleri_listeler ... ok
+test musteriler::testler::not_ve_yayin_linki_kayda_yazilir ... ok
+test musteriler::testler::varyant_dengeli_dagitilir_ve_sabit_kalir ... ok
+test musteriler::testler::varyant_ozeti_yalnizca_gonderilenleri_sayar ... ok
+test nap::testler::ayni_telefon_mukerrer_sayilir ... ok
+test nap::testler::bos_defter_temiz_rapor_verir ... ok
+test musteriler::testler::varyant_sektor_icinde_dengelenir ... ok
+test nap::testler::ayni_ad_adres_mukerrer_sayilir ... ok
+test nap::testler::metin_ozeti_eksikleri_yazar ... ok
+test nap::testler::kritik_eksikler_listede_one_cikar ... ok
+test nap::testler::bozuk_telefon_yakalanir ... ok
+test nap::testler::sabit_hat_kritik_degil ... ok
+test nap::testler::tam_kayitta_eksik_cikmaz ... ok
+test nap::testler::telefon_ve_adres_eksikleri_kritik ... ok
+test ogrenme::testler::bos_sektor_kaydedilmez ... ok
+test medya_web::testler::tek_onay_dosyayi_stoga_tasir ... ok
+test ogrenme::testler::ayni_uclu_yeni_satir_acmaz_sayaci_artirir ... ok
+test ogrenme::testler::eski_onay_etiketi_animasyon_sayilmaz ... ok
+test ogrenme::testler::en_yeni_onay_dersi_belirler ... ok
+test ogrenme::testler::onay_serbest_notu_ve_animasyonu_saklar ... ok
+test medya_web::testler::yabanci_doku_panelden_onaylanmaz ... ok
+test ogrenme::testler::sinir_asilinca_en_eski_kayit_duser ... ok
+test saglik::testler::durdurulan_denetim_paneli_acik_tutar ... ok
+test saglik::testler::durum_isaretleri_ayirt_edilir ... ok
+test saglik::testler::bos_dosya_hata_sayilmaz ... ok
+test ogrenme::testler::otomatik_kayit_sektor_paletini_ezmez ... ok
+test saglik::testler::hata_aciklamalari_sade_ve_cozum_odakli ... ok
+test saglik::testler::maddeler_sirada_bekler_ve_gecmez ... ok
+test saglik::testler::hepsi_yesilse_ana_ekran_acilir ... ok
+test saglik::testler::olmayan_dosya_hata_sayilmaz ... ok
+test saglik::testler::gecerli_json_kabul_edilir ... ok
+test saglik::testler::bozuk_json_hata_verir ... ok
+test ogrenme::testler::onay_renk_paletini_gecer ... ok
+test saglik::testler::salt_okunur_dosya_yazilamaz_sayilir ... ok
+test saglik::testler::sifirlama_maddeleri_basa_alir ... ok
+test saglik::testler::tek_kirmizi_madde_acilisi_engeller ... ok
+test sektor_medya::testler::her_grup_ingilizce_karsilik_bulur ... ok
+test sektor_medya::testler::slug_turkce_harfleri_sadelesir ... ok
+test sektor_tasarim::testler::bilinmeyen_sektor_varsayilana_duser ... ok
+test sektor_tasarim::testler::cekici_acil_ve_neon_palet_alir ... ok
+test sektor_tasarim::testler::klinik_acik_zemin_alir ... ok
+test medya_web::testler::islem_sonrasi_kart_aninda_kalkar ... ok
+test stok_kasa::testler::gecersiz_anahtar_reddedilir ... ok
+test saglik::testler::onarim_saglam_dosyaya_dokunmaz ... ok
+test saglik::testler::onarim_bayat_onbellegi_siler ... ok
+test stok_video::testler::api_varsayilan_olarak_kapali ... ok
+test saglik::testler::onarim_bozuk_defteri_yeniden_olusturur ... ok
+test stok_video::testler::baslangic_video_sinirina_cekilir ... ok
+test stok_video::testler::ayni_video_iki_kez_listelenmez_ve_sekizle_sinirlidir ... ok
+test saglik::testler::onarim_eksik_dosyalari_olusturur ... ok
+test ogrenme::testler::sil_ve_temizle_dosyayi_kucultur ... ok
+test stok_video::testler::dikey_kisa_ve_dusuk_cozunurluk_elenir ... ok
+test stok_video::testler::foto_ken_burns_hedef_klasore_yazar ... ignored
+test stok_video::testler::foto_ken_burns_uretir ... ignored
+test stok_video::testler::her_grup_uc_kelime_ve_etiket_tasir ... ok
+test stok_video::testler::eski_tek_video_bicimi_de_okunur ... ok
+test stok_video::testler::coklu_video_kaydi_okunur_ve_tohumla_secilir ... ok
+test stok_video::testler::sektor_grubu_turkce_kategoriden_bulunur ... ok
+test stok_video::testler::uzanti_kontrolu_mp4_mov_webm_kabul_eder ... ok
+test stok_video::testler::yavas_cekim_adaylari_one_alinir ... ok
+test stok_kasa::testler::tuz_degisirse_kasa_cozulmez ... ok
+test tasarim_brifi::testler::bozuk_dosya_none_doner ... ok
+test tasarim_brifi::testler::bozuk_model_yaniti_hata_doner ... ok
+test tasarim_brifi::testler::brif_semasi_zorunlu_alanlari_ister ... ok
+test tasarim_brifi::testler::awwwards_brifi_bes_bolum_ve_efekt_sozlesmesi_uretir ... ok
+test tasarim_brifi::testler::gecersiz_renkler_bos_qalir ... ok
+test stok_kasa::testler::iki_anahtar_da_sifrelenip_geri_okunur ... ok
+test tasarim_brifi::testler::model_yanitindan_brif_cozulur ... ok
+test tasarim_brifi::testler::olmayan_dosya_none_doner ... ok
+test tasarim_brifi::testler::gecerli_brif_okunur_ve_temizlenir ... ok
+test tasarim_brifi::testler::yerel_istem_semayi_ve_kurallari_tasir ... ok
+test medya_web::testler::toplu_onay_ve_silme ... ok
+test tasarim_brifi::testler::yerel_model_canli ... ignored
+test testler::arayuz_acik_tema ... ok
+test testler::bugun_sirasi_karalisteyi_ve_gonderilenleri_atlar ... ok
+test testler::demo_dosyasi_adi_turkce_karakterleri_sadeler ... ok
+test testler::ayarlar_diske_yazilip_geri_okunur ... ok
+test stok_kasa::testler::ikinci_kayit_digerini_silmez_ve_silme_kalani_bozmaz ... ok
+test testler::cokme_gunlugu_dosyaya_eklenir ... ok
+test testler::demo_renkleri_degistirilir_icerik_korunur ... ok
+test testler::eski_ayar_dosyasinda_sinematik_alanlari_varsayilana_duser ... ok
+test testler::demo_html_paylasim_etiketleri_icerir ... ok
+test testler::gun_farki_tarihleri_cozer ... ok
+test testler::havuz_dagitimi_yazdir ... ignored
+test testler::demo_html_iskelet_bilesenlerini_icerir ... ok
+test testler::hazir_mesaj_baglantiya_sigar ... ok
+test testler::karanlik_zemine_donunce_tema_sinifi_kalkar ... ok
+test testler::karne_harici_kaynak_yuklemez ... ok
+test testler::karne_html_paylasim_etiketleri_icerir ... ok
+test testler::kayitli_numara_acilista_yuklenir ... ok
+test testler::kok_rengi_olmayan_sayfa_atlanir ... ok
+test testler::konum_onbellegi_kaydeder_ve_okur ... ok
+test testler::mevcut_demolari_sinematik_yenile ... ignored
+test testler::odeme_hatirlatmasi_kalan_bakiyeyi_ve_linki_yazar ... ok
+test testler::potansiyel_puani_niyet_ve_ulasilabilirligi_puanlar ... ok
+test testler::potansiyeli_yuksek_isletmeler_once_siralanir ... ok
+test testler::sabit_hat_ile_cep_numarasi_ayrilir ... ok
+test testler::sinematik_dental_demo_uret ... ignored
+test testler::sinematik_kuafor_demo_uret ... ignored
+test testler::stok_video_klasor_demo_uret ... ignored
+test testler::takip_mesaji_gun_sayisini_ve_linki_yazar ... ok
+test testler::tek_deneme_demo_uret ... ignored
+test testler::ton_beyaza_koyu_murekkebe_gider ... ok
+test testler::turkce_karakterler_url_kodlanir ... ok
+test testler::uc_rejim_demo_uret ... ignored
+test testler::uzun_mesaj_baglanti_sinirinda_kirpilir ... ok
+test testler::whatsapp_numarasi_uluslararasi_bicime_cevrilir ... ok
+test testler::yalniz_elle_incelerken_gecici_demo_uret ... ignored
+test testler::kaynaksiz_demolara_yalniz_renk_islenir ... ok
+test testler::yerel_ice_aktarma_ve_uretim ... ignored
+test medya_dogrulama::testler::supheli_karede_yedek_model_devreye_girer ... ok
+test testler::yayin_dizini_kalan_dosyalari_listeler ... ok
+test uretim_pipeline::testler::eksik_fotograf_demo_hazir_saymaz ... ok
+test uretim_pipeline::testler::onayli_bir_video_ve_iki_fotografi_secer ... ok
+test uretim_pipeline::testler::yerel_ai_kareleri_onay_beklemeden_secime_girer ... ok
+test yerel_ai::port_testleri::dinleyen_port_mesgul_gorunur ... ok
+test yerel_ai::sablon_testleri::prompt_sablonlari_turkiye_dokusunu_kapsar ... ok
+test yerel_ai::testler::altyapi_satiri_cihaz_ve_vram_gosterir ... ok
+test yerel_ai::testler::bos_prompt_uretim_baslatmaz ... ok
+test uretim_pipeline::testler::video_olmadan_iki_fotograf_demo_hazir_sayar ... ok
+test yerel_ai::testler::gercek_servis_baslatilir_ve_hazir_olur ... ignored
+test yerel_ai::testler::gercek_servis_uretim_yolunu_doner ... ignored
+test yerel_ai::testler::cikti_yolu_cakismadan_sektor_klasorune_yazar ... ok
+test yerel_ai::testler::istek_govdesi_prompt_ve_hedefi_tasir ... ok
+test yerel_ai::testler::hazir_olmayan_servis_uretim_baslatmaz ... ok
+test yerel_ai::testler::saglik_yaniti_duruma_cevrilir ... ok
+test yerel_ai::testler::varsayilan_prompt_cekici_istemidir ... ok
+test yerel_ai::cikti_testleri::bozuk_ya_da_yarim_cikti_reddedilir ... ok
+test testler::demo_kaynagi_anlik_goruntuden_okunur ... ok
+test stok_video::testler::bozuk_dosya_turkce_hata_verir ... ok
+test gelen::testler::kopru_gercek_istekleri_isle ... ok
+test stok_video::testler::pixabay_dakika_siniri_uygulanir ... ok
+test stok_video::testler::kota_siniri_asilmaz_ve_turkce_uyari_verir ... ok
+test testler::gercek_demo_dosyasi_yeniden_renklendirilir ... ok
+test medya_tarayici::testler::son_indirilen_video_yalniz_yeni_dosyayi_secer ... ok
+test ai::testler::kapali_sunucu_sessizce_basarisiz_olur ... ok
+test tasarim_brifi::testler::kapali_yerel_sunucu_hata_doner ... ok
+
+test result: ok. 282 passed; 0 failed; 19 ignored; 0 measured; 0 filtered out; finished in 2.23s
+
