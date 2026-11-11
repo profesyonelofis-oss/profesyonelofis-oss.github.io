@@ -27,7 +27,7 @@ winresource = "0.1"
 
 # Windows'un yerel dosya seçme penceresi (fotoğraf/video filtreleri).
 [target.'cfg(windows)'.dependencies]
-rfd = { version = "0.15", default-features = false }
+rfd = { version = "0.18", default-features = false }
 # Medya tarayıcısındaki gömülü web görünümü.
 wry = "0.57"
 
