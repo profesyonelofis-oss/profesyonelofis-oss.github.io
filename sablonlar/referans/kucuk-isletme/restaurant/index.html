@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Copper Fig | Neighborhood Bistro &amp; Wine Bar</title>
+  <meta name="description" content="The Copper Fig is a neighborhood bistro serving seasonal small plates, wood-fired mains and natural wine. Walk-ins welcome, reservations recommended.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#1c1512',
+            cream: '#f6f0e4',
+            parchment: '#efe6d3',
+            copper: '#c4703a',
+            copperdark: '#9c5527',
+            sage: '#5f6b52',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['Karla', 'Helvetica', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .menu-row { display: flex; align-items: baseline; gap: .75rem; }
+    .menu-row .leader { flex: 1; border-bottom: 2px dotted rgba(28, 21, 18, .3); transform: translateY(-4px); }
+    .grain::after {
+      content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+    }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-cream font-body text-ink antialiased">
+
+  <!-- ============ NAV ============ -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-ink/95 text-cream backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#top" class="font-display text-2xl tracking-tight">The Copper Fig</a>
+      <nav class="hidden items-center gap-8 text-sm uppercase tracking-[0.18em] md:flex">
+        <a href="#story" class="transition hover:text-copper">Our Story</a>
+        <a href="#menu" class="transition hover:text-copper">Menu</a>
+        <a href="#visit" class="transition hover:text-copper">Hours &amp; Visit</a>
+        <a href="#reserve" class="rounded-full border border-copper px-5 py-2 text-copper transition hover:bg-copper hover:text-ink">Reserve a Table</a>
+      </nav>
+      <button id="navToggle" aria-label="Open menu" aria-expanded="false" class="md:hidden">
+        <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+      </button>
+    </div>
+    <nav id="mobileNav" class="hidden flex-col gap-1 border-t border-cream/10 bg-ink px-5 pb-5 pt-2 text-sm uppercase tracking-[0.18em] md:hidden">
+      <a href="#story" class="py-3">Our Story</a>
+      <a href="#menu" class="py-3">Menu</a>
+      <a href="#visit" class="py-3">Hours &amp; Visit</a>
+      <a href="#reserve" class="mt-2 rounded-full border border-copper px-5 py-3 text-center text-copper">Reserve a Table</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="grain relative overflow-hidden bg-ink pb-24 pt-40 text-cream md:pb-32 md:pt-48">
+    <div class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-copper/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-sage/20 blur-3xl"></div>
+    <div class="relative mx-auto max-w-6xl px-5">
+      <p class="mb-6 text-xs uppercase tracking-[0.35em] text-copper">Est. 2019 &middot; 124 Grove Street</p>
+      <h1 class="max-w-3xl font-display text-5xl font-light leading-[1.05] md:text-7xl">
+        Seasonal plates, <em class="text-copper">wood-fired</em> mains, and wine worth lingering over.
+      </h1>
+      <p class="mt-8 max-w-xl text-lg leading-relaxed text-cream/80">
+        A small neighborhood bistro where the menu changes with the market, the bread is baked
+        every morning, and the last table always feels like a lucky find.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a href="#reserve" class="rounded-full bg-copper px-8 py-4 font-bold uppercase tracking-widest text-ink transition hover:bg-cream">Reserve a Table</a>
+        <a href="#menu" class="rounded-full border border-cream/30 px-8 py-4 uppercase tracking-widest transition hover:border-copper hover:text-copper">See the Menu</a>
+      </div>
+      <div class="mt-16 grid max-w-2xl grid-cols-3 gap-6 border-t border-cream/15 pt-8 text-sm">
+        <div><p class="font-display text-3xl text-copper">14</p><p class="mt-1 text-cream/70">rotating small plates</p></div>
+        <div><p class="font-display text-3xl text-copper">60+</p><p class="mt-1 text-cream/70">natural wines by the glass</p></div>
+        <div><p class="font-display text-3xl text-copper">7</p><p class="mt-1 text-cream/70">local farms we buy from</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section id="story" class="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-2 md:items-center">
+    <div class="fade-up">
+      <!-- IMAGE SLOT: replace this decorative block with <img src="your-photo.jpg" class="rounded-2xl object-cover w-full h-full"> -->
+      <div class="relative aspect-[4/5] overflow-hidden rounded-2xl bg-parchment">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(196,112,58,.35),transparent_55%),radial-gradient(circle_at_75%_80%,rgba(95,107,82,.35),transparent_50%)]"></div>
+        <div class="absolute inset-6 rounded-xl border-2 border-dashed border-ink/20"></div>
+        <p class="absolute inset-x-0 bottom-8 text-center text-xs uppercase tracking-[0.3em] text-ink/50">Your dining room photo here</p>
+      </div>
+    </div>
+    <div class="fade-up">
+      <p class="text-xs uppercase tracking-[0.35em] text-copperdark">Our Story</p>
+      <h2 class="mt-4 font-display text-4xl font-light leading-tight md:text-5xl">Cooking the way our grandmothers did, with better wine.</h2>
+      <p class="mt-6 leading-relaxed text-ink/75">
+        The Copper Fig started as a Sunday supper club in a two-bedroom apartment. Six years later
+        we have a wood oven, forty seats, and the same rule: if it isn't in season, it isn't on the menu.
+      </p>
+      <p class="mt-4 leading-relaxed text-ink/75">
+        Chef Mara Bellini writes the menu every Tuesday after the farmers market run. Expect
+        hand-rolled pasta, whole fish for two, and vegetables treated like the main event.
+      </p>
+      <div class="mt-8 flex items-center gap-4">
+        <div class="h-px w-16 bg-copper"></div>
+        <p class="font-display italic text-lg">Mara Bellini, Chef &amp; Owner</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section id="menu" class="bg-parchment py-24">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="fade-up mb-14 text-center">
+        <p class="text-xs uppercase tracking-[0.35em] text-copperdark">This Week</p>
+        <h2 class="mt-4 font-display text-4xl font-light md:text-5xl">The Menu</h2>
+        <p class="mx-auto mt-4 max-w-xl text-ink/70">Changes weekly. Ask about today's whole-animal special and the off-list wines.</p>
+      </div>
+      <div class="grid gap-14 md:grid-cols-2">
+        <div class="fade-up">
+          <h3 class="mb-6 font-display text-2xl italic text-copperdark">Small Plates</h3>
+          <ul class="space-y-5">
+            <li class="menu-row"><span class="font-bold">Charred sourdough, whipped ricotta</span><span class="leader"></span><span class="font-display text-lg">9</span></li>
+            <li class="menu-row"><span class="font-bold">Roasted beets, pistachio, citrus</span><span class="leader"></span><span class="font-display text-lg">12</span></li>
+            <li class="menu-row"><span class="font-bold">Crispy potatoes, smoked aioli</span><span class="leader"></span><span class="font-display text-lg">11</span></li>
+            <li class="menu-row"><span class="font-bold">Grilled octopus, salsa verde</span><span class="leader"></span><span class="font-display text-lg">17</span></li>
+          </ul>
+          <h3 class="mb-6 mt-12 font-display text-2xl italic text-copperdark">From the Wood Oven</h3>
+          <ul class="space-y-5">
+            <li class="menu-row"><span class="font-bold">Half chicken, preserved lemon</span><span class="leader"></span><span class="font-display text-lg">26</span></li>
+            <li class="menu-row"><span class="font-bold">Whole branzino for two</span><span class="leader"></span><span class="font-display text-lg">48</span></li>
+            <li class="menu-row"><span class="font-bold">Short rib, charred onion jus</span><span class="leader"></span><span class="font-display text-lg">32</span></li>
+          </ul>
+        </div>
+        <div class="fade-up">
+          <h3 class="mb-6 font-display text-2xl italic text-copperdark">Pasta</h3>
+          <ul class="space-y-5">
+            <li class="menu-row"><span class="font-bold">Tagliatelle, brown butter, sage</span><span class="leader"></span><span class="font-display text-lg">21</span></li>
+            <li class="menu-row"><span class="font-bold">Ricotta gnudi, tomato conserva</span><span class="leader"></span><span class="font-display text-lg">23</span></li>
+            <li class="menu-row"><span class="font-bold">Squid ink chitarra, crab</span><span class="leader"></span><span class="font-display text-lg">27</span></li>
+          </ul>
+          <h3 class="mb-6 mt-12 font-display text-2xl italic text-copperdark">Sweets</h3>
+          <ul class="space-y-5">
+            <li class="menu-row"><span class="font-bold">Olive oil cake, mascarpone</span><span class="leader"></span><span class="font-display text-lg">10</span></li>
+            <li class="menu-row"><span class="font-bold">Dark chocolate tart, sea salt</span><span class="leader"></span><span class="font-display text-lg">11</span></li>
+          </ul>
+          <div class="mt-12 rounded-2xl border border-copper/40 bg-cream p-6">
+            <p class="font-display text-xl italic">Sunday Supper</p>
+            <p class="mt-2 text-sm leading-relaxed text-ink/70">Three courses, family style, one long table. Every Sunday at 6pm. $45 per person, wine pairings optional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section id="visit" class="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-3">
+    <div class="fade-up">
+      <h2 class="font-display text-4xl font-light">Hours &amp; Visit</h2>
+      <p class="mt-4 leading-relaxed text-ink/70">Walk-ins always welcome at the bar. The patio is dog-friendly and first come, first served.</p>
+    </div>
+    <div class="fade-up">
+      <h3 class="text-xs uppercase tracking-[0.3em] text-copperdark">Hours</h3>
+      <ul class="mt-4 space-y-2 text-ink/80">
+        <li class="flex justify-between border-b border-ink/10 pb-2"><span>Tue - Thu</span><span>5pm - 10pm</span></li>
+        <li class="flex justify-between border-b border-ink/10 pb-2"><span>Fri - Sat</span><span>5pm - 11pm</span></li>
+        <li class="flex justify-between border-b border-ink/10 pb-2"><span>Sunday</span><span>Supper at 6pm</span></li>
+        <li class="flex justify-between pb-2"><span>Monday</span><span>Closed</span></li>
+      </ul>
+    </div>
+    <div class="fade-up">
+      <h3 class="text-xs uppercase tracking-[0.3em] text-copperdark">Find Us</h3>
+      <p class="mt-4 text-ink/80">124 Grove Street<br>Your City, ST 00000</p>
+      <p class="mt-4"><a href="tel:+15550100" class="font-bold text-copperdark underline decoration-copper/50 underline-offset-4 hover:text-copper">(555) 010-0124</a></p>
+      <p class="mt-1"><a href="mailto:hello@thecopperfig.example" class="text-ink/70 hover:text-copper">hello@thecopperfig.example</a></p>
+    </div>
+  </section>
+
+  <!-- ============ RESERVE CTA ============ -->
+  <section id="reserve" class="grain relative overflow-hidden bg-ink py-24 text-center text-cream">
+    <div class="pointer-events-none absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-copper/15 blur-3xl"></div>
+    <div class="fade-up relative mx-auto max-w-2xl px-5">
+      <h2 class="font-display text-4xl font-light md:text-5xl">Save your seat</h2>
+      <p class="mt-4 text-cream/75">We seat parties of up to eight. For private events and buyouts, email us and we will make it special.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="tel:+15550100" class="rounded-full bg-copper px-8 py-4 font-bold uppercase tracking-widest text-ink transition hover:bg-cream">Call (555) 010-0124</a>
+        <a href="mailto:hello@thecopperfig.example" class="rounded-full border border-cream/30 px-8 py-4 uppercase tracking-widest transition hover:border-copper hover:text-copper">Email Us</a>
+      </div>
+      <p class="mt-6 text-xs uppercase tracking-[0.3em] text-cream/50">Or link your booking widget here (Resy, OpenTable, Tock)</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-ink pb-10 pt-6 text-center text-xs uppercase tracking-[0.25em] text-cream/50">
+    <div class="mx-auto max-w-6xl border-t border-cream/10 px-5 pt-8">
+      <p class="font-display normal-case tracking-normal text-lg text-cream/80">The Copper Fig</p>
+      <p class="mt-3">124 Grove Street &middot; Your City &middot; (555) 010-0124</p>
+      <p class="mt-3">&copy; 2026 The Copper Fig. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    toggle.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('hidden') === false;
+      mobileNav.classList.toggle('flex', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.add('hidden'); mobileNav.classList.remove('flex');
+    }));
+
+    // Scroll-in reveals
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Copper Fig",
+    "servesCuisine": "Seasonal, Mediterranean",
+    "telephone": "(555) 010-0124",
+    "address": { "@type": "PostalAddress", "streetAddress": "124 Grove Street", "addressLocality": "Your City" },
+    "priceRange": "$$"
+  }
+  </script>
+</body>
+</html>
