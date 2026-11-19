@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yetenek Demosu · Scroll-scrub, sticky, 3D, mıknatıs</title>
+<meta name="description" content="Awwwards tarzı sitelerin yeteneklerini tek sayfada gösteren demo: scroll ile çalışan sahne, sticky yatay galeri, 3D eğim, metin maskesi, mıknatıslı imleç.">
+<meta name="theme-color" content="#08090a">
+<style>
+:root{
+  --bg:#08090a; --fg:#f2f0ea; --dim:#8a8f8b;
+  --accent:#c8f169; --accent2:#ff7a45;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 ui-sans-serif,system-ui,"Segoe UI",Roboto,Arial;overflow-x:hidden;transition:background .6s ease}
+body.t2{background:#0a0d14}
+body.t3{background:#0b0a0f}
+body.t4{background:#0a120c}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);transition:color .5s}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:6px 12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#cfd4cf}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.045em;line-height:.9}
+h1{font-size:clamp(44px,11vw,150px)}
+h2{font-size:clamp(30px,6vw,84px)}
+h3{font-size:20px;letter-spacing:-.02em;line-height:1.2}
+p{margin:0;color:var(--dim)}
+
+/* loader */
+#load{position:fixed;inset:0;z-index:100;background:#08090a;display:grid;place-items:center;transition:opacity .7s ease,visibility .7s}
+#load.gone{opacity:0;visibility:hidden}
+#load b{font-size:clamp(40px,9vw,120px);font-weight:800;letter-spacing:-.05em}
+#load small{display:block;font-size:11px;letter-spacing:.4em;color:var(--dim);text-align:center;margin-top:8px}
+
+/* chrome */
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:90;transition:background .5s}
+#cur,#curRing{position:fixed;top:0;left:0;pointer-events:none;z-index:95;border-radius:50%;mix-blend-mode:difference;display:none}
+#cur{width:7px;height:7px;background:#fff;transform:translate(-50%,-50%)}
+#curRing{width:34px;height:34px;border:1px solid rgba(255,255,255,.65);transform:translate(-50%,-50%);transition:width .2s,height .2s,opacity .2s}
+body.cursor #cur,body.cursor #curRing{display:block}
+body.cursor *{cursor:none!important}
+.railnav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:80;display:grid;gap:12px}
+.railnav button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:rgba(255,255,255,.22);transition:.3s}
+.railnav button.on{background:var(--accent);transform:scale(1.5)}
+header{position:fixed;top:0;left:0;right:0;z-index:85;display:flex;justify-content:space-between;align-items:center;
+  padding:16px 24px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#a9afa9;backdrop-filter:blur(8px)}
+
+/* type reveal */
+.split span{display:inline-block;transform:translateY(115%) rotate(3deg);opacity:0;transition:transform .9s cubic-bezier(.19,1,.22,1),opacity .7s}
+.split.in span{transform:none;opacity:1}
+.mask{overflow:hidden;display:block}
+
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 40px;position:relative}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero .wrap{position:relative;z-index:2}
+.hero .sub{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.hero p.lead{max-width:520px;margin-top:26px;font-size:16.5px;color:#bfc6c1}
+.hint{display:flex;gap:14px;align-items:center;margin-top:40px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#6f766f}
+.hint i{width:44px;height:1px;background:var(--accent);display:block}
+
+/* generic block */
+.block{padding:130px 0;position:relative}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-bottom:46px}
+.head p{max-width:400px;font-size:14.5px}
+.note{font-size:12.5px;color:#7d837d;margin-top:18px;max-width:520px}
+
+/* 02 scrub */
+.scrub{position:relative;height:300vh;background:#060708}
+.scrub .pin{position:sticky;top:0;height:100svh;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}
+.scrub canvas{width:100%;height:100%;display:block}
+.scrub .top,.scrub .bot{padding:22px 24px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8e958e}
+.scrub .bot b{color:var(--accent)}
+.meter{width:min(320px,40vw);height:1px;background:rgba(255,255,255,.16);position:relative}
+.meter i{position:absolute;left:0;top:0;height:100%;width:0;background:var(--accent)}
+
+/* 03 horizontal */
+.horiz{position:relative;height:280vh}
+.horiz .pin{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.htrack{display:flex;gap:18px;will-change:transform;padding:0 24px}
+.panel{flex:none;width:min(430px,74vw);height:min(520px,62svh);border-radius:18px;border:1px solid rgba(255,255,255,.1);
+  padding:26px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#101613,#0a0c0a)}
+.panel::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 80% 0%,rgba(200,241,105,.18),transparent 60%)}
+.panel b{font-size:clamp(26px,3vw,40px);letter-spacing:-.03em;display:block}
+.panel .k{font-size:11px;letter-spacing:.28em;color:var(--accent)}
+.panel .row{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;font-size:12px;color:#8b928c}
+
+/* 04 3d */
+.tiltwrap{perspective:1200px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tilt{border-radius:18px;border:1px solid rgba(255,255,255,.12);padding:26px;min-height:250px;
+  background:linear-gradient(160deg,#121815,#0a0d0b);transform-style:preserve-3d;transition:transform .12s linear;
+  display:flex;flex-direction:column;justify-content:space-between}
+.tilt .z{transform:translateZ(40px)}
+.tilt b{font-size:26px;letter-spacing:-.02em}
+.tilt small{font-size:12px;color:#8b928c}
+
+/* 05 mask text */
+.reveal-lines{font-size:clamp(26px,4.6vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1.02;max-width:920px}
+.reveal-lines .mask span{display:block;transform:translateY(110%);transition:transform 1s cubic-bezier(.19,1,.22,1)}
+.reveal-lines.in .mask span{transform:none}
+
+/* 06 magnetic */
+.magrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.mag{position:relative;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:16px 26px;font-weight:700;
+  font-size:14px;transition:transform .18s ease,background .3s,color .3s;background:transparent;color:var(--fg)}
+.mag:hover{background:var(--accent);color:#0b120c;border-color:transparent}
+.mag.solid{background:var(--accent);color:#0b120c;border-color:transparent}
+
+/* 07 theme */
+.themes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.sw{height:140px;border-radius:16px;border:1px solid rgba(255,255,255,.1);position:relative;overflow:hidden;background:#0c0f0d}
+.sw b{position:absolute;left:14px;bottom:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#cfd4cf}
+.sw i{position:absolute;inset:auto -20% -40% -20%;height:120px;filter:blur(20px);opacity:.7}
+
+footer{padding:90px 0 60px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#767d76;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:960px){.tiltwrap{grid-template-columns:1fr}.themes{grid-template-columns:repeat(2,1fr)}.railnav{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .split span,.reveal-lines .mask span{transform:none;opacity:1}
+}
+</style>
+</head>
+<body>
+<div id="load"><div style="text-align:center"><b id="lc">0</b><small>YETENEK DEMOSU</small></div></div>
+<div id="prog"></div>
+<div id="cur"></div><div id="curRing"></div>
+
+<header>
+  <span>Yetenek demosu</span>
+  <span>scroll et ↓</span>
+</header>
+<nav class="railnav" id="railnav" aria-label="Bölümler"></nav>
+
+<main>
+<section class="hero" id="s1" data-accent="#c8f169">
+  <canvas id="heroCv"></canvas>
+  <div class="wrap">
+    <div class="sub">
+      <span class="tag">01 · metin maskesi</span>
+      <span class="tag">02 · canvas parçacık</span>
+    </div>
+    <h1 class="split" data-split>NE YAPABİLİR?</h1>
+    <p class="lead">Bu sayfa bir tema değil, bir yetenek listesi. Her blok, Awwwards tarzı sitelerde gördüğün bir tekniği ayrı ayrı gösteriyor: scroll'a bağlı sahne, sabitlenmiş yatay geçiş, 3D eğim, maskeli tipografi, mıknatıslı imleç, tema geçişi.</p>
+    <div class="hint"><i></i> kaydır, sayaçlar ve sahne seninle hareket ediyor</div>
+  </div>
+</section>
+
+<section class="scrub" id="s2" data-accent="#c8f169">
+  <div class="pin">
+    <div class="top">
+      <span>02 · scroll-scrub sahne</span>
+      <span>video yerine canvas · 90 kare</span>
+    </div>
+    <canvas id="scrubCv"></canvas>
+    <div class="bot">
+      <span>kare <b id="frameNo">00</b> / 89</span>
+      <div class="meter"><i id="meter"></i></div>
+      <span>scroll = zaman çizgisi</span>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="s3" data-accent="#c8f169">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">03 · sticky + yatay</p><h2>Kaydır,<br>yana gitsin.</h2></div>
+      <p>Bölüm ekranda sabitlenir; dikey scroll yatay harekete çevrilir. Kartları fareyle sürüklemek de çalışır.</p>
+    </div>
+  </div>
+  <div class="horiz" id="horiz">
+    <div class="pin">
+      <div class="htrack" id="htrack">
+        <article class="panel"><span class="k">01 · SCROLL-SCRUB</span><div><b>Araç<br>scroll ile<br>yola çıkar.</b><p style="margin-top:12px">Canvas sahnesi, kaydırma oranına göre kare kare çizilir; video dosyası gerekmez.</p></div><div class="row"><span>requestAnimationFrame</span><span>lerp 0.08</span></div></article>
+        <article class="panel"><span class="k">02 · STICKY PIN</span><div><b>Bölüm<br>ekranda<br>durur.</b><p style="margin-top:12px">position:sticky ile 100svh sabitlenir; içerik scroll ile ilerler.</p></div><div class="row"><span>sticky</span><span>300vh</span></div></article>
+        <article class="panel"><span class="k">03 · 3D TILT</span><div><b>Kart<br>imlece<br>eğilir.</b><p style="margin-top:12px">perspective + rotateX/Y; katmanlar translateZ ile derinlik kazanır.</p></div><div class="row"><span>perspective</span><span>translateZ</span></div></article>
+        <article class="panel"><span class="k">04 · MAGNETIC</span><div><b>Düğme<br>imleci<br>çeker.</b><p style="margin-top:12px">İmleç yaklaşınca buton yön vektörü kadar kayar, bırakınca yayla geri döner.</p></div><div class="row"><span>pointermove</span><span>spring</span></div></article>
+        <article class="panel"><span class="k">05 · THEME FLOW</span><div><b>Renk<br>bölüme<br>uyar.</b><p style="margin-top:12px">Bölüm değiştikçe CSS değişkenleri animasyonla geçer; sayfa yeniden yüklenmez.</p></div><div class="row"><span>CSS variables</span><span>transition</span></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="s4" data-accent="#ff9d6b">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">04 · 3D eğim</p><h2>Derinlik<br>fareyle.</h2></div>
+      <p>Kartın üstünde gezin: katmanlar farklı hızda kayar, ışık imleci takip eder.</p>
+    </div>
+    <div class="tiltwrap" id="tiltwrap">
+      <div class="tilt"><span class="k" style="font-size:11px;letter-spacing:.28em;color:#8b928c">KATMAN 1</span><b class="z">Çekici</b><small>7/24 · O-5 hattı</small></div>
+      <div class="tilt"><span class="k" style="font-size:11px;letter-spacing:.28em;color:#8b928c">KATMAN 2</span><b class="z">Akü takviye</b><small>yerinde müdahale</small></div>
+      <div class="tilt"><span class="k" style="font-size:11px;letter-spacing:.28em;color:#8b928c">KATMAN 3</span><b class="z">Benzin destek</b><small>en yakın istasyon</small></div>
+    </div>
+    <p class="note">Not: bu demoda görsel yerine tipografi ve ışık kullanıldı; gerçek fotoğraflar eklenince aynı efekt fotoğraf katmanlarına uygulanır.</p>
+  </div>
+</section>
+
+<section class="block" id="s5" data-accent="#9dd0ff">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">05 · maskeli tipografi</p><h2>Satır satır<br>açılan metin.</h2></div>
+      <p>Her satır kendi maskesinin içinden yukarı kayarak gelir; harf harf gecikmeli.</p>
+    </div>
+    <div class="reveal-lines" id="lines">
+      <span class="mask"><span>Bir çekici sitesi</span></span>
+      <span class="mask"><span>sadece telefon ve</span></span>
+      <span class="mask"><span>adresten ibaret değil.</span></span>
+    </div>
+    <div class="magrow">
+      <button class="mag solid" data-mag data-cursor="link">Mıknatıslı düğme</button>
+      <button class="mag" data-mag data-cursor="link">Ben de öyleyim</button>
+      <button class="mag" data-mag data-cursor="link">Sürükle & bırak</button>
+    </div>
+    <p class="note">05 ve 06 birlikte: imleç özel (blend-mode farkı), düğmeler mıknatıslı. Dokunmatik cihazda imleç devre dışı kalır.</p>
+  </div>
+</section>
+
+<section class="block" id="s6" data-accent="#c8f169" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">06 · tema geçişi</p><h2>Sayfa<br>nefes alır.</h2></div>
+      <p>Bu bloklar arasında arka plan ve vurgu rengi CSS değişkenleriyle akıyor — sayfa yenilenmiyor.</p>
+    </div>
+    <div class="themes">
+      <div class="sw"><i style="background:#c8f169"></i><b>Gece / lime</b></div>
+      <div class="sw"><i style="background:#ff9d6b"></i><b>Otoyol / amber</b></div>
+      <div class="sw"><i style="background:#9dd0ff"></i><b>Şafak / buz</b></div>
+      <div class="sw"><i style="background:#ff7a45"></i><b>Uyarı / turuncu</b></div>
+    </div>
+    <p class="note">Bölüm değişince üstteki ilerleme çubuğu ve vurgular da renk değiştirir.</p>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span>Yetenek demosu · scroll-scrub · sticky · 3D · mask · magnetic</span>
+  <span>tek dosya · dış kütüphane yok</span>
+</footer>
+
+<script>
+(function(){
+  var azalt = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var lerp = function(a,b,t){ return a + (b-a)*t; };
+
+  /* ---------- yükleyici ---------- */
+  var lc = document.getElementById('lc'), load = document.getElementById('load'), n = 0;
+  (function say(){
+    n = Math.min(100, n + Math.ceil(Math.random()*9));
+    lc.textContent = n;
+    if(n < 100) setTimeout(say, 40); else setTimeout(function(){ load.classList.add('gone'); }, 260);
+  })();
+
+  /* ---------- ilerleme ---------- */
+  var prog = document.getElementById('prog'), hdr = document.querySelector('header');
+  function cubuk(){
+    var h = document.documentElement;
+    prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight || 1) * 100) + '%';
+  }
+  addEventListener('scroll', cubuk, {passive:true}); cubuk();
+
+  /* ---------- split metin ---------- */
+  document.querySelectorAll('[data-split]').forEach(function(el){
+    var t = el.textContent.trim(); el.textContent = '';
+    t.split(' ').forEach(function(kelime, i){
+      var s = document.createElement('span');
+      s.textContent = kelime;
+      s.style.transitionDelay = (i * 70) + 'ms';
+      el.appendChild(s);
+      if(i < t.split(' ').length - 1) el.appendChild(document.createTextNode(' '));
+    });
+  });
+
+  /* ---------- görünür olunca aç ---------- */
+  var io = new IntersectionObserver(function(gs){
+    gs.forEach(function(g){ if(g.isIntersecting){ g.target.classList.add('in'); io.unobserve(g.target); } });
+  }, {threshold:.2});
+  document.querySelectorAll('.split,.reveal-lines').forEach(function(e){ io.observe(e); });
+
+  /* ---------- bölüm rayı + tema ---------- */
+  var bölümler = ['s1','s2','s3','s4','s5','s6'].map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  var railnav = document.getElementById('railnav');
+  bölümler.forEach(function(b, i){
+    var d = document.createElement('button');
+    d.setAttribute('aria-label', 'bölüm ' + (i+1));
+    d.onclick = function(){ b.scrollIntoView({behavior:'smooth'}); };
+    railnav.appendChild(d);
+  });
+  var noktalar = railnav.querySelectorAll('button');
+  var temaGozlem = new IntersectionObserver(function(gs){
+    gs.forEach(function(g){
+      if(!g.isIntersecting) return;
+      var i = bölümler.indexOf(g.target);
+      noktalar.forEach(function(n2, k){ n2.classList.toggle('on', k === i); });
+      var renk = g.target.dataset.accent || '#c8f169';
+      document.documentElement.style.setProperty('--accent', renk);
+      document.body.classList.toggle('t2', i === 1);
+      document.body.classList.toggle('t3', i === 3);
+      document.body.classList.toggle('t4', i === 5);
+    });
+  }, {threshold:.45});
+  bölümler.forEach(function(b){ temaGozlem.observe(b); });
+
+  /* ---------- imleç ---------- */
+  var imlec = document.getElementById('cur'), halka = document.getElementById('curRing');
+  if(matchMedia('(pointer:fine)').matches && !azalt){
+    document.body.classList.add('cursor');
+    var mx = innerWidth/2, my = innerHeight/2, hx = mx, hy = my;
+    addEventListener('mousemove', function(e){ mx = e.clientX; my = e.clientY;
+      imlec.style.left = mx + 'px'; imlec.style.top = my + 'px';
+    });
+    (function takip(){
+      hx = lerp(hx, mx, .16); hy = lerp(hy, my, .16);
+      halka.style.left = hx + 'px'; halka.style.top = hy + 'px';
+      requestAnimationFrame(takip);
+    })();
+    document.querySelectorAll('[data-cursor="link"]').forEach(function(el){
+      el.addEventListener('mouseenter', function(){ halka.style.width = '58px'; halka.style.height = '58px'; });
+      el.addEventListener('mouseleave', function(){ halka.style.width = '34px'; halka.style.height = '34px'; });
+    });
+  }
+
+  /* ---------- mıknatıs ---------- */
+  if(!azalt){
+    document.querySelectorAll('[data-mag]').forEach(function(b){
+      b.addEventListener('mousemove', function(e){
+        var r = b.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width/2)) * .28;
+        var dy = (e.clientY - (r.top + r.height/2)) * .38;
+        b.style.transform = 'translate(' + dx + 'px,' + dy + 'px)';
+      });
+      b.addEventListener('mouseleave', function(){ b.style.transform = 'translate(0,0)'; });
+    });
+  }
+
+  /* ---------- 3D tilt ---------- */
+  document.querySelectorAll('.tilt').forEach(function(k){
+    k.addEventListener('mousemove', function(e){
+      if(azalt) return;
+      var r = k.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - .5;
+      var py = (e.clientY - r.top) / r.height - .5;
+      k.style.transform = 'rotateY(' + (px*14) + 'deg) rotateX(' + (-py*14) + 'deg) translateZ(6px)';
+      k.style.background = 'linear-gradient(' + (135 + px*40) + 'deg,#161d19,#090c0a)';
+    });
+    k.addEventListener('mouseleave', function(){ k.style.transform = 'none'; });
+  });
+
+  /* ---------- hero parçacık ---------- */
+  var hc = document.getElementById('heroCv'), hx2 = hc.getContext('2d'), parcalar = [];
+  function heroBoyut(){
+    var d = Math.min(devicePixelRatio || 1, 2);
+    hc.width = hc.clientWidth * d; hc.height = hc.clientHeight * d;
+    hx2.setTransform(d,0,0,d,0,0);
+  }
+  if(!azalt){
+    heroBoyut(); addEventListener('resize', heroBoyut);
+    for(var i=0;i<70;i++) parcalar.push({x:Math.random(),y:Math.random(),s:Math.random()*1.8+.4,v:Math.random()*.0004+.0001});
+    (function heroDongu(){
+      var w = hc.clientWidth, h = hc.clientHeight;
+      hx2.clearRect(0,0,w,h);
+      parcalar.forEach(function(p){
+        p.y -= p.v * 60;
+        if(p.y < 0) p.y = 1;
+        hx2.beginPath();
+        hx2.arc(p.x*w, p.y*h, p.s, 0, Math.PI*2);
+        hx2.fillStyle = 'rgba(200,241,105,' + (.10 + p.s*.12) + ')';
+        hx2.fill();
+        hx2.beginPath();
+        hx2.moveTo(p.x*w, p.y*h);
+        hx2.lineTo(p.x*w, p.y*h + 26);
+        hx2.strokeStyle = 'rgba(200,241,105,.06)';
+        hx2.stroke();
+      });
+      requestAnimationFrame(heroDongu);
+    })();
+  }
+
+  /* ---------- scroll-scrub sahne ---------- */
+  var sc = document.getElementById('scrubCv'), sx = sc.getContext('2d');
+  var frameNo = document.getElementById('frameNo'), meter = document.getElementById('meter');
+  var hedefP = 0, p = 0;
+  function scrubBoyut(){
+    var d = Math.min(devicePixelRatio || 1, 2);
+    sc.width = sc.clientWidth * d; sc.height = sc.clientHeight * d;
+    sx.setTransform(d,0,0,d,0,0);
+  }
+  scrubBoyut(); addEventListener('resize', scrubBoyut);
+
+  function ciz(p2){
+    var w = sc.clientWidth, h = sc.clientHeight;
+    sx.clearRect(0,0,w,h);
+    var g = sx.createLinearGradient(0,0,0,h);
+    g.addColorStop(0,'#070d0a'); g.addColorStop(.62,'#0a1510'); g.addColorStop(1,'#0c1a13');
+    sx.fillStyle = g; sx.fillRect(0,0,w,h);
+
+    // ufuk ve dağlar
+    sx.fillStyle = 'rgba(200,241,105,.045)';
+    sx.beginPath(); sx.moveTo(0,h*.55);
+    for(var i=0;i<=10;i++){ sx.lineTo(w*i/10, h*.55 - Math.sin(i*1.3 + p2*2)*26 - 10); }
+    sx.lineTo(w,h); sx.lineTo(0,h); sx.fill();
+
+    // ikinci tepe katmanı (parallax hissi)
+    sx.fillStyle = 'rgba(200,241,105,.07)';
+    sx.beginPath(); sx.moveTo(0,h*.62);
+    for(var j=0;j<=12;j++){ sx.lineTo(w*j/12, h*.62 - Math.cos(j*.9 + p2*3)*32 - 8); }
+    sx.lineTo(w,h); sx.lineTo(0,h); sx.fill();
+
+    var yol = h*.74;
+    // asfalt
+    sx.fillStyle = '#0b0f0c'; sx.fillRect(0, yol, w, h-yol);
+    // şerit çizgileri (scroll ile akar)
+    sx.strokeStyle = 'rgba(244,241,232,.30)'; sx.lineWidth = 2; sx.setLineDash([34, 26]);
+    sx.lineDashOffset = -p2 * 900;
+    sx.beginPath(); sx.moveTo(0, yol + (h-yol)*.52); sx.lineTo(w, yol + (h-yol)*.52); sx.stroke();
+    sx.setLineDash([]);
+
+    // hız çizgileri
+    sx.strokeStyle = 'rgba(200,241,105,' + (.05 + Math.sin(p2*Math.PI)*.22) + ')';
+    for(var k=0;k<7;k++){
+      var yy = yol - 12 - k*13;
+      var len = 30 + ((k*37 + p2*500) % 120);
+      sx.beginPath(); sx.moveTo(w*.02 + ((p2*700 + k*140) % w), yy); sx.lineTo(w*.02 + ((p2*700 + k*140) % w) + len, yy); sx.stroke();
+    }
+
+    // çekici
+    var tx = w*.06 + p2 * (w*.62);
+    var ty = yol - 34 + Math.sin(p2*Math.PI*8)*1.6;
+    var ol = Math.max(54, Math.min(124, w * (w < 600 ? .17 : .085)));
+    // platform
+    sx.fillStyle = '#16241c'; sx.fillRect(tx, ty + ol*.55, ol*2.15, ol*.34);
+    // kabin
+    sx.fillStyle = '#c8f169';
+    sx.beginPath();
+    sx.moveTo(tx + ol*1.28, ty + ol*.55);
+    sx.lineTo(tx + ol*1.28, ty + ol*.22);
+    sx.lineTo(tx + ol*1.55, ty + ol*.22);
+    sx.lineTo(tx + ol*1.78, ty + ol*.55);
+    sx.closePath(); sx.fill();
+    // cam
+    sx.fillStyle = '#0a1410'; sx.fillRect(tx + ol*1.34, ty + ol*.27, ol*.34, ol*.22);
+    // far ışığı
+    var fg = sx.createRadialGradient(tx + ol*1.7, ty + ol*.62, 4, tx + ol*1.7, ty + ol*.62, ol*1.5);
+    fg.addColorStop(0,'rgba(200,241,105,.20)'); fg.addColorStop(1,'rgba(200,241,105,0)');
+    sx.fillStyle = fg; sx.beginPath(); sx.arc(tx + ol*1.7, ty + ol*.62, ol*1.5, 0, Math.PI*2); sx.fill();
+
+    // O-5 tabelası
+    sx.fillStyle = '#123024'; sx.fillRect(w - 96, yol - 78, 74, 30);
+    sx.strokeStyle = 'rgba(200,241,105,.75)'; sx.lineWidth = 1.5; sx.strokeRect(w - 96, yol - 78, 74, 30);
+    sx.fillStyle = '#c8f169'; sx.font = 'bold 14px ui-sans-serif,system-ui';
+    sx.fillText('O-5', w - 78, yol - 57);
+    sx.fillStyle = '#2b3a31'; sx.fillRect(w - 62, yol - 48, 6, 48);
+
+    // tekerler
+    sx.fillStyle = '#060a08';
+    [tx + ol*.36, tx + ol*1.52].forEach(function(wx){
+      sx.beginPath(); sx.arc(wx, ty + ol*.88, ol*.19, 0, Math.PI*2); sx.fill();
+      sx.strokeStyle = '#3a4a40'; sx.lineWidth = 2;
+      for(var a=0;a<6;a++){
+        var an = a*Math.PI/3 + p2*Math.PI*7;
+        sx.beginPath(); sx.moveTo(wx, ty + ol*.88); sx.lineTo(wx + Math.cos(an)*ol*.15, ty + ol*.88 + Math.sin(an)*ol*.15); sx.stroke();
+      }
+    });
+    // tepe lambası
+    if(Math.sin(p2*Math.PI*16) > 0){
+      sx.fillStyle = 'rgba(255,157,60,.9)'; sx.fillRect(tx + ol*1.45, ty + ol*.14, ol*.12, ol*.07);
+      sx.fillStyle = 'rgba(255,157,60,.14)';
+      sx.beginPath(); sx.arc(tx + ol*1.51, ty + ol*.17, ol*.30, 0, Math.PI*2); sx.fill();
+    }
+
+    // okuma etiketi
+    sx.fillStyle = 'rgba(244,241,232,.55)';
+    sx.font = '10px ui-monospace,monospace';
+    sx.fillText('SCROLL → ZAMAN', 18, h - 14);
+  }
+
+  var kutu = document.querySelector('.scrub');
+  function scrubOku(){
+    var r = kutu.getBoundingClientRect();
+    hedefP = Math.min(1, Math.max(0, -r.top / (r.height - innerHeight || 1)));
+  }
+  addEventListener('scroll', scrubOku, {passive:true}); scrubOku();
+
+  function dongu(){
+    if(azalt){ ciz(hedefP); }
+    else {
+      p = lerp(p, hedefP, .10);
+      ciz(p);
+      frameNo.textContent = String(Math.round(p*89)).padStart(2,'0');
+      meter.style.width = (p*100) + '%';
+      requestAnimationFrame(dongu);
+    }
+  }
+  if(azalt){ ciz(0); meter.style.width = '0%'; } else { requestAnimationFrame(dongu); }
+
+  /* ---------- yatay sticky + sürükle ---------- */
+  var horiz = document.getElementById('horiz'), track = document.getElementById('htrack');
+  var hHedef = 0, hSimdi = 0, suruk = 0, basladi = false, baslaX = 0, sonX = 0;
+  function hOlc(){ hHedef = Math.max(0, track.scrollWidth - innerWidth + 24); }
+  addEventListener('resize', hOlc); hOlc();
+  function hOku(){
+    var r = horiz.getBoundingClientRect();
+    var oran = Math.min(1, Math.max(0, -r.top / (horiz.offsetHeight - innerHeight || 1)));
+    return -oran * hHedef;
+  }
+  function hDongu(){
+    var hedef = hOku() + suruk;
+    hSimdi = azalt ? hedef : lerp(hSimdi, hedef, .11);
+    track.style.transform = 'translateX(' + hSimdi + 'px)';
+    if(!azalt) requestAnimationFrame(hDongu);
+  }
+  track.addEventListener('pointerdown', function(e){
+    basladi = true; baslaX = e.clientX; sonX = suruk;
+    track.setPointerCapture(e.pointerId); track.style.transition = 'none';
+  });
+  track.addEventListener('pointermove', function(e){
+    if(!basladi) return;
+    suruk = sonX + (e.clientX - baslaX) * -1;
+    suruk = Math.min(0, Math.max(-hHedef, suruk));
+  });
+  track.addEventListener('pointerup', function(){ basladi = false; });
+  track.addEventListener('pointercancel', function(){ basladi = false; });
+  if(azalt){ track.style.transform = 'none'; } else { requestAnimationFrame(hDongu); }
+})();
+</script>
+</body>
+</html>

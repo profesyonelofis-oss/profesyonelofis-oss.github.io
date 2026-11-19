@@ -5,7 +5,33 @@ edition = "2021"
 
 [dependencies]
 chrono = "0.4"
-eframe = "0.27"
+eframe = "0.37"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 ureq = "2"
+# Google Maps Platform: asenkron istekler Tokio + reqwest ile atılır.
+tokio = { version = "1", features = ["rt-multi-thread", "time", "net"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+# API anahtarı kasası: AES-256-GCM + SHA-256 + base64.
+aes-gcm = "0.10"
+sha2 = "0.10"
+base64 = "0.22"
+getrandom = "0.2"
+# Demo HTML sıkıştırma (demo üretimi hâlâ kullanıyor).
+minify-html = "0.18.1"
+
+# Windows .exe dosya ikonu ve sürüm bilgisi (build.rs).
+[target.'cfg(windows)'.build-dependencies]
+winresource = "0.1"
+
+# Windows'un yerel dosya seçme penceresi (fotoğraf/video filtreleri).
+[target.'cfg(windows)'.dependencies]
+rfd = { version = "0.15", default-features = false }
+# Medya tarayıcısındaki gömülü web görünümü.
+wry = "0.57"
+
+# egui 0.27.2 `hit_test` panik yaması: değişken listeler kısalınca geçen kareden
+# kalan widget `hits` içinde bulunamıyor ve `unwrap()` uygulamayı öldürüyordu.
+[patch.crates-io]
+egui = { path = "vendor/egui-0.27.2" }

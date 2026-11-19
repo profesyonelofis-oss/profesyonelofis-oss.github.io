@@ -298,6 +298,9 @@ pub struct Musteri {
     /// Teklifin verildiği gün.
     #[serde(default)]
     pub teklif_tarihi: Option<String>,
+    /// "2 Medya" adımında seçilen stok dosyaları (proje köküne göre yollar).
+    #[serde(default)]
+    pub medya: Vec<String>,
 }
 
 /// Defterin özet sayaçları (arayüzde ve günlükte gösterilir).
@@ -356,17 +359,20 @@ impl Defter {
     }
 
     pub fn kaydet(&self) {
-        if let Ok(metin) = serde_json::to_string_pretty(&self.dosya) {
-            // Yazmadan önceki hâli yedekte tutulur: bozuk/eksik bir yazma
-            // kara listeyi ve gönderim geçmişini kaybettirmesin.
-            if fs::metadata(DEFTER_DOSYASI)
-                .map(|m| m.len() > 0)
-                .unwrap_or(false)
-            {
-                let _ = fs::copy(DEFTER_DOSYASI, YEDEK_DOSYASI);
-            }
-            let _ = fs::write(DEFTER_DOSYASI, metin);
+        self.kaydet_yoldan(DEFTER_DOSYASI);
+    }
+
+    /// Verilen yola yazar; başarılıysa `true` (onarım ve testler kullanır).
+    pub fn kaydet_yoldan(&self, yol: &str) -> bool {
+        let Ok(metin) = serde_json::to_string_pretty(&self.dosya) else {
+            return false;
+        };
+        // Yazmadan önceki hâli yedekte tutulur: bozuk/eksik bir yazma
+        // kara listeyi ve gönderim geçmişini kaybettirmesin.
+        if yol == DEFTER_DOSYASI && fs::metadata(yol).map(|m| m.len() > 0).unwrap_or(false) {
+            let _ = fs::copy(yol, YEDEK_DOSYASI);
         }
+        fs::write(yol, metin).is_ok()
     }
 
     fn indeks_yenile(&mut self) {
@@ -437,6 +443,7 @@ impl Defter {
             odeme: Odeme::Yok,
             tahsil_edilen: None,
             teklif_tarihi: None,
+            medya: Vec::new(),
         };
         self.indeks
             .insert(anahtar.to_string(), self.dosya.musteriler.len());
@@ -496,6 +503,13 @@ impl Defter {
     pub fn link_ayarla(&mut self, anahtar: &str, link: &str) {
         if let Some(&sira) = self.indeks.get(anahtar) {
             self.dosya.musteriler[sira].yayin_linki = Some(link.to_string());
+        }
+    }
+
+    /// Seçilen medya dosyalarını kayda işler (yollar proje köküne göre).
+    pub fn medya_ayarla(&mut self, anahtar: &str, medya: Vec<String>) {
+        if let Some(&sira) = self.indeks.get(anahtar) {
+            self.dosya.musteriler[sira].medya = medya;
         }
     }
 
@@ -652,6 +666,13 @@ impl Defter {
         &self.dosya.musteriler
     }
 
+    /// Defterin kayıtlarını verilen listeyle değiştirir; indeks yeniden
+    /// kurulur. Otomatik temizlik ve mükerrer birleştirme sonrası kullanılır.
+    pub fn kayitlari_degistir(&mut self, musteriler: Vec<Musteri>) {
+        self.dosya.musteriler = musteriler;
+        self.indeks_yenile();
+    }
+
     pub fn kayit(&self, anahtar: &str) -> Option<&Musteri> {
         self.indeks
             .get(anahtar)
@@ -792,7 +813,7 @@ fn csv_alan(metin: &str) -> String {
 }
 
 /// Kayıt anahtarı: işletmeyi taramalar arasında eşleştiren kararlı kimlik.
-/// OSM kaydı için node/way kimliği, Google için place ID, yoksa ad+koordinat.
+/// OSM kaydı için node/way kimliği (eski kayıtlarda place ID), yoksa ad+koordinat.
 /// Gönderim sayısı az olan varyantı seçer; eşitlikte A'ya döner.
 /// Denge **sektör içinde** kurulur: restoran müşterilerinde A/B eşit dağılır,
 /// böylece "hangi sektörde hangi açılış daha iyi yanıt alıyor" sorusu da
@@ -1039,6 +1060,30 @@ mod testler {
             assert_eq!(kol.bekleyen, 1);
             assert_eq!(kol.yanit_orani(), 50);
         }
+    }
+
+    #[test]
+    fn gunluk_yirmi_gonderim_siniri_dolunca_kalan_kalmaz() {
+        let mut defter = Defter::default();
+        let gun = "2026-11-03";
+        for i in 0..crate::GUNLUK_GONDERIM_LIMITI {
+            defter.gonderim_kaydet(&format!("osm:node/{i}"), gun);
+        }
+        assert_eq!(
+            defter.gun_gonderim(gun),
+            crate::GUNLUK_GONDERIM_LIMITI,
+            "20 gönderimden sonra günlük hak dolmalı"
+        );
+        assert_eq!(
+            crate::GUNLUK_GONDERIM_LIMITI.saturating_sub(defter.gun_gonderim(gun)),
+            0,
+            "kalan hak 0 olmalı"
+        );
+        // Aynı işletme aynı gün ikinci kez hak düşürmez.
+        defter.gonderim_kaydet("osm:node/0", gun);
+        assert_eq!(defter.gun_gonderim(gun), crate::GUNLUK_GONDERIM_LIMITI);
+        // Ertesi gün sayaç sıfırdan başlar.
+        assert_eq!(defter.gun_gonderim("2026-11-04"), 0);
     }
 
     #[test]
