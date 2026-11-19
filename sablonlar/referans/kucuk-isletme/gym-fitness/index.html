@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ironline Strength Club | Train Hard. Recover Smart.</title>
+  <meta name="description" content="Ironline Strength Club is a coaching-first gym with small-group strength classes, open lifting floor, and honest month-to-month pricing. First week free.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            coal: '#0b0b0d',
+            steel: '#17181c',
+            fog: '#9aa0a6',
+            volt: '#d4f34a',
+          },
+          fontFamily: {
+            display: ['Anton', 'Impact', 'sans-serif'],
+            body: ['Manrope', 'Helvetica', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .outline-text { -webkit-text-stroke: 2px rgba(212, 243, 74, .8); color: transparent; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-track { animation: marquee 22s linear infinite; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-up.in { opacity: 1; transform: none; }
+    .diag { clip-path: polygon(0 0, 100% 3rem, 100% 100%, 0 calc(100% - 3rem)); }
+  </style>
+</head>
+<body class="bg-coal font-body text-white antialiased">
+
+  <!-- ============ NAV ============ -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-coal/95 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#top" class="font-display text-2xl uppercase tracking-wide">Iron<span class="text-volt">line</span></a>
+      <nav class="hidden items-center gap-8 text-sm font-bold uppercase tracking-widest md:flex">
+        <a href="#programs" class="transition hover:text-volt">Programs</a>
+        <a href="#schedule" class="transition hover:text-volt">Schedule</a>
+        <a href="#pricing" class="transition hover:text-volt">Pricing</a>
+        <a href="#coaches" class="transition hover:text-volt">Coaches</a>
+        <a href="#join" class="bg-volt px-5 py-2.5 text-coal transition hover:bg-white">Free Week</a>
+      </nav>
+      <button id="navToggle" aria-label="Open menu" aria-expanded="false" class="md:hidden">
+        <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+      </button>
+    </div>
+    <nav id="mobileNav" class="hidden flex-col border-t border-white/10 bg-coal px-5 pb-5 pt-2 text-sm font-bold uppercase tracking-widest md:hidden">
+      <a href="#programs" class="py-3">Programs</a>
+      <a href="#schedule" class="py-3">Schedule</a>
+      <a href="#pricing" class="py-3">Pricing</a>
+      <a href="#coaches" class="py-3">Coaches</a>
+      <a href="#join" class="mt-2 bg-volt px-5 py-3 text-center text-coal">Free Week</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="relative overflow-hidden pb-20 pt-36 md:pt-44">
+    <div class="pointer-events-none absolute -right-20 top-24 hidden select-none font-display text-[16rem] leading-none text-white/5 lg:block">45KG</div>
+    <div class="relative mx-auto max-w-6xl px-5">
+      <p class="mb-4 inline-block border border-volt/50 px-3 py-1 text-xs font-bold uppercase tracking-[0.3em] text-volt">Coaching-first strength gym</p>
+      <h1 class="font-display text-6xl uppercase leading-[0.95] md:text-8xl">
+        Train hard.<br><span class="outline-text">Recover smart.</span><br>Show up again.
+      </h1>
+      <p class="mt-8 max-w-xl text-lg leading-relaxed text-fog">
+        No mirrors-and-machines maze. Ironline is barbells, small-group coaching, and a plan
+        that meets you where you are. Your first week is free, no card required.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#join" class="bg-volt px-8 py-4 font-display text-xl uppercase tracking-wide text-coal transition hover:bg-white">Start Free Week</a>
+        <a href="#programs" class="border border-white/25 px-8 py-4 font-display text-xl uppercase tracking-wide transition hover:border-volt hover:text-volt">See Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="overflow-hidden border-y border-volt/30 bg-steel py-4" aria-hidden="true">
+    <div class="marquee-track flex w-max gap-8 whitespace-nowrap font-display text-2xl uppercase text-volt/90">
+      <span>Strength</span><span>&bull;</span><span>Conditioning</span><span>&bull;</span><span>Mobility</span><span>&bull;</span><span>Powerlifting</span><span>&bull;</span><span>Open Floor</span><span>&bull;</span>
+      <span>Strength</span><span>&bull;</span><span>Conditioning</span><span>&bull;</span><span>Mobility</span><span>&bull;</span><span>Powerlifting</span><span>&bull;</span><span>Open Floor</span><span>&bull;</span>
+    </div>
+  </div>
+
+  <!-- ============ PROGRAMS ============ -->
+  <section id="programs" class="mx-auto max-w-6xl px-5 py-24">
+    <div class="fade-up mb-12 flex flex-wrap items-end justify-between gap-4">
+      <h2 class="font-display text-5xl uppercase">Programs</h2>
+      <p class="max-w-sm text-sm text-fog">Every membership includes a movement assessment and a written plan in your first week.</p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div class="fade-up group border border-white/10 bg-steel p-7 transition hover:border-volt">
+        <p class="font-display text-4xl text-volt">01</p>
+        <h3 class="mt-4 font-display text-2xl uppercase">Foundations</h3>
+        <p class="mt-3 text-sm leading-relaxed text-fog">Four weeks of squat, hinge, push, pull with a coach at your side. Built for true beginners.</p>
+        <p class="mt-5 text-xs font-bold uppercase tracking-widest text-volt/80">Mon / Wed / Fri &middot; 6am, 6pm</p>
+      </div>
+      <div class="fade-up group border border-white/10 bg-steel p-7 transition hover:border-volt">
+        <p class="font-display text-4xl text-volt">02</p>
+        <h3 class="mt-4 font-display text-2xl uppercase">Strength Club</h3>
+        <p class="mt-3 text-sm leading-relaxed text-fog">Small-group barbell training capped at eight lifters. Progressive blocks, tracked lifts, real PRs.</p>
+        <p class="mt-5 text-xs font-bold uppercase tracking-widest text-volt/80">Daily &middot; 6am - 8pm</p>
+      </div>
+      <div class="fade-up group border border-white/10 bg-steel p-7 transition hover:border-volt">
+        <p class="font-display text-4xl text-volt">03</p>
+        <h3 class="mt-4 font-display text-2xl uppercase">Engine Room</h3>
+        <p class="mt-3 text-sm leading-relaxed text-fog">Conditioning without the chaos. Sleds, rowers, bikes, and intervals scaled to your level.</p>
+        <p class="mt-5 text-xs font-bold uppercase tracking-widest text-volt/80">Tue / Thu &middot; 6am, noon, 7pm</p>
+      </div>
+      <div class="fade-up group border border-white/10 bg-steel p-7 transition hover:border-volt">
+        <p class="font-display text-4xl text-volt">04</p>
+        <h3 class="mt-4 font-display text-2xl uppercase">Open Floor</h3>
+        <p class="mt-3 text-sm leading-relaxed text-fog">Six platforms, calibrated plates, chalk allowed. Run your own program with a coach nearby.</p>
+        <p class="mt-5 text-xs font-bold uppercase tracking-widest text-volt/80">All access hours</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section id="schedule" class="diag bg-steel py-28">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="fade-up font-display text-5xl uppercase">This Week</h2>
+      <div class="fade-up mt-10 overflow-x-auto">
+        <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-volt/40 font-display text-base uppercase tracking-wide text-volt">
+              <th class="py-4 pr-4">Time</th><th class="py-4 pr-4">Mon</th><th class="py-4 pr-4">Tue</th><th class="py-4 pr-4">Wed</th><th class="py-4 pr-4">Thu</th><th class="py-4 pr-4">Fri</th><th class="py-4">Sat</th>
+            </tr>
+          </thead>
+          <tbody class="text-fog">
+            <tr class="border-b border-white/10"><td class="py-4 pr-4 font-bold text-white">6:00a</td><td class="py-4 pr-4">Foundations</td><td class="py-4 pr-4">Engine Room</td><td class="py-4 pr-4">Foundations</td><td class="py-4 pr-4">Engine Room</td><td class="py-4 pr-4">Foundations</td><td class="py-4">Open Floor</td></tr>
+            <tr class="border-b border-white/10"><td class="py-4 pr-4 font-bold text-white">12:00p</td><td class="py-4 pr-4">Strength Club</td><td class="py-4 pr-4">Engine Room</td><td class="py-4 pr-4">Strength Club</td><td class="py-4 pr-4">Engine Room</td><td class="py-4 pr-4">Strength Club</td><td class="py-4">Team WOD</td></tr>
+            <tr class="border-b border-white/10"><td class="py-4 pr-4 font-bold text-white">6:00p</td><td class="py-4 pr-4">Foundations</td><td class="py-4 pr-4">Strength Club</td><td class="py-4 pr-4">Foundations</td><td class="py-4 pr-4">Strength Club</td><td class="py-4 pr-4">Open Floor</td><td class="py-4">Closed</td></tr>
+            <tr><td class="py-4 pr-4 font-bold text-white">7:00p</td><td class="py-4 pr-4">Mobility</td><td class="py-4 pr-4">Engine Room</td><td class="py-4 pr-4">Mobility</td><td class="py-4 pr-4">Engine Room</td><td class="py-4 pr-4">Open Floor</td><td class="py-4">Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="mx-auto max-w-6xl px-5 py-24">
+    <h2 class="fade-up font-display text-5xl uppercase">Honest Pricing</h2>
+    <p class="fade-up mt-3 max-w-md text-sm text-fog">Month to month. Cancel any time from your account, no phone call required.</p>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <div class="fade-up border border-white/10 bg-steel p-8">
+        <h3 class="font-display text-2xl uppercase">Open Floor</h3>
+        <p class="mt-4 font-display text-5xl">$59<span class="text-lg text-fog">/mo</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-fog">
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>All access hours, 5am - 10pm</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Six lifting platforms</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Movement assessment included</li>
+        </ul>
+        <a href="#join" class="mt-8 block border border-white/25 py-3 text-center font-display uppercase tracking-wide transition hover:border-volt hover:text-volt">Choose Plan</a>
+      </div>
+      <div class="fade-up relative border-2 border-volt bg-steel p-8">
+        <p class="absolute -top-3 left-8 bg-volt px-3 py-0.5 text-xs font-extrabold uppercase tracking-widest text-coal">Most Popular</p>
+        <h3 class="font-display text-2xl uppercase">Strength Club</h3>
+        <p class="mt-4 font-display text-5xl">$129<span class="text-lg text-fog">/mo</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-fog">
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Unlimited coached classes</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Open floor included</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Quarterly progress testing</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Written training blocks</li>
+        </ul>
+        <a href="#join" class="mt-8 block bg-volt py-3 text-center font-display uppercase tracking-wide text-coal transition hover:bg-white">Choose Plan</a>
+      </div>
+      <div class="fade-up border border-white/10 bg-steel p-8">
+        <h3 class="font-display text-2xl uppercase">1-on-1</h3>
+        <p class="mt-4 font-display text-5xl">$95<span class="text-lg text-fog">/session</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-fog">
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Private coaching, your schedule</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Nutrition check-ins</li>
+          <li class="flex gap-3"><span class="text-volt">&#9632;</span>Packs of 10 save 15%</li>
+        </ul>
+        <a href="#join" class="mt-8 block border border-white/25 py-3 text-center font-display uppercase tracking-wide transition hover:border-volt hover:text-volt">Book Intro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COACHES ============ -->
+  <section id="coaches" class="bg-steel py-24">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="fade-up font-display text-5xl uppercase">The Coaches</h2>
+      <div class="mt-12 grid gap-6 sm:grid-cols-3">
+        <div class="fade-up">
+          <!-- IMAGE SLOT: swap this block for <img src="coach.jpg" class="aspect-[3/4] w-full object-cover"> -->
+          <div class="flex aspect-[3/4] items-end bg-gradient-to-br from-volt/20 via-coal to-coal p-5">
+            <p class="text-xs uppercase tracking-[0.3em] text-fog">Coach photo</p>
+          </div>
+          <h3 class="mt-4 font-display text-xl uppercase">Dre Okafor</h3>
+          <p class="text-sm text-fog">Head Coach &middot; CSCS. 12 years under the bar, powerlifting total 1,540.</p>
+        </div>
+        <div class="fade-up">
+          <div class="flex aspect-[3/4] items-end bg-gradient-to-br from-volt/20 via-coal to-coal p-5">
+            <p class="text-xs uppercase tracking-[0.3em] text-fog">Coach photo</p>
+          </div>
+          <h3 class="mt-4 font-display text-xl uppercase">Sofia Reyes</h3>
+          <p class="text-sm text-fog">Strength &amp; Mobility &middot; DPT student, keeps our lifters lifting pain-free.</p>
+        </div>
+        <div class="fade-up">
+          <div class="flex aspect-[3/4] items-end bg-gradient-to-br from-volt/20 via-coal to-coal p-5">
+            <p class="text-xs uppercase tracking-[0.3em] text-fog">Coach photo</p>
+          </div>
+          <h3 class="mt-4 font-display text-xl uppercase">Marcus Lee</h3>
+          <p class="text-sm text-fog">Conditioning &middot; Former college rower, runs the Engine Room like clockwork.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOIN CTA ============ -->
+  <section id="join" class="mx-auto max-w-6xl px-5 py-24 text-center">
+    <h2 class="fade-up font-display text-5xl uppercase md:text-7xl">First week <span class="text-volt">free</span></h2>
+    <p class="fade-up mx-auto mt-5 max-w-md text-fog">Drop in for any class or open floor session. If it is not for you, no hard feelings and no follow-up calls.</p>
+    <div class="fade-up mt-9 flex flex-wrap justify-center gap-4">
+      <a href="tel:+15550166" class="bg-volt px-10 py-4 font-display text-xl uppercase tracking-wide text-coal transition hover:bg-white">Call (555) 016-6600</a>
+      <a href="mailto:train@ironline.example" class="border border-white/25 px-10 py-4 font-display text-xl uppercase tracking-wide transition hover:border-volt hover:text-volt">Email Us</a>
+    </div>
+    <p class="fade-up mt-6 text-xs uppercase tracking-[0.3em] text-fog">880 Foundry Ave &middot; Your City &middot; Open 5am - 10pm</p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-white/10 py-8 text-center text-xs uppercase tracking-[0.25em] text-fog">
+    <p class="font-display text-lg text-white">Iron<span class="text-volt">line</span> Strength Club</p>
+    <p class="mt-3">&copy; 2026 Ironline Strength Club. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    toggle.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('hidden') === false;
+      mobileNav.classList.toggle('flex', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.add('hidden'); mobileNav.classList.remove('flex');
+    }));
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Ironline Strength Club",
+    "telephone": "(555) 016-6600",
+    "address": { "@type": "PostalAddress", "streetAddress": "880 Foundry Ave", "addressLocality": "Your City" },
+    "priceRange": "$$"
+  }
+  </script>
+</body>
+</html>

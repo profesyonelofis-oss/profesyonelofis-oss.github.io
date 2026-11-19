@@ -10,9 +10,26 @@
       "lisans": "MIT",
       "atif_gerekli": false,
       "ticari": true,
-      "stil": ["buyuk-baslik", "kare-galeri", "ortalanmis-hero", "tek-sayfa"],
-      "sektorler": ["Kuafor", "Guzellik", "Dugun", "Dis Klinigi", "Estetik", "Otel"],
-      "bolumler": ["hero", "hizmetler", "galeri", "iletisim"]
+      "stil": [
+        "buyuk-baslik",
+        "kare-galeri",
+        "ortalanmis-hero",
+        "tek-sayfa"
+      ],
+      "sektorler": [
+        "Kuafor",
+        "Guzellik",
+        "Dugun",
+        "Dis Klinigi",
+        "Estetik",
+        "Otel"
+      ],
+      "bolumler": [
+        "hero",
+        "hizmetler",
+        "galeri",
+        "iletisim"
+      ]
     },
     {
       "id": "startbootstrap-one-page-wonder",
@@ -22,9 +39,27 @@
       "lisans": "MIT",
       "atif_gerekli": false,
       "ticari": true,
-      "stil": ["sirali-akis", "genis-gorsel", "numara-one", "tek-sayfa"],
-      "sektorler": ["Cekici", "Oto Servis", "Tamir", "Emlak", "Danismanlik", "Nakliyat"],
-      "bolumler": ["hero", "acil-serit", "hizmetler", "kapsam", "iletisim"]
+      "stil": [
+        "sirali-akis",
+        "genis-gorsel",
+        "numara-one",
+        "tek-sayfa"
+      ],
+      "sektorler": [
+        "Cekici",
+        "Oto Servis",
+        "Tamir",
+        "Emlak",
+        "Danismanlik",
+        "Nakliyat"
+      ],
+      "bolumler": [
+        "hero",
+        "acil-serit",
+        "hizmetler",
+        "kapsam",
+        "iletisim"
+      ]
     },
     {
       "id": "tailwind-toolbox-landing",
@@ -35,9 +70,55 @@
       "atif_gerekli": false,
       "ticari": true,
       "not": "Demo görselleri (hero.png, Freepik) bilerek alınmadı; atıf gerektirir.",
-      "stil": ["iki-sutun-hero", "izgara-menu", "tailwind"],
-      "sektorler": ["Restoran", "Kafe", "Meyhane", "Firin", "Pastane", "Market"],
-      "bolumler": ["hero", "menu", "konum", "iletisim"]
+      "stil": [
+        "iki-sutun-hero",
+        "izgara-menu",
+        "tailwind"
+      ],
+      "sektorler": [
+        "Restoran",
+        "Kafe",
+        "Meyhane",
+        "Firin",
+        "Pastane",
+        "Market"
+      ],
+      "bolumler": [
+        "hero",
+        "menu",
+        "konum",
+        "iletisim"
+      ]
+    },
+    {
+      "id": "kucuk-isletme-seti",
+      "ad": "Small Business Templates (4 tek dosyalık şablon)",
+      "yol": "sablonlar/referans/kucuk-isletme",
+      "kaynak": "https://github.com/umairalisadaqat/free-small-business-website-templates",
+      "lisans": "MIT",
+      "atif_gerekli": false,
+      "ticari": true,
+      "not": "restaurant / salon-spa / gym-fitness / local-services. Tailwind CDN kullanıyor; bizden çıkan sayfa Tailwind'siz ve tek dosya. Buradan yalnız bölüm sırası, noktalı menü çizgisi ve 'hikaye' bölümünün görselli düzeni alındı.",
+      "stil": [
+        "noktali-liste",
+        "gorselli-hikaye",
+        "buyuk-rakamli-istatistik",
+        "yumusak-vurgu-lekesi"
+      ],
+      "sektorler": [
+        "Restoran",
+        "Kafe",
+        "Kuafor",
+        "Spor",
+        "Servis"
+      ],
+      "bolumler": [
+        "hero",
+        "hikaye",
+        "menu",
+        "yorumlar",
+        "iletisim"
+      ]
     }
   ],
   "kullanma": [
@@ -61,6 +142,14 @@
     {
       "kaynak": "HTML5 UP",
       "sebep": "CC BY 3.0: footer'da atıf zorunlu. Atıf istemiyorsak kullanılmaz."
+    }
+  ],
+  "referanslar": [
+    {
+      "kaynak": "https://github.com/PaulleDemon/awesome-landing-pages",
+      "lisans": "MIT",
+      "durum": "vendor edilmedi (34 MB)",
+      "ne_icin": "SaaS/restoran/portfolyo landing örnekleri; bölüm ritmi ve CTA yerleşimi karşılaştırması."
     }
   ]
 }

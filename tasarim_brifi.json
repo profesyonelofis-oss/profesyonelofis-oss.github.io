@@ -1,0 +1,91 @@
+{
+  "profil": "ajans",
+  "stil": "luxe-sinema",
+  "palet": {
+    "vurgu": "#2f6f4f",
+    "vurgu2": "#8fbf9f",
+    "zemin": "#0e1412",
+    "yazi": "#f4f1ea"
+  },
+  "tipografi": {
+    "baslik": "'Space Grotesk','Geist',system-ui,sans-serif",
+    "govde": "'Geist',system-ui,-apple-system,'Segoe UI',sans-serif"
+  },
+  "hareket": "dengeli",
+  "efektler": {
+    "kenburns": true,
+    "glass": true,
+    "parallax": true,
+    "magnetic": true,
+    "grain": true,
+    "imlec": true,
+    "sinematik": "kenburns+sinema",
+    "cam": "glassmorphism",
+    "kaydirma": "scroll-parallax",
+    "giris": "staggered fade-in",
+    "stagger_ms": 80
+  },
+  "bolumler": [
+    {
+      "etiket": "Matbaa · İstanbul",
+      "baslik": "Matbaa deneyimini\nsinematik bir dile taşıyoruz.",
+      "metin": "Kafe <Deneme>, İstanbul merkezli Matbaa deneyimini sakin bir lüks, net bir ritim ve insan odaklı bir hikâyeyle yeniden yorumluyor.",
+      "kalemler": []
+    },
+    {
+      "etiket": "Hakkımızda",
+      "baslik": "Bir mekân değil,\nhatırlanan bir ritüel.",
+      "metin": "Kafe <Deneme> için kurduğumuz bu anlatı, ilk bakışta değil; ilk temasta kendini gösteren bir özen duygusu taşıyor. Her ayrıntı, markanın karakterini aynı sakinlikle anlatıyor.",
+      "kalemler": []
+    },
+    {
+      "etiket": "Hizmetler",
+      "baslik": "Her ayrıntı,\naynı imzayı taşır.",
+      "metin": "Matbaa deneyimini oluşturan adımlar; şeffaf kapsam, ölçülü estetik ve tutarlı bir sonuç için tasarlandı.",
+      "kalemler": [
+        {
+          "ad": "İmza Deneyim",
+          "aciklama": "Markaya ait, tekrar edilemeyen bir ilk izlenim."
+        },
+        {
+          "ad": "Kişisel Yaklaşım",
+          "aciklama": "İhtiyaç ve beklenti baştan dinlenir."
+        },
+        {
+          "ad": "Sürdürülebilir Kalite",
+          "aciklama": "Her temasta aynı özen."
+        },
+        {
+          "ad": "Şeffaf İletişim",
+          "aciklama": "Süreç boyunca net ve sakin iletişim."
+        }
+      ]
+    },
+    {
+      "etiket": "AI Asistan Widget / WhatsApp",
+      "baslik": "Sorunuzu yazın,\ndoğru adıma yönlendirelim.",
+      "metin": "Kafe <Deneme> için tasarlanan demo asistanı; hizmetleri, çalışma saatlerini ve iletişim adımlarını sade bir dille yanıtlar. Devam etmek isterseniz WhatsApp hattı hazır.",
+      "kalemler": [
+        {
+          "ad": "7/24 AI asistan",
+          "aciklama": "Soruları anlar, doğru sonraki adımı önerir."
+        },
+        {
+          "ad": "Canlı WhatsApp",
+          "aciklama": "Konuşmayı doğrudan ekibe bağlar."
+        },
+        {
+          "ad": "Konum paylaşımı",
+          "aciklama": "Acil durumda tek dokunuşla iletilir."
+        }
+      ]
+    },
+    {
+      "etiket": "İletişim",
+      "baslik": "Bir sonraki adım,\nsizinle başlıyor.",
+      "metin": "Kafe <Deneme> · İstanbul. Telefon: +90 532 123 45 67. Çalışma saatleri: Pzt-Cum 09:00-18:00 · Cmt 10:00-16:00. Adres: Beşiktaş / İstanbul.",
+      "kalemler": []
+    }
+  ],
+  "cta": "İletişime geç"
+}

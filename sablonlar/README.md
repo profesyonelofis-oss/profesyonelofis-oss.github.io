@@ -15,6 +15,21 @@ geliyor. Hepsi **MIT** lisanslı: ticari kullanım serbest, atıf zorunlu değil
 | `startbootstrap-creative/` | https://github.com/StartBootstrap/startbootstrap-creative | MIT | Diş kliniği, kuaför, düğün — büyük başlık + galeri + iletişim |
 | `startbootstrap-one-page-wonder/` | https://github.com/StartBootstrap/startbootstrap-one-page-wonder | MIT | Oto servis, çekici, emlak — sıralı bölüm akışı |
 | `tailwind-toolbox-landing/` | https://github.com/tailwindtoolbox/Landing-Page | MIT (kod) | Restoran, kafe, herhangi bir landing — Tailwind grid |
+| `referans/kucuk-isletme/` | https://github.com/umairalisadaqat/free-small-business-website-templates | MIT | Restoran / kuaför-salon / spor / yerel servis için dört tek dosyalık şablon: **noktalı menü çizgisi**, görselli "hikaye" bölümü, büyük rakamlı istatistik şeridi, yumuşak vurgu lekeleri |
+
+**Referans alınan ama indirilmeyen:**
+[PaulleDemon/awesome-landing-pages](https://github.com/PaulleDemon/awesome-landing-pages) (MIT,
+34 MB) — bölüm ritmi ve CTA yerleşimini karşılaştırmak için; dosyaları repoya
+konmadı.
+
+## Bu klasörden ne alındı, neye dönüştü
+
+| Referans fikri | Bizde karşılığı |
+|---|---|
+| Görselli "hikaye" bölümü (4/5 dikey foto + metin) | `Hakkında` bölümü: galeriden bir kare ayrılıp oraya taşınıyor (`hikaye_ve_galeri`), aynı fotoğraf iki yerde görünmüyor |
+| Hero'da yumuşak vurgu lekeleri | `.hero::before/::after` — 70 px blur, sektör renginden, hareket yok |
+| Tek eylemli kapanış + iletişim | İşletmenin kendi bandı (ara) + altında **satıcı bandı** (WhatsApp'tan yaz) |
+| Noktalı menü çizgisi | Bilinçli olarak alınmadı: fiyat gösterimini kaldırdığımız için çizgi boş kalıyordu |
 
 ## Kullanım kuralları (önemli)
 

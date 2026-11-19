@@ -1,0 +1,17 @@
+{
+  "surum": 1,
+  "port": 8777,
+  "kayitlar": [
+    {
+      "zaman": "2026-11-06 23:36",
+      "telefon": "5551112233",
+      "ad": "Kopru Testi",
+      "metin": "Fiyat nedir?",
+      "yon": "Gelen",
+      "niyet": "Ret",
+      "asama": "SatisKapandi",
+      "okundu": true,
+      "kaynak": "köprü"
+    }
+  ]
+}
