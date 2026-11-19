@@ -1,7 +1,7 @@
 //! Türkiye'nin 81 ili ve 973 ilçesi.
 //!
-//! Kaynak: OpenStreetMap/Nominatim sorgularında kullanılmak üzere derlenmiş
-//! idari bölünme listesi (volkansenturk/turkiye-iller-ilceler).
+//! Kaynak: kamuya açık idari bölünme listesi
+//! (volkansenturk/turkiye-iller-ilceler); konum çözümü Google Geocoding (OSM) ile yapılır.
 //! İstanbul varsayılan il olduğu için listenin başında tutulur.
 
 // Veri tablosu: her il tek satır, ilçeler tek satırda kalsın diye rustfmt
