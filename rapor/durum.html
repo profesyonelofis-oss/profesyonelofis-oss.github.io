@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saruhanlı Oto Kurtarma · Durum Raporu</title>
+<style>
+:root{--v:#12523f;--v2:#0c3a2d;--lime:#d9ff57;--bg:#0b1210;--card:#111b17;--line:#22332c;--tx:#eaf1ec;--dim:#9db0a7;--ok:#7bd88f;--warn:#ffcf6b;--bad:#ff8b8b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;padding:18px 14px 40px}
+.wrap{max-width:1080px;margin:0 auto}
+h1{font-size:clamp(20px,4.4vw,30px);line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--lime)}
+.sub{color:var(--dim);margin:0 0 18px;font-size:13.5px}
+.live{display:inline-block;background:rgba(123,216,143,.12);border:1px solid rgba(123,216,143,.35);color:var(--ok);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;margin-right:6px}
+a{color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(217,255,87,.3)}
+a:hover{border-bottom-color:var(--lime)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:0 0 22px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 13px}
+.kpi b{display:block;font-size:22px;letter-spacing:-.02em;color:var(--lime)}
+.kpi span{color:var(--dim);font-size:12px}
+section{margin:0 0 26px}
+h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);margin:0 0 10px;font-weight:700}
+h2 i{display:inline-block;width:6px;height:6px;background:var(--lime);border-radius:50%;margin-right:8px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13.5px}
+th{text-align:left;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--dim);padding:9px 11px;background:#0e1815;border-bottom:1px solid var(--line);font-weight:700}
+td{padding:10px 11px;border-bottom:1px solid #1a2823;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#0f1a16}
+.old{color:var(--bad);text-decoration:line-through;text-decoration-color:rgba(255,139,139,.45)}
+.new{color:var(--tx)}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;white-space:nowrap;font-weight:600}
+.t-ok{background:rgba(123,216,143,.14);color:var(--ok);border:1px solid rgba(123,216,143,.3)}
+.t-new{background:rgba(217,255,87,.14);color:var(--lime);border:1px solid rgba(217,255,87,.3)}
+.t-warn{background:rgba(255,207,107,.14);color:var(--warn);border:1px solid rgba(255,207,107,.3)}
+.note{background:linear-gradient(135deg,rgba(18,82,63,.45),rgba(11,18,16,.9));border:1px solid var(--line);border-radius:14px;padding:14px 15px;font-size:13.5px;color:#d7e3dc}
+.note b{color:var(--lime)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+@media (max-width:640px){
+  table,thead,tbody,tr,td,th{display:block}
+  thead{display:none}
+  tr{border-bottom:1px solid var(--line);padding:6px 0}
+  tr:last-child{border-bottom:none}
+  td{border:none;padding:5px 12px;background:none!important}
+  td::before{content:attr(data-l);display:block;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Saruhanlı Oto Kurtarma · <em>son durum</em></h1>
+  <p class="sub"><span class="live">YAYINDA</span> O-5 · Kemalpaşa → Savaştepe · 7 ilçe · 0507 129 94 39</p>
+
+  <div class="kpis">
+    <div class="kpi"><b>7</b><span>ilçe sayfası (O-5)</span></div>
+    <div class="kpi"><b>9</b><span>yayındaki adres</span></div>
+    <div class="kpi"><b>4</b><span>şema türü / sayfa</span></div>
+    <div class="kpi"><b>0</b><span>doğrulama hatası</span></div>
+    <div class="kpi"><b>3.</b><span>Saruhanlı sırası</span></div>
+  </div>
+
+  <section>
+    <h2><i></i>Ne değişti</h2>
+    <table>
+      <thead><tr><th>Alan</th><th>Önce</th><th>Şimdi</th><th>Durum</th></tr></thead>
+      <tbody>
+        <tr><td data-l="Alan">Kapsam</td><td data-l="Önce" class="old">30 ilçe (İzmir–İstanbul)</td><td data-l="Şimdi" class="new">O-5 Kemalpaşa–Savaştepe, 7 ilçe</td><td data-l="Durum"><span class="tag t-ok">yayında</span></td></tr>
+        <tr><td data-l="Alan">Alan adı</td><td data-l="Önce" class="old">ornek-alan-adi.com (yer tutucu)</td><td data-l="Şimdi" class="new">freebuff.page adresi · canonical'lar gerçek</td><td data-l="Durum"><span class="tag t-ok">yayında</span></td></tr>
+        <tr><td data-l="Alan">Adres biçimi</td><td data-l="Önce" class="old">/manisa-akhisar.html (307 yönlendirme)</td><td data-l="Şimdi" class="new">/manisa-akhisar (doğrudan 200)</td><td data-l="Durum"><span class="tag t-ok">düzeltildi</span></td></tr>
+        <tr><td data-l="Alan">Sayfa içeriği</td><td data-l="Önce" class="old">Şablon metin, aynı bloklar</td><td data-l="Şimdi" class="new">O-5 kartı: kavşak, km, bağlantı yolu, servis alanı, mahalleler + yerel not</td><td data-l="Durum"><span class="tag t-new">yeni</span></td></tr>
+        <tr><td data-l="Alan">Başlık / H1</td><td data-l="Önce" class="old">"Oto kurtarma Akhisar" (çekici ve 7/24 yok)</td><td data-l="Şimdi" class="new">"Çekici Akhisar · 7/24 · O-5 K18" · H1: "Akhisar çekici · 7/24 oto kurtarma"</td><td data-l="Durum"><span class="tag t-new">yeni</span></td></tr>
+        <tr><td data-l="Alan">Telefon dönüşümü</td><td data-l="Önce" class="old">Üstte 2 buton, sonra iletişim kartı</td><td data-l="Şimdi" class="new">+ "Hangi durumda ararsınız?" 6 durum kartı ve tek dokunuş arama butonu</td><td data-l="Durum"><span class="tag t-new">yeni</span></td></tr>
+        <tr><td data-l="Alan">Yapısal veri</td><td data-l="Önce" class="old">Yalnız AutoRepair</td><td data-l="Şimdi" class="new">AutoRepair + BreadcrumbList + Service + FAQPage</td><td data-l="Durum"><span class="tag t-new">4 şema</span></td></tr>
+        <tr><td data-l="Alan">Yerel SEO</td><td data-l="Önce" class="old">Yok</td><td data-l="Şimdi" class="new">geo.region (TR-45/35/10), geo.position, ICBM, og:image</td><td data-l="Durum"><span class="tag t-new">eklendi</span></td></tr>
+        <tr><td data-l="Alan">Dizin</td><td data-l="Önce" class="old">30 kart, koridor yok</td><td data-l="Şimdi" class="new">7 kart + "O-5 üzerinde hizmet verdiğimiz kesim" sırası</td><td data-l="Durum"><span class="tag t-ok">yayında</span></td></tr>
+        <tr><td data-l="Alan">Ana sayfa</td><td data-l="Önce" class="old">"30 bölge · İzmir–İstanbul"</td><td data-l="Şimdi" class="new">"7 ilçe · Kemalpaşa'dan Savaştepe'ye", hat durakları km'li</td><td data-l="Durum"><span class="tag t-ok">yayında</span></td></tr>
+        <tr><td data-l="Alan">Yorum</td><td data-l="Önce" class="old">Link vardı, CTA zayıftı</td><td data-l="Şimdi" class="new">Her sayfada "Yorumunuz sıralamayı belirliyor" kartı + gerçek yer kimliği linki</td><td data-l="Durum"><span class="tag t-ok">yayında</span></td></tr>
+        <tr><td data-l="Alan">Kapsam dışı sayfalar</td><td data-l="Önce" class="old">25 sayfa yayında (kanibalizasyon)</td><td data-l="Şimdi" class="new">_arsiv/ altında, yayına yüklenmedi</td><td data-l="Durum"><span class="tag t-ok">temiz</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><i></i>7 ilçe · yayındaki sayfalar</h2>
+    <table>
+      <thead><tr><th>İlçe</th><th>Kavşak</th><th>Km</th><th>Bağlantı yolu</th><th>Sıra (10.11)</th><th>Sayfa</th></tr></thead>
+      <tbody>
+        <tr><td data-l="İlçe">Kemalpaşa (İzmir)</td><td data-l="Kavşak">K22</td><td data-l="Km">389,6</td><td data-l="Yol">D.300</td><td data-l="Sıra"><span class="tag t-warn">ilk 6'da yok</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/izmir-kemalpasa">aç</a></td></tr>
+        <tr><td data-l="İlçe">Turgutlu (Manisa)</td><td data-l="Kavşak">O-5 / viyadük</td><td data-l="Km">360,0</td><td data-l="Yol">E-96 / D.300</td><td data-l="Sıra"><span class="tag t-warn">ilk 6'da yok</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/manisa-turgutlu">aç</a></td></tr>
+        <tr><td data-l="İlçe">Saruhanlı (Manisa)</td><td data-l="Kavşak">K19</td><td data-l="Km">339,6</td><td data-l="Yol">D.565</td><td data-l="Sıra"><span class="tag t-ok">3.</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/manisa-saruhanli">aç</a></td></tr>
+        <tr><td data-l="İlçe">Akhisar (Manisa)</td><td data-l="Kavşak">K18</td><td data-l="Km">315,1</td><td data-l="Yol">D.565</td><td data-l="Sıra"><span class="tag t-warn">ilk 6'da yok</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/manisa-akhisar">aç</a></td></tr>
+        <tr><td data-l="İlçe">Kırkağaç (Manisa)</td><td data-l="Kavşak">K17</td><td data-l="Km">299,5</td><td data-l="Yol">D.240</td><td data-l="Sıra"><span class="tag t-warn">ilk 6'da yok</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/manisa-kirkagac">aç</a></td></tr>
+        <tr><td data-l="İlçe">Soma (Manisa)</td><td data-l="Kavşak">K16</td><td data-l="Km">277,4</td><td data-l="Yol">D.240 / 45.04</td><td data-l="Sıra"><span class="tag t-warn">ilk 6'da yok</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/manisa-soma">aç</a></td></tr>
+        <tr><td data-l="İlçe">Savaştepe (Balıkesir)</td><td data-l="Kavşak">K15</td><td data-l="Km">262,4</td><td data-l="Yol">10.51 il yolu</td><td data-l="Sıra"><span class="tag t-warn">ilk 6'da yok</span></td><td data-l="Sayfa"><a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/balikesir-savastepe">aç</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><i></i>Yorum → sıra merdiveni (tek kalan iş)</h2>
+    <table>
+      <thead><tr><th>İlçe</th><th>Lider yorum</th><th>İlk 3 için</th><th>1. sıra için</th></tr></thead>
+      <tbody>
+        <tr><td data-l="İlçe">Kemalpaşa</td><td data-l="Lider">zayıf (2 yorumlu işletme var)</td><td data-l="İlk 3"><span class="tag t-new">12</span></td><td data-l="1. sıra">25</td></tr>
+        <tr><td data-l="İlçe">Turgutlu</td><td data-l="Lider">profil zayıf</td><td data-l="İlk 3"><span class="tag t-new">15</span></td><td data-l="1. sıra">30</td></tr>
+        <tr><td data-l="İlçe">Soma</td><td data-l="Lider">20</td><td data-l="İlk 3"><span class="tag t-new">25</span></td><td data-l="1. sıra">40</td></tr>
+        <tr><td data-l="İlçe">Saruhanlı</td><td data-l="Lider">23</td><td data-l="İlk 3"><span class="tag t-ok">30</span></td><td data-l="1. sıra">45</td></tr>
+        <tr><td data-l="İlçe">Akhisar</td><td data-l="Lider">42</td><td data-l="İlk 3">50</td><td data-l="1. sıra">70</td></tr>
+        <tr><td data-l="İlçe">Kırkağaç</td><td data-l="Lider">66</td><td data-l="İlk 3">75</td><td data-l="1. sıra">95</td></tr>
+        <tr><td data-l="İlçe">Savaştepe</td><td data-l="Lider">108 (sponsorlu)</td><td data-l="İlk 3">120</td><td data-l="1. sıra">140</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><i></i>Kalan işler · son durum</h2>
+    <table>
+      <thead><tr><th>İş</th><th>Durum</th><th>Kim / süre</th></tr></thead>
+      <tbody>
+        <tr><td data-l="İş">Google profili: kategori, hizmet alanı, foto, website</td><td data-l="Durum"><span class="tag t-new">metinler hazır</span> profil-hazir.md: açıklama, 7 ilçe, 10 foto listesi, ilk gönderi, 4 soru-cevap</td><td data-l="Kim">sen · 6-8 dk</td></tr>
+        <tr><td data-l="İş">Search Console sitemap gönderimi</td><td data-l="Durum"><span class="tag t-new">IndexNow tamam</span> Bing/Yandex'e 9 URL bildirildi (202); Google için tek eksik doğrulama kodu</td><td data-l="Kim">sen · 2 dk</td></tr>
+        <tr><td data-l="İş">Yorum sayısı</td><td data-l="Durum"><span class="tag t-ok">plan hazır</span> 30-gun-plani.md: 16 → 43 yorum, haftalık ritim, 3 mesaj şablonu, 4 gönderi metni</td><td data-l="Kim">sen · 30 dk/hafta</td></tr>
+        <tr><td data-l="İş">Reklam</td><td data-l="Durum"><span class="tag t-warn">bütçe yok · plan B</span> organik: yorum + O-5 içerik + profil gücü</td><td data-l="Kim">—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="two">
+    <div class="note"><b>Yayındaki adresler</b><br>
+      Dizin: <a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/">/</a><br>
+      Premium ana sayfa: <a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/anasayfa">/anasayfa</a><br>
+      Sitemap: <a href="https://site-74ad7168ac5940b0a4e353051388ae97.freebuff.page/sitemap.xml">/sitemap.xml</a> · 9 URL
+    </div>
+    <div class="note"><b>Doğrulama</b><br>
+      8 sayfa + varlıklar <b>200</b>, olmayan adres <b>404</b>, `.html` adresleri kanonik adrese 307.<br>
+      Üretim 14 dosya · testler 19 geçti · bozuk JSON 0.
+    </div>
+  </section>
+
+  <p class="sub" style="margin-top:22px">Not: 16 MB'lık sahne sayfası (sahneler.html) yükleme sınırı yüzünden yayına alınmadı; gerekirse optimize edilip eklenir. Kendi alan adınız bağlanınca canonical'lar tek komutla yeni adrese çevrilir.</p>
+</div>
+</body>
+</html>

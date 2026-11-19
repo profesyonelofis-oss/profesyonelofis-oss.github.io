@@ -6,12 +6,20 @@
 data/
 __pycache__/
 *.pyc
+# Yerel AI model ağırlıkları: ilk açılışta indirilir (~4 GB), depoya girmez.
+yerel_ai/model/
+
+# Surge yayını: üretilen klasör ve hesap jetonu depoya girmez
+surge_site/
+_gecici/
 
 # Yerel ayarlar ve çalışma zamanı dosyaları
 # .env: Google Places anahtarı gibi gizli değerler
 .env
 # google_kota.json: Google yedek aramasının günlük/aylık istek sayacı
 google_kota.json
+# onbellek/: indirilen Street View kareleri (faturalı istek tekrarlanmasın)
+onbellek/
 # musteri_kayitlari.json: kalıcı müşteri defteri (iletişim durumu, kara liste)
 musteri_kayitlari*.json
 # konum_onbellek.json: ilçe koordinat/poligon önbelleği
@@ -20,6 +28,8 @@ konum_onbellek.json
 sonuc_onbellek.json
 # ayarlar.json: kalıcı uygulama ayarları (gönderen WhatsApp numarası)
 ayarlar.json
+# gelir.json: abonelikler ve hazır teklifler
+gelir.json
 # cikti/: CSV dışa aktarımları
 cikti/
 # demos/: üretilen demo ve karne sayfaları (yayın .yayin/ çalışma kopyasından yapılır)
@@ -27,6 +37,17 @@ demos/
 # .yayin/: GitHub Pages (gh-pages dalı) için ayrı git worktree
 .yayin/
 *.log
+# nexus_hata.log: çökme/panik günlüğü (uygulamanın yanında tutulur)
+nexus_hata.log
 
 # Arayüz doğrulaması için alınan ekran görüntüleri
 screenshots/
+api_anahtari.enc
+api_tuz.bin
+
+# Öğrenme hafızası: kullanıcıya özel, sürüm kontrolüne girmez.
+memory/
+teslimat/
+otomasyon.json
+plan.json
+pinler.json

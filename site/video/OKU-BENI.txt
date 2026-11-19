@@ -1,0 +1,52 @@
+SAHNELI VIDEO — NASIL KENDI VIDEOKLERINI KOYARSIN
+=================================================
+
+Sayfanin tamami videodur. Fare tekeri her cevrildiginde
+hem video hem ustundeki icerik bir sonraki sahneye gecer.
+Sahneler sirayla:
+
+  01  Yukleme   -> giris (cevher: cekici ustunde arac)
+  02  Motor     -> hizmetler
+  03  Yol       -> nasil calisiyor
+  04  Hat       -> Izmir - Savastepe hatti
+  05  Bolge     -> hizmet alani
+  06  Gece      -> S.S.S.
+  07  Yola Cik  -> iletisim
+
+KENDI VIDEOLARINI KOY
+---------------------
+1) Videolari bu klasore kopyala, isimleri sirayla olsun:
+
+   site/video/01-yukleme.mp4
+   site/video/02-motor.mp4
+   site/video/03-yol.mp4
+   site/video/04-hat.mp4
+   site/video/05-bolge.mp4
+   site/video/06-gece.mp4
+   site/video/07-yola-cik.mp4
+
+   Tek video varsa: sadece 01-yukleme.mp4 koy, asagidaki
+   komutu --bol ile bolerek kullan (ornek en altta).
+
+2) Komutu calistir (proje kokunde):
+
+   python site/sahne_hazirla.py --kare 22 --genislik 1100
+
+   Video basina ~15-25 kare uretir; toplam 10-20 MB tut.
+
+3) Sayfayi yenile. Bitti.
+
+NOTLAR
+------
+* Her video = bir sahne. Kare dizisi oldugu icin sayfa
+  video dosyasini yuklemez; tekerlek aninda gecis yapar.
+* Dikey video da olur, ekrani kaplar (kenarlar kirpilir).
+* Gecis suresi: 1.05 sn crossfade + hafif zoom.
+* 4K video koyma; 1080p yeterli. Cok uzun video koyma,
+  ilk 3-6 saniyesi kullanilir.
+* Hatali/eksik sahne olursa sayfa ilk sahnede kalir,
+  konsolda hata vermez.
+* Tek videodan N sahne uretmek icin:
+
+   python site/sahne_hazirla.py --bol 7 --kare 22 --genislik 1100 \
+     --adlar "Yukleme,Motor,Yol,Hat,Bolge,Gece,Yola Cik"
